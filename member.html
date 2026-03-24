@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>2025 中華電信智慧創新應用大賽暨 5G 加速器徵選活動</title>
+    <meta name="author" content="" />
+    <meta name="description" content="面對 AI 崛起與數位轉型浪潮，中華電信智慧創新應用大賽暨5G加速器徵選活動聚焦於「智慧驅動、數位韌性、永續未來」，導入人工智慧、資料分析、永續應用等新興科技，廣邀產學團隊提出具備市場潛力與合作價值的創新解決方案串接上下游產業鏈技術專家及研發資源，整合更深度的技術與商業諮詢，開發出更具商業價值的數位應用，與中華電信共創智慧產業圈。" />
+    <meta name="keywords" content="" />
+    <meta name="Resource-type" content="" />
+    <!-- <meta property="og:image" content="https://www.zyed.com.tw/VITRUVIUS/img/1200x630.png"> -->
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/fullpage.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <!-- <script type="text/javascript" src="js/fullpage.js"></script> -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QDF2DWWL46"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-QDF2DWWL46');
+    </script>
+    
+</head>
+
+<body>
+    <header id="header">
+        <div class="fixed_area">
+            <ul>
+                <li>
+                    <a href="member.html">立即報名</a>
+                </li>
+                <li>
+                    <a href="index-smart.html#tab-option1">智慧創新<br>應用大賽</a>
+                </li>
+                <li>
+                    <a href="index-5g.html#tab-option1">5G加速器<br>徵選活動</a>
+                </li>
+            </ul>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo_white.svg" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index-smart.html" target="_blank">智慧創新應用大賽</a></li>
+                <li><a href="index-5g.html" target="_blank">5G加速器徵選活動</a></li>
+                <li><a href="index.html#a1" target="_blank">最新消息</a></li>
+                <li><a href="index.html#a2" target="_blank">FAQ</a></li>
+                <li><a href="results-announcement.html" target="_blank">名單公告</a></li>
+                <li><a href="media-coverage.html" target="_blank">歷屆回顧</a></li>
+                <li><a href="member.html" target="_blank">參賽專區</a></li>
+            </ul>
+        </nav>
+        <button id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <section>
+        <!-- <div class="section theme theme-kv">
+            <div class="pc">
+                <img src="img/kv.jpg" alt="">
+            </div>
+            <div class="mob">
+                <img src="img/kv.jpg" alt="">
+            </div>
+        </div> -->
+        <div class="section theme theme-member">
+            <div class="theme-member-tab">
+                <h3><span>參賽專區</span></h3>
+                <div class="tab-box">                     
+                    <div class="tab-content tab-content1">
+                            <div class="theme-title">
+                                <h3 class="gradient-text">登入</h3>
+                            </div>
+                        <div class="theme-content">
+                            <div class="login-box">
+                                <form>
+                                    <div class="input-box">
+                                        <label for="username">帳號</label>
+                                        <input type="text" id="username" placeholder="請輸入主要聯絡人 E-mail" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for="password">密碼</label>
+                                        <input type="password" id="password" placeholder="請輸入密碼" required>
+                                    </div>
+                                    <button type="submit">登入</button>
+                                </form>
+                            </div>
+                            <div class="member-option">
+                                <div class="list">
+                                    <a href="register.html">註冊帳號</a>
+                                </div>
+                                <div class="list">
+                                    <a href="reset-password.html">忘記密碼</a>
+                                </div>
+                            </div>
+                            
+                        </div>                                   
+                    </div>
+                    
+                </div>
+            </div>
+                
+            </div>
+    </section>
+    <footer id="footer"></footer>
+
+</body>
+
+<script>
+
+    $(document).ready(function () {
+
+        new WOW().init();
+
+        // $('#header').load('page/header.html');
+        $('#footer').load('page/footer.html');
+        
+        $('#menu-toggle').on('click', function () {
+            $('nav').slideToggle(); // 用動畫切換顯示/隱藏
+            $(this).toggleClass('active'); // 如果你想讓按鈕變化樣式（選配）
+        });
+        $('.menu li a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+
+            const target = $($(this).attr('href'));
+
+            if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 600); // 600 毫秒滑動
+            }
+        });
+        
+        $(".more_topic").click(function(){
+            $(this).next(".more_content").slideToggle(300); // 可改為 toggle() 若不要動畫
+            $(this).children('span').toggleClass("active"); // 可用來改變 icon 或樣式
+        });
+
+        var maxHeight = 0;
+
+        // 找出最大高度
+        $(".set-height").each(function(){
+            var thisHeight = $(this).outerHeight();
+            if (thisHeight > maxHeight) {
+            maxHeight = thisHeight;
+            }
+        });
+
+        // 套用統一高度
+        $(".set-height").height(maxHeight);
+    });
+
+
+</script>
+
+
+
+</html>

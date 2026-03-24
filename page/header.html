@@ -1,0 +1,60 @@
+
+        <div class="fixed_area">
+            <ul>
+                <li>
+                    <a href="member.html">立即報名</a>
+                </li>
+                <li>
+                    <a href="index-smart.html#tab-option1">智慧創新<br>應用大賽</a>
+                </li>
+                <li>
+                    <a href="index-5g.html#tab-option1">5G加速器<br>徵選活動</a>
+                </li>
+            </ul>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo_white.svg" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index-smart.html" target="_blank">智慧創新應用大賽</a></li>
+                <li><a href="index-5g.html" target="_blank">5G加速器徵選活動</a></li>
+                <li><a href="index.html#a1" target="_blank">最新消息</a></li>
+                <li><a href="index.html#a2" target="_blank">FAQ</a></li>
+                <li><a href="results-announcement.html" target="_blank">名單公告</a></li>
+                <li><a href="media-coverage.html" target="_blank">歷屆回顧</a></li>
+                <li><a href="member.html" target="_blank">參賽專區</a></li>
+            </ul>
+        </nav>
+        <button id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+
+        <script>
+
+            $(document).ready(function () {
+                
+                $('#menu-toggle').on('click', function () {
+                    $('nav').slideToggle(); // 用動畫切換顯示/隱藏
+                    $(this).toggleClass('active'); // 如果你想讓按鈕變化樣式（選配）
+                });
+                $('.menu li a[href^="#"]').on('click', function (e) {
+        
+                    e.preventDefault();
+        
+                    const target = $($(this).attr('href'));
+        
+                    if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 600); // 600 毫秒滑動
+                    }
+                });
+            });
+        
+        </script>
