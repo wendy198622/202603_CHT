@@ -288,10 +288,8 @@ input, button, select, textarea {
 }
 
 .fixed_area ul li {
-  width: 110px;
-  height: 110px;
-  background: url(../img/nav_icon.png) center center no-repeat;
-  background-size: contain;
+  width: 140px;
+  height: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,6 +309,16 @@ input, button, select, textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
+}
+
+.fixed_area ul li:nth-child(1) {
+  background: url(../img/nav_icon1.png) center center no-repeat;
+  background-size: contain;
+}
+
+.fixed_area ul li:nth-child(2) {
+  background: url(../img/nav_icon2.png) center center no-repeat;
+  background-size: contain;
 }
 
 header {
@@ -541,9 +549,20 @@ footer .company_info .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+footer .company_info .info h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 12px;
 }
 
 footer .company_info .info ul {
@@ -971,11 +990,11 @@ section .home-theme-faq {
 }
 
 section .home-theme-faq .theme-title {
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#2886B3), to(transparent));
-  background: linear-gradient(to right, transparent, #2886B3, transparent);
-  -o-border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#11B0FF), to(transparent)) 1;
-     border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#6928B3), to(transparent));
+  background: linear-gradient(to right, transparent, #6928B3, transparent);
+  -o-border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#A866F4), to(transparent)) 1;
+     border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
   margin-top: 0;
 }
 
@@ -999,15 +1018,16 @@ section .home-theme-faq .theme-content .faq-group .title span {
   display: inline-block;
   padding: 4px 16px;
   letter-spacing: 2px;
+  color: #fff;
 }
 
 section .home-theme-faq .theme-content .faq-group .list {
   padding-bottom: 20px;
   border-bottom: 2px solid;
   /* 寬度與樣式先設定好 */
-  -o-border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#11B0FF), to(transparent)) 1;
-     border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
+  -o-border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#A866F4), to(transparent)) 1;
+     border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
 }
 
 section .home-theme-faq .theme-content .faq-group .list h5 {
@@ -1201,8 +1221,8 @@ section .theme-smart .theme-smart-tab {
 }
 
 section .theme-smart .theme-smart-tab > h3 {
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#2886B3), to(transparent));
-  background: linear-gradient(to right, transparent, #2886B3, transparent);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#6928B3), to(transparent));
+  background: linear-gradient(to right, transparent, #6928B3, transparent);
   padding: 4px 12px;
   margin: 30px 0 40px;
   font-size: 20px;
@@ -1213,10 +1233,10 @@ section .theme-smart .theme-smart-tab > h3 {
   /* 寬度與樣式先設定好 */
   border-bottom: 2px solid;
   /* 寬度與樣式先設定好 */
-  background: linear-gradient(to right, transparent, #2886B3, transparent);
-  -o-border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#11B0FF), to(transparent)) 1;
-     border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
+  background: linear-gradient(to right, transparent, #6928B3, transparent);
+  -o-border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#A866F4), to(transparent)) 1;
+     border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
 }
 
 section .theme-smart .theme-smart-tab > h3 span {
@@ -1427,9 +1447,8 @@ section .theme-smart .theme-smart-tab .tab-box .theme-content .target .list .sub
 
 section .theme-smart .theme-smart-tab .tab-box .theme-content .target .list p {
   font-size: 18px;
-  background: linear-gradient(135deg, #78CAEF, #8D93D2, #EBB26C);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fff;
+  margin-top: 12px;
 }
 
 section .theme-smart .theme-smart-tab .tab-box .theme-content ul {
@@ -1859,8 +1878,8 @@ section .theme-5g .theme-5g-tab {
 }
 
 section .theme-5g .theme-5g-tab > h3 {
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#6928B3), to(transparent));
-  background: linear-gradient(to right, transparent, #6928B3, transparent);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#2886B3), to(transparent));
+  background: linear-gradient(to right, transparent, #2886B3, transparent);
   padding: 4px 12px;
   margin: 30px 0 40px;
   font-size: 20px;
@@ -1871,10 +1890,10 @@ section .theme-5g .theme-5g-tab > h3 {
   /* 寬度與樣式先設定好 */
   border-bottom: 2px solid;
   /* 寬度與樣式先設定好 */
-  background: linear-gradient(to right, transparent, #6928B3, transparent);
-  -o-border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#A866F4), to(transparent)) 1;
-     border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
+  background: linear-gradient(to right, transparent, #2886B3, transparent);
+  -o-border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#11B0FF), to(transparent)) 1;
+     border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
 }
 
 section .theme-5g .theme-5g-tab > h3 span {
@@ -2698,6 +2717,17 @@ section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul.topic_li
   list-style-type: none !important;
 }
 
+section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul.topic_list_none h4.power {
+  background: -webkit-gradient(linear, left top, right top, from(#00A5A9), to(#284FA6));
+  background: linear-gradient(to right, #00A5A9, #284FA6);
+  color: #fff;
+  display: inline-block;
+  padding: 0 12px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
 section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul.topic_list_none > li {
   position: relative;
   line-height: 2;
@@ -2711,12 +2741,87 @@ section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul.topic_li
   font-weight: bold;
 }
 
+section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul.topic_list_none > li a {
+  display: inline-block;
+}
+
 section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul.topic_list_none .topic_list_none {
   padding-left: 32px;
 }
 
 section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul.topic_list_none .topic_list_none li {
   margin-bottom: 0;
+}
+
+section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity, section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+}
+
+section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity li, section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li {
+  width: 276px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 20px;
+}
+
+section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity li h4, section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li h4 {
+  text-align: center;
+}
+
+section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity li:nth-child(1), section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity li:nth-child(3), section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity li:nth-child(5), section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li:nth-child(1), section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li:nth-child(3), section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li:nth-child(5) {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#05022E), to(#05022E)), -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
+  background-image: linear-gradient(#05022E, #05022E), linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity li:nth-child(1) h4, section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity li:nth-child(3) h4, section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity li:nth-child(5) h4, section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li:nth-child(1) h4, section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li:nth-child(3) h4, section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li:nth-child(5) h4 {
+  background: linear-gradient(110deg, #00F9FF, #457FFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity li:nth-child(2), section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity li:nth-child(4), section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity li:nth-child(6), section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li:nth-child(2), section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li:nth-child(4), section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li:nth-child(6) {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#05022E), to(#05022E)), -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
+  background-image: linear-gradient(#05022E, #05022E), linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity li:nth-child(2) h4, section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity li:nth-child(4) h4, section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity li:nth-child(6) h4, section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li:nth-child(2) h4, section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li:nth-child(4) h4, section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li:nth-child(6) h4 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
+  background: linear-gradient(0deg, #EBB26C, #71DDC3, #78CAEF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .opportunity li p, section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li p {
+  font-size: 16px;
+  color: #fff;
+  background: none;
+  margin-top: 12px;
+  line-height: 1.4;
+}
+
+section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul .awards li {
+  width: 100%;
 }
 
 section .theme-allround {
@@ -2728,8 +2833,8 @@ section .theme-allround .theme-smart-tab {
 }
 
 section .theme-allround .theme-smart-tab > h3 {
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#2886B3), to(transparent));
-  background: linear-gradient(to right, transparent, #2886B3, transparent);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#6928B3), to(transparent));
+  background: linear-gradient(to right, transparent, #6928B3, transparent);
   padding: 4px 12px;
   margin: 0 0 40px;
   font-size: 20px;
@@ -2740,10 +2845,10 @@ section .theme-allround .theme-smart-tab > h3 {
   /* 寬度與樣式先設定好 */
   border-bottom: 2px solid;
   /* 寬度與樣式先設定好 */
-  background: linear-gradient(to right, transparent, #2886B3, transparent);
-  -o-border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#11B0FF), to(transparent)) 1;
-     border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
+  background: linear-gradient(to right, transparent, #6928B3, transparent);
+  -o-border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#A866F4), to(transparent)) 1;
+     border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
 }
 
 section .theme-allround .theme-smart-tab > h3 span {
@@ -2903,6 +3008,13 @@ section .theme-allround .theme-smart-tab .tab-box .theme-content h5 {
   color: #fff;
 }
 
+section .theme-allround .theme-smart-tab .tab-box .theme-content h5.blue-bg {
+  background: -webkit-gradient(linear, left top, right top, from(#00A5A9), to(#284FA6));
+  background: linear-gradient(to right, #00A5A9, #284FA6);
+  display: inline-block;
+  padding: 0 20px;
+}
+
 section .theme-allround .theme-smart-tab .tab-box .theme-content p {
   margin-top: 20px;
   line-height: 1.8;
@@ -2928,8 +3040,8 @@ section .theme-result .theme-result-tab {
 }
 
 section .theme-result .theme-result-tab > h3 {
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#2886B3), to(transparent));
-  background: linear-gradient(to right, transparent, #2886B3, transparent);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#6928B3), to(transparent));
+  background: linear-gradient(to right, transparent, #6928B3, transparent);
   padding: 4px 12px;
   margin: 30px 0 40px;
   font-size: 20px;
@@ -2940,10 +3052,10 @@ section .theme-result .theme-result-tab > h3 {
   /* 寬度與樣式先設定好 */
   border-bottom: 2px solid;
   /* 寬度與樣式先設定好 */
-  background: linear-gradient(to right, transparent, #2886B3, transparent);
-  -o-border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#11B0FF), to(transparent)) 1;
-     border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
+  background: linear-gradient(to right, transparent, #6928B3, transparent);
+  -o-border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#A866F4), to(transparent)) 1;
+     border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
 }
 
 section .theme-result .theme-result-tab > h3 span {
@@ -3058,8 +3170,8 @@ section .theme-media .theme-media-tab {
 }
 
 section .theme-media .theme-media-tab > h3 {
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#2886B3), to(transparent));
-  background: linear-gradient(to right, transparent, #2886B3, transparent);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#6928B3), to(transparent));
+  background: linear-gradient(to right, transparent, #6928B3, transparent);
   padding: 4px 12px;
   margin: 30px 0 40px;
   font-size: 20px;
@@ -3070,10 +3182,10 @@ section .theme-media .theme-media-tab > h3 {
   /* 寬度與樣式先設定好 */
   border-bottom: 2px solid;
   /* 寬度與樣式先設定好 */
-  background: linear-gradient(to right, transparent, #2886B3, transparent);
-  -o-border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#11B0FF), to(transparent)) 1;
-     border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
+  background: linear-gradient(to right, transparent, #6928B3, transparent);
+  -o-border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#A866F4), to(transparent)) 1;
+     border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
 }
 
 section .theme-media .theme-media-tab > h3 span {
@@ -3262,11 +3374,11 @@ section .theme-member .theme-member-tab > h3 {
   /* 寬度與樣式先設定好 */
   border-bottom: 2px solid;
   /* 寬度與樣式先設定好 */
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#2886B3), to(transparent));
-  background: linear-gradient(to right, transparent, #2886B3, transparent);
-  -o-border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#11B0FF), to(transparent)) 1;
-     border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#6928B3), to(transparent));
+  background: linear-gradient(to right, transparent, #6928B3, transparent);
+  -o-border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#A866F4), to(transparent)) 1;
+     border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
 }
 
 section .theme-member .theme-member-tab > h3 span {
@@ -3451,16 +3563,17 @@ section .theme-member .theme-member-tab .tab-box .tab-content .theme-content .me
 }
 
 section .theme-register {
-  background: #05022E;
+  background: url(../img/login_bg.png) center center no-repeat;
+  background-size: cover;
 }
 
 section .theme-register .theme-register-tab {
-  padding: 60px 0;
+  padding: 100px 0;
 }
 
 section .theme-register .theme-register-tab > h3 {
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#2886B3), to(transparent));
-  background: linear-gradient(to right, transparent, #2886B3, transparent);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#6928B3), to(transparent));
+  background: linear-gradient(to right, transparent, #6928B3, transparent);
   padding: 4px 12px;
   margin: 0 0 40px;
   font-size: 20px;
@@ -3471,20 +3584,16 @@ section .theme-register .theme-register-tab > h3 {
   /* 寬度與樣式先設定好 */
   border-bottom: 2px solid;
   /* 寬度與樣式先設定好 */
-  background: linear-gradient(to right, transparent, #2886B3, transparent);
-  -o-border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#11B0FF), to(transparent)) 1;
-     border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
+  background: linear-gradient(to right, transparent, #6928B3, transparent);
+  -o-border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#A866F4), to(transparent)) 1;
+     border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
 }
 
 section .theme-register .theme-register-tab > h3 span {
   display: inline-block;
   padding: 4px 20px;
   color: #fff;
-}
-
-section .theme-register .theme-register-tab .tab-box {
-  margin-top: 40px;
 }
 
 section .theme-register .theme-register-tab .tab-box input[type="radio"] {
@@ -3516,7 +3625,6 @@ section .theme-register .theme-register-tab .tab-box .tab-content {
   width: 96%;
   max-width: 1080px;
   margin: 0 auto;
-  margin-top: 40px;
   padding: 0 60px;
   border-radius: 20px;
   background-size: contain;
@@ -3526,6 +3634,10 @@ section .theme-register .theme-register-tab .tab-box .tab-content {
   section .theme-register .theme-register-tab .tab-box .tab-content {
     padding: 60px 20px;
   }
+}
+
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-title {
+  margin-top: 0;
 }
 
 section .theme-register .theme-register-tab .tab-box .tab-content .theme-title h3 {
@@ -3551,7 +3663,6 @@ section .theme-register .theme-register-tab .tab-box .tab-content .theme-content
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 40px;
 }
 
 section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset {
@@ -3745,6 +3856,7 @@ section .theme-register .theme-register-tab .tab-box .tab-content .theme-content
   color: #fff;
   font-size: 13px;
   text-align: center;
+  opacity: 0.6;
 }
 
 section .theme-event {
@@ -3756,8 +3868,8 @@ section .theme-event .theme-event-tab {
 }
 
 section .theme-event .theme-event-tab > h3 {
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#2886B3), to(transparent));
-  background: linear-gradient(to right, transparent, #2886B3, transparent);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#6928B3), to(transparent));
+  background: linear-gradient(to right, transparent, #6928B3, transparent);
   padding: 4px 12px;
   margin: 0 0 40px;
   font-size: 20px;
@@ -3768,10 +3880,10 @@ section .theme-event .theme-event-tab > h3 {
   /* 寬度與樣式先設定好 */
   border-bottom: 2px solid;
   /* 寬度與樣式先設定好 */
-  background: linear-gradient(to right, transparent, #2886B3, transparent);
-  -o-border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#11B0FF), to(transparent)) 1;
-     border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
+  background: linear-gradient(to right, transparent, #6928B3, transparent);
+  -o-border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#A866F4), to(transparent)) 1;
+     border-image: linear-gradient(to right, transparent, #A866F4, transparent) 1;
 }
 
 section .theme-event .theme-event-tab > h3 span {

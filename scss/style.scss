@@ -11,10 +11,8 @@
         flex-direction: column;
         gap: 8px;
         li{
-            width: 110px;
-            height: 110px;
-            background: url(../img/nav_icon.png) center center no-repeat;
-            background-size: contain;
+            width: 140px;
+            height: 140px;
            
             display: flex;
             align-items: center;      // 垂直置中
@@ -26,6 +24,14 @@
                 text-align: center;
                 box-sizing: border-box; // 確保 padding 不撐開寬度
                 display: block;         // 在 Flex 下用 block 即可
+            }
+            &:nth-child(1){
+                background: url(../img/nav_icon1.png) center center no-repeat;
+                background-size: contain;
+            }
+            &:nth-child(2){
+                background: url(../img/nav_icon2.png) center center no-repeat;
+                background-size: contain;
             }
         }
     }
@@ -182,7 +188,14 @@ footer{
         }
         .info{
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
+            h4{
+                font-size: 18px;
+                font-weight: 500;
+                color: #fff;
+                margin-top: 12px;
+            }
             ul{
                 display: flex;
                 align-items: center;
@@ -543,6 +556,7 @@ section{
                         display: inline-block;
                         padding: 4px 16px;
                         letter-spacing: 2px;
+                        color: #fff;
                     }
                 }
                 .list{
@@ -864,10 +878,9 @@ section{
                                 font-weight: 500;
                             }
                             p{     
-                                font-size: 18px;                               
-                                background: linear-gradient(135deg, #78CAEF, #8D93D2, #EBB26C); 
-                                -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;
+                                font-size: 18px;
+                                color: $primary-color;
+                                margin-top: 12px;
                             }
                         }
                     }
@@ -1886,6 +1899,15 @@ section{
     
                             &.topic_list_none{
                                 list-style-type: none !important;
+                                h4.power{
+                                    background: $linear-color;
+                                    color: #fff;
+                                    display: inline-block;
+                                    padding: 0 12px;
+                                    font-size: 24px;
+                                    font-weight: 500;
+                                    letter-spacing: 2px;
+                                }
                                 > li{
                                     position: relative;
                                     line-height: 2;
@@ -1896,13 +1918,74 @@ section{
                                         position: absolute;
                                         left: 0;
                                         font-weight: bold;
-                                      }
+                                    }
+                                    a{
+                                        display: inline-block;
+                                    }
                                 }
                                 .topic_list_none{
                                     padding-left: 32px;
                                     li{
                                         margin-bottom: 0;
                                     }
+                                }
+                            }
+                            .opportunity, .awards{
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                gap: 16px;
+                                padding: 16px;
+                                li{
+                                    width: 276px;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                    padding: 12px 20px;
+                                    h4{
+                                        text-align: center;
+                                    }
+
+                                    &:nth-child(1), &:nth-child(3), &:nth-child(5) {
+                                        border: 2px solid transparent;
+                                        border-radius: 10px;
+                                        background-image: linear-gradient($bg-color, $bg-color), $rainbow-linear-color1;
+                                        background-origin: border-box;
+                                        background-clip: padding-box, border-box;
+                                        transition: all .3s;
+
+                                        h4{
+                                            background: linear-gradient(110deg, #00F9FF, #457FFF); 
+                                            -webkit-background-clip: text;
+                                            -webkit-text-fill-color: transparent;
+                                        }
+                                      }
+                                      &:nth-child(2), &:nth-child(4), &:nth-child(6) {
+                                        border: 2px solid transparent;
+                                        border-radius: 10px;
+                                        background-image: linear-gradient($bg-color, $bg-color), $rainbow-linear-color2;
+                                        background-origin: border-box;
+                                        background-clip: padding-box, border-box;
+                                        transition: all .3s;
+
+                                        h4{
+                                            background: linear-gradient(0deg, #EBB26C, #71DDC3, #78CAEF);
+                                            -webkit-background-clip: text;
+                                            -webkit-text-fill-color: transparent;
+                                        }
+                                      }
+                                      p{
+                                          font-size: 16px;
+                                          color: #fff;
+                                          background: none;
+                                          margin-top: 12px;
+                                          line-height: 1.4;
+                                      }
+                                    }
+                                    
+                            }
+                            .awards{
+                                li{
+                                    width: 100%;
                                 }
                             }
                         }
@@ -2050,6 +2133,11 @@ section{
                     h5{
                         margin-top: 40px;
                         color: #fff;
+                        &.blue-bg{
+                            background: $linear-color;
+                            display: inline-block;
+                            padding: 0 20px;
+                        }
                     }
                     p{
                         margin-top: 20px;
@@ -2528,9 +2616,11 @@ section{
     }
 
     .theme-register{
-        background: $bg-color;
+        // background: $bg-color;
+        background: url(../img/login_bg.png) center center no-repeat;
+        background-size: cover;
         .theme-register-tab{
-            padding: 60px 0;
+            padding: 100px 0;
             > h3{
                 background: $title-bg-color2;
                 padding: 4px 12px;
@@ -2550,7 +2640,7 @@ section{
                 }
             }
             .tab-box{
-                margin-top: 40px;
+                // margin-top: 40px;
 
                 input[type="radio"]{
                     display: none;
@@ -2577,7 +2667,6 @@ section{
                     width: 96%;
                     max-width: 1080px;
                     margin: 0 auto;
-                    margin-top: 40px;
                     padding: 0 60px;
                     // background: rgba(225,225,225,1);
                     border-radius: 20px;
@@ -2587,6 +2676,7 @@ section{
                     }
 
                     .theme-title{
+                        margin-top: 0;
                         h3{
                             text-align: center;
                         }
@@ -2602,7 +2692,7 @@ section{
                             flex-direction: row;
                             flex-wrap: wrap;
                             justify-content: space-between;
-                            margin-bottom: 40px;
+                            // margin-bottom: 40px;
                         }
                         fieldset{
                             width: 100%;
@@ -2735,6 +2825,7 @@ section{
                             color: #fff;
                             font-size: 13px;
                             text-align: center;
+                            opacity: 0.6;
                         }
                           
                           
