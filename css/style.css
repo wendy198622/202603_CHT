@@ -830,7 +830,7 @@ section .tab-box #tab-option8:checked ~ .tab-option8 span {
 }
 
 section .tab-box .tab-content {
-  width: 90%;
+  width: 96%;
   max-width: 1080px;
   margin: 0 auto;
   margin-top: 40px;
@@ -1199,7 +1199,7 @@ section .home-theme-faq .theme-content .faq-group + .faq-group {
 }
 
 section .theme-newspage .container {
-  width: 90%;
+  width: 96%;
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -2155,7 +2155,7 @@ section .theme-5g .theme-5g-tab .tab-box #tab-option8:checked ~ .tab-option8 spa
 }
 
 section .theme-5g .theme-5g-tab .tab-box .tab-content {
-  width: 90%;
+  width: 96%;
   max-width: 1080px;
   margin: 0 auto;
   margin-top: 40px;
@@ -3133,7 +3133,7 @@ section .theme-result .theme-result-tab .tab-box #tab-option2:checked ~ .tab-opt
 }
 
 section .theme-result .theme-result-tab .tab-box .tab-content {
-  width: 90%;
+  width: 96%;
   max-width: 1080px;
   margin: 0 auto;
   margin-top: 40px;
@@ -3290,7 +3290,7 @@ section .theme-media .theme-media-tab .tab-box #tab-option-inner2:checked ~ .tab
 }
 
 section .theme-media .theme-media-tab .tab-box .tab-content {
-  width: 90%;
+  width: 96%;
   max-width: 1080px;
   margin: 0 auto;
   margin-top: 40px;
@@ -3430,7 +3430,7 @@ section .theme-member .theme-member-tab .tab-box label:hover {
 }
 
 section .theme-member .theme-member-tab .tab-box .tab-content {
-  width: 90%;
+  width: 96%;
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -3606,7 +3606,7 @@ section .theme-register .theme-register-tab .tab-box label:hover {
 }
 
 section .theme-register .theme-register-tab .tab-box .tab-content {
-  width: 90%;
+  width: 96%;
   max-width: 1080px;
   margin: 0 auto;
   margin-top: 40px;
@@ -3909,7 +3909,7 @@ section .theme-event .theme-event-tab .tab-box #tab-option8:checked ~ .tab-optio
 }
 
 section .theme-event .theme-event-tab .tab-box .tab-content {
-  width: 90%;
+  width: 96%;
   max-width: 1080px;
 }
 
