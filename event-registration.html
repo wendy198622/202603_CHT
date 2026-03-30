@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>2025 中華電信智慧創新應用大賽暨 5G 加速器徵選活動</title>
+    <title>2026 中華電信智慧創新應用大賽暨 5G 加速器徵選活動</title>
     <meta name="author" content="" />
     <meta name="description" content="面對 AI 崛起與數位轉型浪潮，中華電信智慧創新應用大賽暨5G加速器徵選活動聚焦於「智慧驅動、數位韌性、永續未來」，導入人工智慧、資料分析、永續應用等新興科技，廣邀產學團隊提出具備市場潛力與合作價值的創新解決方案串接上下游產業鏈技術專家及研發資源，整合更深度的技術與商業諮詢，開發出更具商業價值的數位應用，與中華電信共創智慧產業圈。" />
     <meta name="keywords" content="" />
@@ -35,9 +35,9 @@
     <header>
         <div class="fixed_area">
             <ul>
-                <li>
+                <!-- <li>
                     <a href="member.html">立即報名</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="index-smart.html#tab-option1">智慧創新<br>應用大賽</a>
                 </li>
@@ -57,8 +57,8 @@
                 <li><a href="index-5g.html" target="_blank">5G加速器徵選活動</a></li>
                 <li><a href="index.html#a1" target="_blank">最新消息</a></li>
                 <li><a href="index.html#a2" target="_blank">FAQ</a></li>
-                <li><a href="results-announcement.html" target="_blank">名單公告</a></li>
-                <li><a href="media-coverage.html" target="_blank">歷屆回顧</a></li>
+                <li><a href="#" target="_blank">名單公告</a></li>
+                <li><a href="#" target="_blank">歷屆回顧</a></li>
                 <li><a href="member.html" target="_blank">參賽專區</a></li>
             </ul>
         </nav>
@@ -75,63 +75,65 @@
                 <h3><span>賽事選擇</span></h3>
                 <div class="tab-box">
                         
-                        <input type="radio" name="smart-tab" id="tab-option1" checked>
-                        <label for="tab-option1" class="tab-option1">智慧創新應用大賽</label>
+                        <input type="radio" name="smart-tab" id="tab-option1">
+                        <label for="tab-option1" class="tab-option1"><span>智慧創新應用大賽</span></label>
                         
-                        <input type="radio" name="smart-tab" id="tab-option2">
-                        <label for="tab-option2" class="tab-option2">5G加速器徵選活動</label>
+                        <input type="radio" name="smart-tab" id="tab-option2" checked>
+                        <label for="tab-option2" class="tab-option2"><span>5G加速器徵選活動</span></label>
 
                         
                         <div class="tab-content tab-content1">
                             <div class="theme-title">
-                                <h3 class="gradient-text">智慧創新應用大賽報名資料</h3>
+                                <h3>智慧創新應用大賽報名資料</h3>
                             </div>
                             <div class="theme-content">
                                 <form>
                                     <div class="form-group">
                                         <fieldset>
-                                            <div class="label-title">請選擇您的身份組別：</div>
-                                            <label class="inline-block">
-                                                <input type="radio" name="group1" value="student" required>
-                                                學生組
-                                            </label>
-                                            <label>
-                                                <input type="radio" name="group1" value="social">
-                                                社會組
-                                            </label>
+                                            <div class="label-title">請選擇您的身份組別</div>
+                                            <div class="label-content">
+                                                <label>
+                                                    <input type="radio" name="group1" value="student" required>
+                                                    <span>學生組</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="group1" value="social">
+                                                    <span>社會組</span>
+                                                </label>
+                                            </div>
                                         </fieldset>
     
-                                        <fieldset class="w100">
-                                            <label>作品名稱<input type="text" name="project_name" required></label>
+                                        <fieldset>
+                                            <div class="label-title">作品名稱</div>
+                                            <div class="label-content">
+                                                <label class="w100"><input type="text" name="project_name" required></label>
+                                            </div>
                                         </fieldset>
     
-                                        <fieldset class="w100">
-                                            <label>團隊名稱<input type="text" name="team_name" required></label>
+                                        <fieldset>
+                                            <div class="label-title">團隊名稱</div>
+                                            <div class="label-content">
+                                                <label class="w100"><input type="text" name="team_name" required></label>
+                                            </div>
                                         </fieldset>
-    
+
                                         <fieldset>
                                             <div class="label-title">主題（擇一）：</div>
-                                            <label><input type="radio" name="topic" value="medical"> 智慧醫療</label>
-                                            <label><input type="radio" name="topic" value="environment"> 智慧環境</label>
-                                            <label><input type="radio" name="topic" value="transport"> 智慧交通</label>
-                                            <label><input type="radio" name="topic" value="finance"> 智慧金融</label>
-                                            <label><input type="radio" name="topic" value="manufacturing"> 智慧製造</label>
-                                            <label><input type="radio" name="topic" value="life"> 智慧生活</label>
-                                            <label><input type="radio" name="topic" value="culture"> 智慧文化</label>
+                                            <div class="label-content">
+                                                <label><input type="radio" name="topic" value="medical"> 智慧醫療</label>
+                                                <label><input type="radio" name="topic" value="environment"> 智慧環境</label>
+                                                <label><input type="radio" name="topic" value="transport"> 智慧交通</label>
+                                                <label><input type="radio" name="topic" value="finance"> 智慧金融</label>
+                                                <label><input type="radio" name="topic" value="manufacturing"> 智慧製造</label>
+                                                <label><input type="radio" name="topic" value="life"> 智慧生活</label>
+                                                <label><input type="radio" name="topic" value="culture"> 智慧文化</label>
+                                                <label><input type="radio" name="topic" value="communicate"> 智慧通信</label>
+                                            </div>
                                         </fieldset>
-                                            
-                                        <fieldset>
-                                            <div class="label-title">特別獎申請：</div>
-                                            <label>
-                                                <input type="checkbox" name="special_apply">
-                                                <p class="apply">本作品將使用中華電信 YoCity 平台與技術，並申請「元宇宙應用特別獎」<span>(詳細說明請參閱競賽辦法)</p>
-                                                </span>
-                                            </label>
-                                        </fieldset>
-    
+
                                         <fieldset>
                                             <div class="label-title">如何得知本賽事：</div>
-                                            <div class="label-group">
+                                            <div class="label-content">
                                                 <label><input type="checkbox" name="source" value="previous_team">上一屆參賽團隊</label>
                                                 <label><input type="checkbox" name="source" value="recommendation">師長、朋友、同事、同學推薦</label>
                                                 <label><input type="checkbox" name="source" value="facebook">FB粉絲頁、社團推薦</label>
@@ -139,388 +141,389 @@
                                                 <label><input type="checkbox" name="source" value="tech_website">科技網頁廣告</label>
                                                 <label><input type="checkbox" name="source" value="dcard">Dcard廣告</label>
                                                 <label><input type="checkbox" name="source" value="search">自行搜尋</label>
-                                                <label><input type="checkbox" name="source" value="other">其他<input type="text" name="source_other" placeholder="請輸入" style="margin-left: 4px;"></label>
+                                                <label><input type="checkbox" name="source" value="linkedin">LinkedIn</label>
+                                                <label><input type="checkbox" name="source" value="other">其他
+                                                    <input type="text" name="source_other" placeholder="請輸入" class="inline">
+                                                </label>
                                             </div>
                                         </fieldset>
                                     </div>
 
-                                    <div class="form-group">
-                                        <div class="member_group">
+                                    <div class="form-group member_group">
 
-                                            <div class="group-title">團隊成員</div>
+                                        <div class="group-title">團隊成員</div>
 
-                                            <!-- Radios -->
-                                            <input type="radio" name="tab-member" id="member-tab1" checked>
-                                            <label for="member-tab1">隊長</label>
+                                        <!-- Radios -->
+                                        <input type="radio" name="tab-member" id="member-tab1" checked>
+                                        <label for="member-tab1">隊長</label>
 
-                                            <input type="radio" name="tab-member" id="member-tab2">
-                                            <label for="member-tab2">隊員1</label>
+                                        <input type="radio" name="tab-member" id="member-tab2">
+                                        <label for="member-tab2">隊員1</label>
 
-                                            <input type="radio" name="tab-member" id="member-tab3">
-                                            <label for="member-tab3">隊員2</label>
+                                        <input type="radio" name="tab-member" id="member-tab3">
+                                        <label for="member-tab3">隊員2</label>
 
-                                            <input type="radio" name="tab-member" id="member-tab4">
-                                            <label for="member-tab4">隊員3</label>
+                                        <input type="radio" name="tab-member" id="member-tab4">
+                                        <label for="member-tab4">隊員3</label>
 
-                                            <input type="radio" name="tab-member" id="member-tab5">
-                                            <label for="member-tab5">隊員4</label>
+                                        <input type="radio" name="tab-member" id="member-tab5">
+                                        <label for="member-tab5">隊員4</label>
 
-                                            <input type="radio" name="tab-member" id="member-tab6">
-                                            <label for="member-tab6">隊員5</label>
-                                            
-                                            <!-- Tab Contents -->
-                                            <div id="member-content1" class="member-tab-content">
-                                                <div class="member_people">
+                                        <input type="radio" name="tab-member" id="member-tab6">
+                                        <label for="member-tab6">隊員5</label>
+                                        
+                                        <!-- Tab Contents -->
+                                        <div id="member-content1" class="member-tab-content">
+                                            <div class="member_people">
+                                                
+                                                <div class="member_role">隊長</div>
+                                                <div class="member">
                                                     
-                                                    <div class="member_role">隊長</div>
-                                                    <div class="member">
-                                                        <fieldset>
-                                                                <h6>姓名</h6>
-                                                            <label><input type="text" name="member_name" required>
-                                                            </label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>性別</h6>
-                                                            <!-- <div class="label-title">性別</div> -->
-                                                            <select name="gender" id="gender" required>
-                                                                <option value="">請選擇</option>
-                                                                <option value="male">男性</option>
-                                                                <option value="female">女性</option>
-                                                            </select>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>學校/公司</h6>
-                                                            <label><input type="text" name="member_company" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>科系/職稱</h6>
-                                                            <label><input type="text" name="member_position" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>出生年月日</h6>
-                                                            <label><input type="date" name="member_birth" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>手機號碼</h6>
-                                                            <label><input type="text" name="member_phone" required></label>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6>信箱</h6>
-                                                            <label><input type="email" name="member_email" required></label>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳 
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">身分證明檔上傳</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p> 
-                                                            <p class="note">學生組：上傳學生證 / 社會組：上傳身分證</p>
-                                                        </fieldset>
-                                                    </div>
+                                                    <fieldset>
+                                                        <h6>姓名</h6>
+                                                        <label><input type="text" name="member_name" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>性別</h6>
+                                                        <!-- <div class="label-title">性別</div> -->
+                                                        <select name="gender" id="gender" required>
+                                                            <option value="">請選擇</option>
+                                                            <option value="male">男性</option>
+                                                            <option value="female">女性</option>
+                                                        </select>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>學校/公司</h6>
+                                                        <label><input type="text" name="member_company" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>科系/職稱</h6>
+                                                        <label><input type="text" name="member_position" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>出生年月日</h6>
+                                                        <label><input type="date" name="member_birth" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>手機號碼</h6>
+                                                        <label><input type="text" name="member_phone" required></label>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6>信箱</h6>
+                                                        <label><input type="email" name="member_email" required></label>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
+                                                        <label for="file" class="custom-file-label inline">檔案上傳 
+                                                            <span class="material-icons">arrow_circle_up</span>
+                                                            <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                        </label>
+                                                        <p class="note">(限jpg、pdf格式)</p>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6 class="inline">身分證明檔上傳</h6>
+                                                        <label for="file" class="custom-file-label inline">檔案上傳
+                                                            <span class="material-icons">arrow_circle_up</span>
+                                                            <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                        </label>
+                                                        <p class="note">(限jpg、pdf格式)</p> 
+                                                        <p class="note">學生組：上傳學生證 / 社會組：上傳身分證</p>
+                                                    </fieldset>
                                                 </div>
                                             </div>
-                                            
-                                            <div id="member-content2" class="member-tab-content">
-                                                <div class="member_people">
-                                                    <div class="member_role">隊員1</div>
-                                                    <div class="member">
-                                                        <fieldset>
-                                                                <h6>姓名</h6>
-                                                            <label><input type="text" name="member_name" required>
-                                                            </label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>性別</h6>
-                                                            <!-- <div class="label-title">性別</div> -->
-                                                            <select name="gender" id="gender" required>
-                                                                <option value="">請選擇</option>
-                                                                <option value="male">男性</option>
-                                                                <option value="female">女性</option>
-                                                            </select>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>學校/公司</h6>
-                                                            <label><input type="text" name="member_company" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>科系/職稱</h6>
-                                                            <label><input type="text" name="member_position" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>出生年月日</h6>
-                                                            <label><input type="date" name="member_birth" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>手機號碼</h6>
-                                                            <label><input type="text" name="member_phone" required></label>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6>信箱</h6>
-                                                            <label><input type="email" name="member_email" required></label>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳 
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">身分證明檔上傳</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p> 
-                                                            <p class="note">學生組：上傳學生證 / 社會組：上傳身分證</p>
-                                                        </fieldset>
-                                                    </div>                   
+                                        </div>
+                                        
+                                        <div id="member-content2" class="member-tab-content">
+                                            <div class="member_people">
+                                                <div class="member_role">隊員1</div>
+                                                <div class="member">
+                                                    <fieldset>
+                                                            <h6>姓名</h6>
+                                                        <label><input type="text" name="member_name" required>
+                                                        </label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>性別</h6>
+                                                        <!-- <div class="label-title">性別</div> -->
+                                                        <select name="gender" id="gender" required>
+                                                            <option value="">請選擇</option>
+                                                            <option value="male">男性</option>
+                                                            <option value="female">女性</option>
+                                                        </select>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>學校/公司</h6>
+                                                        <label><input type="text" name="member_company" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>科系/職稱</h6>
+                                                        <label><input type="text" name="member_position" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>出生年月日</h6>
+                                                        <label><input type="date" name="member_birth" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>手機號碼</h6>
+                                                        <label><input type="text" name="member_phone" required></label>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6>信箱</h6>
+                                                        <label><input type="email" name="member_email" required></label>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
+                                                        <label for="file" class="custom-file-label inline">檔案上傳 
+                                                            <span class="material-icons">arrow_circle_up</span>
+                                                            <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                        </label>
+                                                        <p class="note">(限jpg、pdf格式)</p>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6 class="inline">身分證明檔上傳</h6>
+                                                        <label for="file" class="custom-file-label inline">檔案上傳
+                                                            <span class="material-icons">arrow_circle_up</span>
+                                                            <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                        </label>
+                                                        <p class="note">(限jpg、pdf格式)</p> 
+                                                        <p class="note">學生組：上傳學生證 / 社會組：上傳身分證</p>
+                                                    </fieldset>
+                                                </div>                   
+                                            </div>
+                                        </div>
+                                        
+                                        <div id="member-content3" class="member-tab-content">
+                                            <div class="member_people">
+                                                <div class="member_role">隊員2</div>
+                                                <div class="member">
+                                                    <fieldset>
+                                                            <h6>姓名</h6>
+                                                        <label><input type="text" name="member_name" required>
+                                                        </label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>性別</h6>
+                                                        <!-- <div class="label-title">性別</div> -->
+                                                        <select name="gender" id="gender" required>
+                                                            <option value="">請選擇</option>
+                                                            <option value="male">男性</option>
+                                                            <option value="female">女性</option>
+                                                        </select>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>學校/公司</h6>
+                                                        <label><input type="text" name="member_company" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>科系/職稱</h6>
+                                                        <label><input type="text" name="member_position" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>出生年月日</h6>
+                                                        <label><input type="date" name="member_birth" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>手機號碼</h6>
+                                                        <label><input type="text" name="member_phone" required></label>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6>信箱</h6>
+                                                        <label><input type="email" name="member_email" required></label>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
+                                                        <label for="file" class="custom-file-label inline">檔案上傳 
+                                                            <span class="material-icons">arrow_circle_up</span>
+                                                            <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                        </label>
+                                                        <p class="note">(限jpg、pdf格式)</p>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6 class="inline">身分證明檔上傳</h6>
+                                                        <label for="file" class="custom-file-label inline">檔案上傳
+                                                            <span class="material-icons">arrow_circle_up</span>
+                                                            <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                        </label>
+                                                        <p class="note">(限jpg、pdf格式)</p> 
+                                                        <p class="note">學生組：上傳學生證 / 社會組：上傳身分證</p>
+                                                    </fieldset>
                                                 </div>
                                             </div>
-                                            
-                                            <div id="member-content3" class="member-tab-content">
-                                                <div class="member_people">
-                                                    <div class="member_role">隊員2</div>
-                                                    <div class="member">
-                                                        <fieldset>
-                                                                <h6>姓名</h6>
-                                                            <label><input type="text" name="member_name" required>
-                                                            </label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>性別</h6>
-                                                            <!-- <div class="label-title">性別</div> -->
-                                                            <select name="gender" id="gender" required>
-                                                                <option value="">請選擇</option>
-                                                                <option value="male">男性</option>
-                                                                <option value="female">女性</option>
-                                                            </select>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>學校/公司</h6>
-                                                            <label><input type="text" name="member_company" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>科系/職稱</h6>
-                                                            <label><input type="text" name="member_position" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>出生年月日</h6>
-                                                            <label><input type="date" name="member_birth" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>手機號碼</h6>
-                                                            <label><input type="text" name="member_phone" required></label>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6>信箱</h6>
-                                                            <label><input type="email" name="member_email" required></label>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳 
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">身分證明檔上傳</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p> 
-                                                            <p class="note">學生組：上傳學生證 / 社會組：上傳身分證</p>
-                                                        </fieldset>
-                                                    </div>
+                                        </div>
+                                        
+                                        <div id="member-content4" class="member-tab-content">
+                                            <div class="member_people">
+                                                <div class="member_role">隊員3</div>
+                                                <div class="member">
+                                                    <fieldset>
+                                                            <h6>姓名</h6>
+                                                        <label><input type="text" name="member_name" required>
+                                                        </label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>性別</h6>
+                                                        <!-- <div class="label-title">性別</div> -->
+                                                        <select name="gender" id="gender" required>
+                                                            <option value="">請選擇</option>
+                                                            <option value="male">男性</option>
+                                                            <option value="female">女性</option>
+                                                        </select>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>學校/公司</h6>
+                                                        <label><input type="text" name="member_company" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>科系/職稱</h6>
+                                                        <label><input type="text" name="member_position" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>出生年月日</h6>
+                                                        <label><input type="date" name="member_birth" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>手機號碼</h6>
+                                                        <label><input type="text" name="member_phone" required></label>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6>信箱</h6>
+                                                        <label><input type="email" name="member_email" required></label>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
+                                                        <label for="file" class="custom-file-label inline">檔案上傳 
+                                                            <span class="material-icons">arrow_circle_up</span>
+                                                            <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                        </label>
+                                                        <p class="note">(限jpg、pdf格式)</p>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6 class="inline">身分證明檔上傳</h6>
+                                                        <label for="file" class="custom-file-label inline">檔案上傳
+                                                            <span class="material-icons">arrow_circle_up</span>
+                                                            <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                        </label>
+                                                        <p class="note">(限jpg、pdf格式)</p> 
+                                                        <p class="note">學生組：上傳學生證 / 社會組：上傳身分證</p>
+                                                    </fieldset>
                                                 </div>
                                             </div>
-                                            
-                                            <div id="member-content4" class="member-tab-content">
-                                                <div class="member_people">
-                                                    <div class="member_role">隊員3</div>
-                                                    <div class="member">
-                                                        <fieldset>
-                                                                <h6>姓名</h6>
-                                                            <label><input type="text" name="member_name" required>
-                                                            </label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>性別</h6>
-                                                            <!-- <div class="label-title">性別</div> -->
-                                                            <select name="gender" id="gender" required>
-                                                                <option value="">請選擇</option>
-                                                                <option value="male">男性</option>
-                                                                <option value="female">女性</option>
-                                                            </select>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>學校/公司</h6>
-                                                            <label><input type="text" name="member_company" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>科系/職稱</h6>
-                                                            <label><input type="text" name="member_position" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>出生年月日</h6>
-                                                            <label><input type="date" name="member_birth" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>手機號碼</h6>
-                                                            <label><input type="text" name="member_phone" required></label>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6>信箱</h6>
-                                                            <label><input type="email" name="member_email" required></label>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳 
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">身分證明檔上傳</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p> 
-                                                            <p class="note">學生組：上傳學生證 / 社會組：上傳身分證</p>
-                                                        </fieldset>
-                                                    </div>
+                                        </div>
+                                        
+                                        <div id="member-content5" class="member-tab-content">
+                                            <div class="member_people">
+                                                <div class="member_role">隊員4</div>
+                                                <div class="member">
+                                                    <fieldset>
+                                                            <h6>姓名</h6>
+                                                        <label><input type="text" name="member_name" required>
+                                                        </label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>性別</h6>
+                                                        <!-- <div class="label-title">性別</div> -->
+                                                        <select name="gender" id="gender" required>
+                                                            <option value="">請選擇</option>
+                                                            <option value="male">男性</option>
+                                                            <option value="female">女性</option>
+                                                        </select>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>學校/公司</h6>
+                                                        <label><input type="text" name="member_company" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>科系/職稱</h6>
+                                                        <label><input type="text" name="member_position" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>出生年月日</h6>
+                                                        <label><input type="date" name="member_birth" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>手機號碼</h6>
+                                                        <label><input type="text" name="member_phone" required></label>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6>信箱</h6>
+                                                        <label><input type="email" name="member_email" required></label>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
+                                                        <label for="file" class="custom-file-label inline">檔案上傳 
+                                                            <span class="material-icons">arrow_circle_up</span>
+                                                            <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                        </label>
+                                                        <p class="note">(限jpg、pdf格式)</p>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6 class="inline">身分證明檔上傳</h6>
+                                                        <label for="file" class="custom-file-label inline">檔案上傳
+                                                            <span class="material-icons">arrow_circle_up</span>
+                                                            <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                        </label>
+                                                        <p class="note">(限jpg、pdf格式)</p> 
+                                                        <p class="note">學生組：上傳學生證 / 社會組：上傳身分證</p>
+                                                    </fieldset>
                                                 </div>
                                             </div>
-                                            
-                                            <div id="member-content5" class="member-tab-content">
-                                                <div class="member_people">
-                                                    <div class="member_role">隊員4</div>
-                                                    <div class="member">
-                                                        <fieldset>
-                                                                <h6>姓名</h6>
-                                                            <label><input type="text" name="member_name" required>
-                                                            </label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>性別</h6>
-                                                            <!-- <div class="label-title">性別</div> -->
-                                                            <select name="gender" id="gender" required>
-                                                                <option value="">請選擇</option>
-                                                                <option value="male">男性</option>
-                                                                <option value="female">女性</option>
-                                                            </select>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>學校/公司</h6>
-                                                            <label><input type="text" name="member_company" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>科系/職稱</h6>
-                                                            <label><input type="text" name="member_position" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>出生年月日</h6>
-                                                            <label><input type="date" name="member_birth" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>手機號碼</h6>
-                                                            <label><input type="text" name="member_phone" required></label>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6>信箱</h6>
-                                                            <label><input type="email" name="member_email" required></label>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳 
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">身分證明檔上傳</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p> 
-                                                            <p class="note">學生組：上傳學生證 / 社會組：上傳身分證</p>
-                                                        </fieldset>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div id="member-content6" class="member-tab-content">
-                                                <div class="member_people">
-                                                    <div class="member_role">隊員5</div>
-                                                    <div class="member">
-                                                        <fieldset>
-                                                                <h6>姓名</h6>
-                                                            <label><input type="text" name="member_name" required>
-                                                            </label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>性別</h6>
-                                                            <!-- <div class="label-title">性別</div> -->
-                                                            <select name="gender" id="gender" required>
-                                                                <option value="">請選擇</option>
-                                                                <option value="male">男性</option>
-                                                                <option value="female">女性</option>
-                                                            </select>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>學校/公司</h6>
-                                                            <label><input type="text" name="member_company" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>科系/職稱</h6>
-                                                            <label><input type="text" name="member_position" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>出生年月日</h6>
-                                                            <label><input type="date" name="member_birth" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>手機號碼</h6>
-                                                            <label><input type="text" name="member_phone" required></label>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6>信箱</h6>
-                                                            <label><input type="email" name="member_email" required></label>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳 
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">身分證明檔上傳</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p> 
-                                                            <p class="note">學生組：上傳學生證 / 社會組：上傳身分證</p>
-                                                        </fieldset>
-                                                    </div>
+                                        </div>
+                                        
+                                        <div id="member-content6" class="member-tab-content">
+                                            <div class="member_people">
+                                                <div class="member_role">隊員5</div>
+                                                <div class="member">
+                                                    <fieldset>
+                                                            <h6>姓名</h6>
+                                                        <label><input type="text" name="member_name" required>
+                                                        </label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>性別</h6>
+                                                        <!-- <div class="label-title">性別</div> -->
+                                                        <select name="gender" id="gender" required>
+                                                            <option value="">請選擇</option>
+                                                            <option value="male">男性</option>
+                                                            <option value="female">女性</option>
+                                                        </select>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>學校/公司</h6>
+                                                        <label><input type="text" name="member_company" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>科系/職稱</h6>
+                                                        <label><input type="text" name="member_position" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>出生年月日</h6>
+                                                        <label><input type="date" name="member_birth" required></label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h6>手機號碼</h6>
+                                                        <label><input type="text" name="member_phone" required></label>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6>信箱</h6>
+                                                        <label><input type="email" name="member_email" required></label>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6 class="inline">參賽同意書簽署電子檔上傳</h6>
+                                                        <label for="file" class="custom-file-label inline">檔案上傳 
+                                                            <span class="material-icons">arrow_circle_up</span>
+                                                            <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                        </label>
+                                                        <p class="note">(限jpg、pdf格式)</p>
+                                                    </fieldset>
+                                                    <fieldset class="w100">
+                                                        <h6 class="inline">身分證明檔上傳</h6>
+                                                        <label for="file" class="custom-file-label inline">檔案上傳
+                                                            <span class="material-icons">arrow_circle_up</span>
+                                                            <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
+                                                        </label>
+                                                        <p class="note">(限jpg、pdf格式)</p> 
+                                                        <p class="note">學生組：上傳學生證 / 社會組：上傳身分證</p>
+                                                    </fieldset>
                                                 </div>
                                             </div>
                                         </div>
@@ -609,8 +612,17 @@
                                                     </label>
                                                     <p class="note">(限上傳WORD、PDF檔案格式擇一，以隊伍名稱為檔名進行上傳，檔案大小不得超過20MB)</p>
                                                 </fieldset>
+
+                                                <fieldset class="w100">
+
+                                                    <h6 class="inline">作品短片連結</h6>
+                                                    <label class="inline w100">
+                                                        <input type="text" name="videolink" class="videolink">
+                                                    </label>
+                                                </fieldset>
                                                 <fieldset>
-                                                    <label><h6>作品短片說明</h6><textarea id="comments" name="comments" maxlength="300" placeholder="(選填加分項) 請填入影片網址，並簡要說明影片內容"></textarea></label>
+                                                    <h6>作品短片說明</h6>
+                                                    <label><textarea id="comments" name="comments" maxlength="300" placeholder="簡要說明影片內容"></textarea></label>
                                                 </fieldset>
                                                 <fieldset>
                                                     <label><h6>作品簡介</h6><textarea id="comments" name="comments" maxlength="300" placeholder="請輸入內容(限300字內)"></textarea></label>
@@ -686,456 +698,204 @@
 
                         <div class="tab-content tab-content2">
                             <div class="theme-title">
-                                <h3 class="gradient-text">
-                                    <img class="logo-5g" src="img/logo_5g.svg" alt="">
-                                    2025 第七屆徵選活動報名資料</h3>
+                                <h3>2026第八屆【中華電信5G加速器】徵選活動</h3>
                             </div>
                             <div class="theme-content">
+                                <img class="logo-5g" src="img/logo_5g.svg" alt="">
                                 <form>
                                     <div class="form-group">
-
                                         <div class="group-title">基本資料</div>
-    
-                                        <fieldset class="w100">
-                                            <label>公司名稱<input type="text" name="company_name" required></label>
-                                        </fieldset>
-    
-                                        <fieldset class="w100">
-                                            <label>公司統編<input type="text" name="company_taxid" required></label>
-                                        </fieldset>
-
-                                        <fieldset class="w100">
-                                            <label>公司設立日期<input type="date" name="company_birth" required></label>
-                                        </fieldset>
-    
-                                        <fieldset class="w100">
-                                            <label>公司地址<input type="text" name="company_address" required></label>
-                                        </fieldset>
-    
-                                        <fieldset class="w100">
-                                            <label>公司網址<input type="text" name="company_website" required></label>
-                                        </fieldset>
-    
-                                        <fieldset class="w100">
-                                            <label>公司電話<input type="text" name="company_tel" required></label>
-                                        </fieldset>
-
-                                        <fieldset class="w100">
-                                            <div class="form-row">
-                                                <div class="form-label">登記資本額</div>
-                                                <div class="form-inputs">
-                                                    新台幣 <input type="text" name="fund_amount" placeholder=""> 萬元
-                                                </div>
-                                            </div>
-                                        </fieldset>
-
-                                        <fieldset class="w100">
-                                            <div class="form-row">
-                                                <div class="form-label">實收資本額</div>
-                                                <div class="form-inputs">
-                                                    新台幣 <input type="text" name="fund_amount" placeholder=""> 萬元
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                            
                                         <fieldset>
-                                            <div class="label-title mr20">最近一年營業規模：</div>
+                                            <div class="label-title">公司名稱</div>
                                             <div class="label-content">
-                                                <label>
-                                                    <input type="radio" name="funds">超過新台幣1億元
-                                                </label>
-    
-                                                <label>
-                                                    <input type="radio" name="funds">新台幣1億元(含)以下
-                                                </label>
-    
-                                                <label>
-                                                    <input type="radio" name="funds">新台幣5千萬元(含)以下
-                                                </label>
-    
-                                                <label>
-                                                    <input type="radio" name="funds">新台幣3千萬元(含)以下
-                                                </label>
-    
-                                                <label>
-                                                    <input type="radio" name="funds">新台幣1千萬元(含)以下
-                                                </label>
+                                                <label><input type="text" name="company_name" required></label>
                                             </div>
                                         </fieldset>
-
-                                        <fieldset class="w100">
-                                            <label>員工數<input type="text" name="company_number" required></label>
-                                        </fieldset>
-                                    </div>
-
-
-                                    <div class="form-group">
-                                        <div class="staff_group">
-
-                                            <div class="group-title">團隊成員</div>
-
-                                            <!-- Radios -->
-                                            <input type="radio" name="tab-staff" id="staff-tab1" checked>
-                                            <label for="staff-tab1">主要聯絡人</label>
-
-                                            <input type="radio" name="tab-staff" id="staff-tab2">
-                                            <label for="staff-tab2">負責人</label>
-                                            
-                                            <!-- Tab Contents -->
-                                            <div id="staff-content1" class="staff-tab-content">
-                                                <div class="staff_people">
-                                                    
-                                                    <div class="staff_role">主要聯絡人</div>
-                                                    <div class="staff">
-                                                        <fieldset>
-                                                            <h6>姓名</h6>
-                                                            <label><input type="text" name="staff_name" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>性別</h6>
-                                                            <select name="gender" id="gender" required>
-                                                                <option value="">請選擇</option>
-                                                                <option value="male">男性</option>
-                                                                <option value="female">女性</option>
-                                                            </select>
-                                                        </fieldset>
-                                                        <!-- <fieldset>
-                                                            <h6>單位</h6>
-                                                            <label><input type="text" name="staff_dept" required></label>
-                                                        </fieldset> -->
-                                                        <fieldset>
-                                                            <h6>職稱</h6>
-                                                            <label><input type="text" name="staff_position" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>聯絡電話<p class="note">(請留手機以便後續活動聯繫)</p></h6>
-                                                            <label><input type="text" name="staff_phone" required></label>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6>信箱</h6>
-                                                            <label><input type="email" name="staff_email" required></label>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">上傳徵選同意書</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳 
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p>
-                                                        </fieldset>
-                                                        <fieldset class="w100">
-                                                            <h6 class="inline">上傳身分證明檔</h6>
-                                                            <label for="file" class="custom-file-label inline">檔案上傳
-                                                                <span class="material-icons">arrow_circle_up</span>
-                                                                <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".pdf, .jpg, .jpeg" required>
-                                                            </label>
-                                                            <p class="note">(限jpg、pdf格式)</p> 
-                                                        </fieldset>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div id="staff-content2" class="staff-tab-content">
-                                                <div class="staff_people">
-                                                    <div class="staff_role">負責人</div>
-                                                    <div class="staff">
-                                                        <fieldset>
-                                                            <h6>姓名</h6>
-                                                            <label><input type="text" name="staff_name" required></label>
-                                                        </fieldset>
-                                                        <fieldset>
-                                                            <h6>性別</h6>
-                                                            <select name="gender" id="gender" required>
-                                                                <option value="">請選擇</option>
-                                                                <option value="male">男性</option>
-                                                                <option value="female">女性</option>
-                                                            </select>
-                                                        </fieldset>
-
-                                                        <fieldset class="w100">
-                                                            <label>出生年月日<input type="date" name="birth" required></label>
-                                                        </fieldset>
-                                                    </div>                                                   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-
-                                        <div class="group-title">公司介紹</div>
-    
-                                        <fieldset class="w100">
-                                            <label>公司簡介(300字為限)<textarea name="" id=""></textarea></label>
-                                        </fieldset>
-                                        <fieldset class="w100">
-                                            <label>主要產品/服務(500字為限)<textarea name="" id=""></textarea></label>
-                                        </fieldset>
-                                        <fieldset class="w100">
-                                            <label>主要產品/服務發展現況說明<textarea name="" id="" placeholder="Ex：產品開發、產品公開測試中、產品上市、過去一年營收大於1000萬元台幣、首次公開募股IPO等發展狀況"></textarea></label>
-                                        </fieldset>
-    
-                                        <fieldset class="w100">
-                                            <label>市場分佈<input type="text" name="" placeholder="Ex：台灣XX%、美國XX%、日本XX%"></label>
-                                        </fieldset>
-    
-                                        <fieldset class="w100">
-                                            <label>已取得專利數<input type="text" name="" placeholder=""></label>
-                                        </fieldset>
-    
-                                        <fieldset class="w100">
-                                            <label>申請中專利數<input type="text" name="" placeholder=""></label>
-                                        </fieldset>
-
-                                        <fieldset class="w100">
-                                            <label>得獎事蹟成功案例<textarea name="" id="" placeholder="請簡述說明，如獲創投/天使投資、政府計畫補助、其他等特殊事蹟"></textarea></label>
-                                        </fieldset>
-                                            
                                         <fieldset>
-                                            <div class="label-title mr20">產業領域(可複選)</div>
+                                            <div class="label-title">公司統編</div>
                                             <div class="label-content">
-                                                <label>
-                                                    <input type="checkbox" name="">生技醫藥
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">機械電機
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">綠能科技
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">電子資訊
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">數位經濟
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">文創科技
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">國防航太
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">新農業
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">循環經濟
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">民生化工
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">材料土木
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">觀光休閒
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">社會企業
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">研發服務
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">資訊及數位產業
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">臺灣精準健康產業
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">綠電及再生能源產業
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">民生及戰備產業
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">高齡產業
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">人工智慧與智慧應用
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">精準健康與樂齡生活
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">淨零轉型與永續發展
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">數位科技與創新經濟
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">民生戰備與軍工產業
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">居家安全
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">健康醫療
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">社會參與
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">便利餐食
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">健康移動
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">學習育樂
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">其他
-                                                </label>
+                                                <label><input type="text" name="company_taxid" required></label>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="label-title">公司設立日期</div>
+                                            <div class="label-content">
+                                                <label><input type="date" name="company_birth" required></label>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="label-title">公司網址</div>
+                                            <div class="label-content">
+                                                <label><input type="text" name="company_website" required></label>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="label-title">登記資本額</div>
+                                            <div class="label-content">
+                                                <label>新台幣<input type="text" name="fund_amount" placeholder="">萬元</label>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="label-title">最近一年營業規模</div>
+                                            <div class="label-content inline-flex">
+                                                <label><input type="radio" name="funds">超過新台幣1億元</label>
+                                                <label><input type="radio" name="funds">新台幣1億元(含)以下</label>
+                                                <label><input type="radio" name="funds">新台幣5千萬元(含)以下</label>
+                                                <label><input type="radio" name="funds">新台幣3千萬元(含)以下</label>    
+                                                <label><input type="radio" name="funds">新台幣1千萬元(含)以下</label>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="label-title">員工人數</div>
+                                            <div class="label-content">
+                                                <label><input type="text" name="company_number" required></label>
                                             </div>
                                         </fieldset>
                                     </div>
                                     <div class="form-group">
-
-                                        <div class="group-title">募資近況</div>
-                                            
-                                            
                                         <fieldset>
-                                            <div class="label-title mr20">目前募資階段</div>
-                                            <div class="label-content">
-                                                <label>
-                                                    <input type="checkbox" name="">無募資經驗
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">Crowd-funding群眾募資
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">Self-fund自有資金
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">Seed種子輪
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">Angel天使輪
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">Pre-A
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">A輪
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">B輪
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">C輪
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">D輪
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">IPO公開上市
-                                                </label>
+                                            <div class="item">
+                                                <div class="label-title">主要聯絡人姓名</div>
+                                                <div class="label-content">
+                                                    <label><input type="text" name="staff_name" required></label>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="label-title">負責人</div>
+                                                <div class="label-content">
+                                                        <label><input type="text" name="staff_name" required></label>
+                                                </div>
                                             </div>
                                         </fieldset>
-
-                                        <fieldset class="w100">
-                                            <div class="form-row">
-                                                <div class="form-label">最近一次募資金額</div>
-                                                <div class="form-inputs">
-                                                    新台幣 <input type="text" name="fund_amount" placeholder=""> 萬元；
-                                                    估值 <input type="text" name="valuation" placeholder=""> 元 (新台幣)
+                                        <fieldset>
+                                            <div class="item">
+                                                <div class="label-title">主要聯絡人職稱</div>
+                                                <div class="label-content">
+                                                    <label><input type="text" name="staff_position" required></label>
                                                 </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="label-title">負責人職稱</div>
+                                                <div class="label-content">
+                                                        <label><input type="text" name="staff_position" required></label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="item">
+                                                <div class="label-title">主要聯絡人手機</div>
+                                                <div class="label-content">
+                                                    <label><input type="text" name="staff_phone" required></label>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="label-title"></div>
+                                                <div class="label-content"></div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="item">
+                                                <div class="label-title">主要聯絡人 Email</div>
+                                                <div class="label-content">
+                                                    <label><input type="text" name="staff_email" required></label>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="label-title"></div>
+                                                <div class="label-content"></div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="group-title">公司介紹</div>    
+                                        <fieldset>
+                                            <div class="label-title">公司簡介<br>(300字為限)</div>
+                                            <div class="label-content"><textarea name="" id=""></textarea></div>
+                                        </fieldset> 
+                                        <fieldset>
+                                            <div class="label-title">主要產品/服務<br>(500字為限)</div>
+                                            <div class="label-content"><textarea name="" id=""></textarea></div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="label-title">主要產品/服務發展<br>現況說明</div>
+                                            <div class="label-content"><textarea name="" id="" placeholder="Ex：產品開發、產品公開測試中、產品上市、過去一年營收大於1000萬元台幣、首次公開募股IPO等發展狀況"></textarea></div>
+                                        </fieldset>    
+                                        <fieldset>
+                                            <div class="label-title">已取得專利數</div>
+                                            <div class="label-content">
+                                                <label><input type="text" name="" placeholder=""></label>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="label-title">得獎事蹟/成功案例</div>
+                                            <div class="label-content"><textarea name="" id="" placeholder="請簡述說明，如獲創投/天使投資、政府計畫補助、其他等特殊事蹟"></textarea></div>
+                                        </fieldset>  
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="group-title">募資近況</div>  
+
+                                        <fieldset>
+                                            <div class="label-title">目前募資階段</div>
+                                            <div class="label-content inline-flex">
+                                                <label><input type="radio" name="funds">無募資經驗</label>
+                                                <label><input type="radio" name="funds">Crowd-funding 群眾募資</label>
+                                                <label><input type="radio" name="funds">Self-fund 自有資金</label>
+                                                <label><input type="radio" name="funds">Seed 種子輪</label>    
+                                                <label><input type="radio" name="funds">Angel 天使輪</label>
+                                                <label><input type="radio" name="funds">Pre-A</label>
+                                                <label><input type="radio" name="funds">A輪</label>
+                                                <label><input type="radio" name="funds">B輪</label>
+                                                <label><input type="radio" name="funds">C輪</label>
+                                                <label><input type="radio" name="funds">D輪</label>
+                                                <label><input type="radio" name="funds">IPO公開上市</label>
+                                            </div>
+                                        </fieldset>  
+                                        <fieldset>
+                                            <div class="label-title">最近一次募資金額</div>
+                                            <div class="label-content">
+                                                <label>新台幣<input type="text" name="fund_amount" placeholder="">萬元</label><br><label>估值<input type="text" name="fund_amount" placeholder="">元(新台幣)</label> 
                                             </div>
                                         </fieldset>
                                     </div>
                                     <div class="form-group">
 
                                         <div class="group-title">共創商機合作可能性</div>   
-                                            
                                         <fieldset>
-                                            <div class="label-title mr20">主題領域</div>
-                                            <div class="label-content">
-                                                <label>
-                                                    <input type="checkbox" name="">智慧製造
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">智慧零售
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">智慧金融
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">智慧城市
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">智慧交通
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">綠電節能
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">智慧資安
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">智慧醫療
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">其他
-                                                </label>
+                                            <div class="label-title">主題領域</div>
+                                            <div class="label-content inline-flex">
+                                                <label><input type="radio" name="topic">海地星空</label>
+                                                <label><input type="radio" name="topic">人工智慧</label>
+                                                <label><input type="radio" name="topic">智慧製造</label>
+                                                <label><input type="radio" name="topic">智慧醫療</label>    
+                                                <label><input type="radio" name="topic">智慧交通</label>
+                                                <label><input type="radio" name="topic">資通安全(含量子運算)</label>
+                                                <label><input type="radio" name="topic">數位娛樂</label>
+                                                <label><input type="radio" name="topic">創新永續</label>
+                                                <label><input type="radio" name="topic">其他<input type="text"></label>
                                             </div>
-                                        </fieldset>
-
+                                        </fieldset>  
                                         <fieldset>
-                                            <div class="label-title mr20">團隊需求(最期望合作3項)</div>
-                                            <div class="label-content">
-                                                <label>
-                                                    <input type="checkbox" name="">場域驗證
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">技術支援
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">策略投資與媒合
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">多元管道行銷與曝光
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">銷售通路
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">技術聯合推廣
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">電信資源
-                                                </label>
-                                                <label>
-                                                    <input type="checkbox" name="">軟硬體支援
-                                                </label>
+                                            <div class="label-title">主題領域</div>
+                                            <div class="label-content inline-flex">
+                                                <label><input type="radio" name="target">場域驗證</label>
+                                                <label><input type="radio" name="target">技術支援</label>
+                                                <label><input type="radio" name="target">策略投資與媒合</label>
+                                                <label><input type="radio" name="target">多元管道行銷與曝光</label>    
+                                                <label><input type="radio" name="target">銷售通路</label>
+                                                <label><input type="radio" name="target">技術聯合推廣</label>
+                                                <label><input type="radio" name="target">電信資源</label>
+                                                <label><input type="radio" name="target">軟硬體支援</label>
                                             </div>
+                                        </fieldset>  
+                                        <fieldset>
+                                            <div class="label-title">透過什麼管道知曉中華電信5G加速器</div>
+                                            <div class="label-content"><textarea name="" id="" placeholder="Ex：中華電信5G加速器網站、新聞媒體報導、展會活動(智慧城市展/Meet Taipei..等)、創投網站或相關創育機構推薦…等。"></textarea></div>
                                         </fieldset>
-
-                                        <fieldset class="w100">
-                                            <label>承上，團隊需求請進行補充說明<textarea name="" id="" placeholder="Ex：如所需場域驗證、銷售通路或電信資源等細項說明。"></textarea></label>
-                                        </fieldset>
-
-                                        <fieldset class="w100">
-                                            <label>請說明主要產品/服務與5G應用的關連<textarea name="" id="" placeholder="Ex：運用5G高頻寬、低延遲、大連結等特性，以發展團隊產品或服務等應用說明。"></textarea></label>
-                                        </fieldset>
-
-                                        <fieldset class="w100">
-                                            <label>透過什麼管道知曉中華電信5G加速器<textarea name="" id="" placeholder="Ex：中華電信5G加速器網站、新聞媒體報導、展會活動(智慧城市展/Meet Taipei..等)、創投網站或相關創育機構推薦…等。"></textarea></label>
-                                        </fieldset>
-                                        <div class="event_group">
-                                            <div class="event_content">
-                                                <fieldset>
-                                                    <h6 class="inline">公司產品服務簡報檔案</h6>
-                                                    <label for="file" class="custom-file-label inline">檔案上傳 
-                                                        <span class="material-icons">arrow_circle_up</span>
-                                                        <input type="file" name="uploadFile" id="file" class="custom-file-input" accept=".ppt, .pdf" required>
-                                                    </label>
-                                                    <p class="note">(可依第三項評選標準補充)，簡報檔案格式請提供16：9的PPT或PDF檔案擇一(如有影片請內崁不要外連YouTube);檔案名稱：公司中+英名稱_產品服務簡報檔，如【中華電信 CHT_產品服務簡報檔】</p>
-                                                </fieldset>
-                                            </div>
-                                        </div>
+                                        <p>註: 上述資料，請於報名網頁/線上表單填寫。</p>
+                                        <p>註：公司產品服務簡報檔案(可依第肆項評選標準補充)，簡報檔案格式請提供16：9的PPT或PDF檔案擇一 ; 檔案名稱：公司中+英名稱_產品服務簡報檔，如【中華電信 CHT_產品服務簡報檔】。</p>
                                     </div>
 
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <div class="process_group">
                                             <h4>
                                                 <fieldset disabled>
@@ -1197,8 +957,9 @@
                                     <div class="btn-group">
                                         <button class="outline">暫存</button>
                                         <button>完成資料送出</button>
-                                    </div>
+                                    </div> -->
                                 </form>
+
                             </div>                                   
                         </div>
                     

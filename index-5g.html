@@ -13,22 +13,25 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <!-- <link rel="stylesheet" type="text/css" href="css/fullpage.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     
     <!-- js -->
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <!-- <script type="text/javascript" src="js/fullpage.js"></script> -->
+    <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QDF2DWWL46"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-QDF2DWWL46"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'G-QDF2DWWL46');
-    </script>
+    </script> -->
     
 </head>
 
@@ -36,9 +39,9 @@
     <header id="header">
         <div class="fixed_area">
             <ul>
-                <li>
+                <!-- <li>
                     <a href="member.html">立即報名</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="index-smart.html#tab-option1">智慧創新<br>應用大賽</a>
                 </li>
@@ -58,7 +61,7 @@
                 <li><a href="index-5g.html" target="_blank">5G加速器徵選活動</a></li>
                 <li><a href="index.html#a1" target="_blank">最新消息</a></li>
                 <li><a href="index.html#a2" target="_blank">FAQ</a></li>
-                <li><a href="results-announcement.html" target="_blank">名單公告</a></li>
+                <li><a href="#" target="_blank">名單公告</a></li>
                 <li><a href="media-coverage.html" target="_blank">歷屆回顧</a></li>
                 <li><a href="member.html" target="_blank">參賽專區</a></li>
             </ul>
@@ -72,11 +75,15 @@
 
     <section>
         <div class="section theme theme-kv">
-            <div class="pc">
-                <img src="img/kv.jpg" alt="">
-            </div>
-            <div class="mob">
-                <img src="img/kv.jpg" alt="">
+            <div class="my-slick-slider">
+                <div class="slide-item">
+                    <img src="img/kv-smart.jpg" alt="">
+                    <!-- <img class="mob" src="img/kv-smart.jpg" alt=""> -->
+                </div>
+                <div class="slide-item">
+                    <img src="img/kv-5g.jpg" alt="">
+                    <!-- <img class="mob" src="img/kv-5g.jpg" alt=""> -->
+                </div>
             </div>
         </div>
         <div class="section theme theme-5g">
@@ -85,67 +92,102 @@
                 <div class="tab-box">
                     <form>
                         
-                        <input type="radio" name="smart-tab" id="tab-option1" checked>
-                        <label for="tab-option1" class="tab-option1">徵件主題/資格</label>
+                        <input type="radio" name="smart-tab" id="tab-option1">
+                        <label for="tab-option1" class="tab-option1"><span>徵選說明/徵選資格</span></label>
 
                         <input type="radio" name="smart-tab" id="tab-option2">
-                        <label for="tab-option2" class="tab-option2">加速器機制</label>
+                        <label for="tab-option2" class="tab-option2"><span>徵選主題</span></label>
 
                         <input type="radio" name="smart-tab" id="tab-option3">
-                        <label for="tab-option3" class="tab-option3">評選說明</label>
-
-                        <!-- <br> -->
+                        <label for="tab-option3" class="tab-option3"><span>評選說明</span></label>
 
                         <input type="radio" name="smart-tab" id="tab-option4">
-                        <label for="tab-option4" class="tab-option4">活動權利/義務</label>
+                        <label for="tab-option4" class="tab-option4"><span>徵選時程</span></label>
+
+                        <br>
 
                         <input type="radio" name="smart-tab" id="tab-option5">
-                        <label for="tab-option5" class="tab-option5">文件下載</label>
-
+                        <label for="tab-option5" class="tab-option5"><span>機制與特別獎勵</span></label>
 
                         <input type="radio" name="smart-tab" id="tab-option6">
-                        <label for="tab-option6" class="tab-option6">注意事項</label>
+                        <label for="tab-option6" class="tab-option6"><span>權利及義務</span></label>
+
+                        <input type="radio" name="smart-tab" id="tab-option7">
+                        <label for="tab-option7" class="tab-option7"><span>文件下載</span></label>
+
+
+                        <input type="radio" name="smart-tab" id="tab-option8" checked>
+                        <label for="tab-option8" class="tab-option8"><span>注意事項</span></label>
                         
 
                         
 
                         <div class="tab-content tab-content1">
                             <div class="theme-title">
-                                <h3 class="gradient-text">徵選主題</h3>
+                                <h3 class="gradient-text">徵選說明</h3>
                             </div>
                             <div class="theme-content">
-                                <ul>
-                                    <li>強化AI賦能，因應ESG綠能永續趨勢，並延續數位轉型、運動科技、元宇宙等主題</li>
-                                    <li>AIoT、Blockchain、AR/VR/MR/XR、Cloud、BigData、Health 到 Information /cyber security等領域<br>(包含但不限此範圍)</li>
-                                </ul>
+                                <p>中華電信是國內最大之綜合電信業者，主要業務涵蓋固網通信、行動通信及寬頻接取與網際網路，亦以大數據、資安、雲端及網路資料中心等技術資源提供企業客戶資通訊服務，同時發展物聯網、人工智慧、ESG等創新科技服務，致力成為以永續發展的國際標竿企業。 </p>
+                                <p>中華電信自2018年成立台灣第一個電信加速器，已輔導逾80多家優秀新創團隊發展，秉持「賦能夥伴 平台資產」理念，運用集團資通訊優勢，提供技術支持、實證場域、商機及資金媒合等資源，並結合國內外策略合作夥伴，串接上下游產業鏈技術專家，協助台灣新創企業數位轉型與智慧升級，賦能創業者實現創新技術及商業應用落地。</p>
                             </div>
                             <div class="theme-title">
                                 <h3 class="gradient-text">徵選資格</h3>
                             </div>
                             <div class="theme-content">
                                 <ul>
-                                    <li>符合中小企業認定標準且設立未滿八年之公司為原則(2017年1月1日以後成立之企業，且取得正式統編)。</li>
-                                    <li>可提供數位轉型、智慧驅動、永續未來等方向之相關新創技術或解決方案。</li>
-                                    <li>具未來潛力發展與商務合作之新創團隊，期望與中華電信一起因應AI及ESG綠能永續趨勢，開創市場新商機。</li>
+                                    <li>新創企業：符合我國公司法設立登記未滿8年之公司(2018年1月1日以後設立之企業，且營運中之企業)。</li>
+                                    <li>中小企業：符合我國公司法設立登記且符合行政院核定「中小企業認定標準」營運中之企業。</li>
+                                    <li>具未來發展潛力與商務合作之新創團隊，期望與中華電信合作發展AI創新應用及ESG綠能永續之市場商機。</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="tab-content tab-content2">
                             <div class="theme-title">
-                                <h3 class="gradient-text">加速器機制</h3>
+                                <h3 class="gradient-text">徵選主題</h3>
                             </div>
                             <div class="theme-content">
-                                <!-- <p>入選團隊得接受中華電信5G加速器培訓課程與輔導。</p> -->
-                                <p>計畫將依入選團隊需求提供多項資源(詳細說明如下)：</p>
-                                <ul class="decimal rule">
-                                    <li><h4>商機拓展</h4><p>提供專業導師輔導資源，擴大共創業務合作。</p></li>
-                                    <li><h4>技術支持</h4><p>提供高頻寬、低延遲和大連結的5G網路技術。</p></li>
-                                    <li><h4>實證場域</h4><p>提供電信學院及研究院全台多個5G場域進行PoC測試與驗證。</p></li>
-                                    <li><h4>資金媒合</h4><p>獲得創投、天使投資及企業投資部門募資機會。</p></li>
-                                    <li><h4>行銷曝光</h4><p>參與國內大型展會及新聞媒體聯名露出。</p></li>
-                                    <li><h4>電信資源</h4><p>雲端服務折抵優惠及行動上網1門首年免費。</p></li>
-                                    <li class="col-2"><h4>AI創新特別獎</h4><p>本屆將額外依據AI智慧創新技術和實用價值與可行性，於入選團隊中評選出AI創新特別獎3名，提供相關算力資源。</p></li>
-                                </ul>
+                                <p>聚焦可與中華電信業務連結的「數位韌性、智慧驅動、永續未來」等面向之海地星空、人工智慧(含製造、醫療、交通、娛樂等)、運動科技、資通安全(含量子運算)、創新永續等領域解決方案。(參考領域別下表說明)</p>
+                                <div class="topic-content">
+                                    <table>
+                                        <tr>
+                                            <th colspan="2" style="width: 40%;">領域</th>
+                                            <th style="width: 60%;">領域說明發展方向如下(但不限此範圍)</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">海地星空</td>
+                                            <td class="left">以海底電纜、光纖與行動通訊網路、微波通訊、多軌衛星(低軌/中軌/高軌)等關鍵通訊技術，並結合AI、全光網路與開放式網路的多層次韌性網路，於災害應用與緊急通訊、智慧城市與公共服務等跨域整合應用。</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">人工智慧</td>
+                                            <td>智慧製造</td>
+                                            <td class="left">以AI、5G為核心，結合物聯網(IoT)、邊緣運算、雲端與數據分析等技術，可協助製造業從自動化升級至AI協作與數位轉型，或可整合各項垂直應用技術，推出具市場利基的智慧製造解決方案。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>智慧醫療</td>
+                                            <td class="left">結合5G網路、AI應用、雲端運算、大數據分析，實現遠距診療、  行動照護、數位健康生活，或透過物聯網整合應用，實現即時影象分析，精準醫療，降低醫療成本，提升效率與品質。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>智慧交通</td>
+                                            <td class="left">係運用AI、5G、AIoT、大數據分析與無人載具技術，協助海、陸、空交通與移動服務場域，支援城市治理及交通場域的解決方案，以發展基礎設施創新應用。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>數位娛樂</td>
+                                            <td class="left">運用5G、AI、AR/VR/XR/MR、沉浸式互動技術與元宇宙應用，可導入內容製作、展演服務與互動體驗場域，提供觀光導覽、藝文科技、智慧教育、文化展演、賽事轉播等應用服務，發展具國際競爭力的創新體驗。</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">運動科技</td>
+                                            <td class="left">結合AI、5G、穿戴式裝置、感測技術、數據分析與沉浸式互動應用，可導入運動訓練、賽事管理、觀賽體驗與全民運動場域，運動產業與數位科技可整合發展升級至跨域應用。</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">資通安全(含量子運算)</td>
+                                            <td class="left">以AI、5G、雲端等技術，提供網路安全、資料保護、身分驗證與資安治理、量子密碼與後量子加密等應用，可保障企業資安護韌性及適用可敏感場域之解決方案。</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">創新永續(含其他)</td>
+                                            <td class="left">以5G、AI、IoT、雲端、大數據，可提升資源效率、改善生活品質、支持永續治理的綠色科技或淨零解決方案。</td>
+                                        </tr> 
+                                    </table>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-content tab-content3">
@@ -153,86 +195,153 @@
                                 <h3 class="gradient-text">評選標準</h3>
                             </div>
                             <div class="theme-content">
-                                <ul class="decimal rule-desc">
-                                    <li><h4>創新應用<br>可行性</h4></li>
-                                    <li><h4>核心技術<br>能量及創新性</h4></li>
-                                    <li><h4>市場與行銷<br>可行性</h4></li>
-                                    <li><h4>經營團隊<br>執行力</h4></li>
-                                    <li><h4>資金<br>規劃</h4></li>
-                                </ul>
-                                <div class="table-content selection">
-                                    <p>報名文件：</p>
-                                    <ul class="decimal">
-                                        <li>請於<a href="member.html">參賽專區</a>填寫第七屆徵選活動報名資料、上傳公司產品服務簡報檔案（依活動簡章第三項評選標準補充）、徵選同意書，即完成報名。</li>
-                                        <li>徵選參賽文件資料不齊者，經通知未於期限內繳交，視同放棄參賽。</li>
-                                    </ul>
+                                <div class="competition-content">
+                                    <table>
+                                        <tr>
+                                            <th style="width: 15%;">項次</th>
+                                            <th style="width: 25%;">項目</th>
+                                            <th style="width: 60%;">說明</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>創新應用可行性</td>
+                                            <td class="left">符合「數位韌性、智慧驅動、永續未來」等面向之海地星空、人工智慧(製造、醫療、交通、娛樂等)、運動科技、資通安全(含量子運算)、創新永續等領域解決方案。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>核心技術能量及創新性</td>
+                                            <td class="left">・產品所具技術、優勢<br>
+                                                ・核心技術能量<br>
+                                                ・產品及服務完成度</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>市場與行銷可行性</td>
+                                            <td class="left">・明確潛在合作客戶 <br>
+                                                ・產業鏈定位明確性 <br>
+                                                ・營運策略、商業模式 <br>
+                                                ・掌握國內外市場及客戶需求 <br>
+                                                ・執行風險與因應對策，是否涉及他人智財權及掌握關鍵智財權</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>經營團隊執行力</td>
+                                            <td class="left">・公司基本資料 <br>
+                                                ・團隊組織及能力</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>資金規劃</td>
+                                            <td class="left">・營運計畫完備性 <br>
+                                                ・財務穩定性<br>
+                                                ・投資效益</td>
+                                        </tr>
+                                    </table>
                                 </div>
-                                <div class="theme-title">
-                                    <h3 class="gradient-text mt20
-                                    ">評選時程</h3>
-                                </div>
-                                <ul class="schedule">
-                                    <li>
-                                        <div class="step">1</div>
-                                        <div class="topic">報名繳件截止日期</div>
-                                        <div class="time">即日起至9/22(一)12:00</div>
-                                    </li>
-                                    <li>
-                                        <div class="step">2</div>
-                                        <div class="topic">決賽入圍通知</div>
-                                        <div class="time">10/9 (四)</div>
-                                    </li>
-                                    <li>
-                                        <div class="step">3</div>
-                                        <div class="topic">總決賽Pitch<br>(中華電信板橋學院)</div>
-                                        <div class="time">11/1 (六)</div>
-                                    </li>
-                                    <li>
-                                        <div class="step">4</div>
-                                        <div class="topic">公告獲選團隊</div>
-                                        <div class="time">11/3 (一)</div>
-                                    </li>
-                                    <li>
-                                        <div class="step">5</div>
-                                        <div class="topic">頒獎典禮暨成果發表<br>(中華電信國際會議室)</div>
-                                        <div class="time">11/27 (四)</div>
-                                    </li>
-                                </ul>
-                                
                             </div>
                         </div>
                         <div class="tab-content tab-content4">
                             <div class="theme-title">
-                                <h3 class="gradient-text">活動權利/義務
+                                <h3 class="gradient-text">徵選時程
                                     </h3>
                             </div>
                             <div class="theme-content">
-                                <div class="left">
-                                    <div class="table-topic">權利</div>
+                                
+                                <div class="competition-content">
+                                    <table>
+                                        <tr>
+                                            <th style="width: 25%;">項目</th>
+                                            <th style="width: 25%;">時程</th>
+                                            <th style="width: 50%;">說明</th>
+                                        </tr>
+                                        <tr>
+                                            <td>(一)線上報名申請</td>
+                                            <td>即日起至6/24(三)截止</td>
+                                            <td class="left">申請時間即日起至6月24日(三)下午5點截止，填寫線上報名表，並完成上傳簡報。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(二)初審入圍通知</td>
+                                            <td>7/3(五)</td>
+                                            <td class="left">通過書面審查者，將以電子郵件方式通知入圍團隊。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(三)總決賽</td>
+                                            <td>7/24(五)</td>
+                                            <td class="left">通知入圍團隊進行決賽，採實體簡報及問答。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(四)公告獲選團隊</td>
+                                            <td>7/31(五)</td>
+                                            <td class="left">於活動網頁公告入選團隊。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(五)頒獎典禮暨成果發表</td>
+                                            <td>11/26(四) </td>
+                                            <td class="left">邀請產官學專家與入選團隊參與</td>
+                                        </tr>
+                                    </table>
                                 </div>
-                                <ul class="decimal">
-                                    <li>入選團隊得依規定運用本加速機制中所提供之相關資源，包含商機拓展、技術支持、實證場域、資金媒合、行銷曝光與電信資源等。</li>
-                                    <li>入選團隊將參展Demo Day成果發表相關活動(請勿於確定參加後無故棄權，若有重大或不可抗力之因素須退出本加速器，請由團隊代表人向主辦單位提出說明)。</li>
-                                </ul>
-                                <br>
-                                <br>
-                                <br>
-                                <div class="left">
-                                    <div class="table-topic">義務</div>
-                                </div>
-                                <ul class="decimal">
-                                    <li>配合第七屆5G加速器徵選活動廣宣，如參與Demo Day、頒獎典禮、影音拍攝、新聞採訪等相關活動。</li>
-                                    <li>依誠信原則提供真實資料，提報資料若經查證有違反本徵選辦法或不實陳述者，主辦單位保有終止或取消獲選資格，及返還使用資源等值費用之權利。</li>
+                                <ul class="topic_list_none">
+                                    <li>(一) 線上報名：請於上述期限內至報名網頁完成報名作業(表單連結)，參賽文件未於期限內繳交，視同放棄參賽。</li>
+                                    <li>(二) 注事項項：由工作小組檢視報名文件，如資料不全，經通知未能於期限內補充即不受理。通過初審書面審查之團隊，將以電子郵件通知決賽事宜。</li>
                                 </ul>
                                 
                             </div>
                         </div>
                         <div class="tab-content tab-content5">
                             <div class="theme-title">
+                                <h3 class="gradient-text">加速機制與特別獎勵</h3>
+                            </div>
+                            <div class="theme-content">
+                                <ul class="topic_list_none">
+                                    <li>一、	加速機制：依獲選團隊需求，啟動輔導與媒合，及提供以下多項資源。
+                                        <ul class="topic_list_none">
+                                            <li>(一)	商機拓展：探索共創業務合作，專業導師媒合交流。</li>
+                                            <li>(二)	技術支持：提供高頻寬、低延遲和大連結的5G網路技術諮詢。</li>
+                                            <li> (三)	實證場域：提供電信學院及研究院5G場域進行PoC測試與驗證。 </li>
+                                            <li> (四)	資金媒合：企業投資部門以及創投基金募資媒合。</li>
+                                            <li> (五)	行銷曝光：提供國內大型展會及新聞媒體露出。</li>
+                                            <li> (六)	電信資源：雲端服務及行動上網優惠。</li>
+                                        </ul>
+                                    </li>
+                                    <li>二、	特別獎勵：依入圍決賽團隊AI創新技術及應用，與可解決實際場域問題，提供獎勵如下：
+                                        <ul class="topic_list_none">
+                                            <li>(一)	AI創新特別獎：以團隊運用AI創新技術或提供之智慧應用解決方案，經評選具商業價值，提供獲選團隊AI算力、行動寬頻資源。</li>
+                                            <li> (二)	海地星空特別獎：以海纜、光纖與行動網路、微波通訊、多軌衛星等關鍵通訊技術，團隊運用海纜、光纖、行動網路、微波通訊、多軌衛星等關鍵技術，經評選可於災害應用與緊急通訊、智慧城市與公共服務等實際場域之創新應用，提供獲選團隊網路技術諮詢與場域驗證及業務媒合洽談機會。</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content tab-content6">
+                            <div class="theme-title">
+                                <h3 class="gradient-text">權利及義務</h3>
+                            </div>
+                            <div class="theme-content">
+                                <ul class="topic_list_none">
+                                    <li>一、 權利：                                                                                        
+                                        <ul class="topic_list_none">
+                                            <li>(一)	入選團隊得依視其需求運用本加速機制，包含商機拓展、技術支持、實證場域、資金媒合、行銷曝光與電信資源等。 </li>
+                                            <li> (二)	特別獎勵依對應獎項內容提供獲獎團隊相關資源。</li>
+                                            <li> (三)	將參展Demo Day成果發表相關活動(請勿於確定參加後無故棄權，若有重大或不可抗力之因素須退出本加速器，請由團隊代表人向主辦單位提出說明)。</li>
+                                        </ul>
+                                    </li>
+                                    <li>二、	義務：
+                                        <ul class="topic_list_none">
+                                            <li>(一)	配合第八屆5G加速器徵選活動廣宣，如參與國內展會、Demo Day、頒獎典禮、影音拍攝、新聞採訪等相關活動。(二)	依誠信原則提供真實資料，提報資料若經查證有違反本徵選活動或不實陳述者，主辦單位保有終止或取消獲選資格，及返還使用資源等值費用之權利。</li>
+                                            <li> (二)	依誠信原則提供真實資料，提報資料若經查證有違反本徵選活動或不實陳述者，主辦單位保有終止或取消獲選資格，及返還使用資源等值費用之權利。</li>                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-content tab-content7">
+                            <div class="theme-title">
                                 <h3 class="gradient-text">文件下載</h3>
                             </div>
                             <div class="theme-content">
-                                <ul class="document-download">
+                                <!-- <ul class="document-download">
                                     <li>
                                         <a href="files/5G加速器徵選活動/01.【活動簡章】2025 第七屆5G加速器徵選活動.pdf" download>
                                             <img src="img/icon-document1.svg" alt="">
@@ -245,21 +354,27 @@
                                             <span>徵選同意書</span>
                                         </a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
-                        <div class="tab-content tab-content6">
+                        <div class="tab-content tab-content8">
                                 <div class="theme-title">
                                     <h3 class="gradient-text">注意事項</h3>
                                 </div>
                                 <div class="theme-content">
-                                    <ul class="decimal">
-                                        <li>參與本活動之新創團隊，應擔保參賽作品之相關內容，並無重製、改作、抄襲、仿冒或其他侵害第三人智慧財產權或其他權利之情事。惟主辦單位及協辦單位基於研究、宣傳與推廣等需要，對於所有入選/得獎作品仍享有文件、圖面、檔案等進行攝影、出版、著作、展覽及其它圖版揭載等利用權利，各入選/得獎者不得提出異議，並應配合提供相關圖片與資料。</li>
-                                        <li>為記錄本活動相關內容，參賽團隊及其成員同意主辦單位與執行單位有權拍攝（包括但不限於拍攝照片、側錄平面、動態花絮、平面及動態專訪等拍攝成果），或請參賽公司及其成員提供相關照片及動態影像。參賽團隊及所有成員同意無償授權主辦單位與執行單位及其關係企業，作為本活動舉辦、行銷宣傳推廣活動或進行結案報告等目的範圍內，進行公開發表、公開展示、重製、編輯、改作、散布、公開傳輸及播映等行為。參賽團隊及其成員同意永久不行使肖像權或其他類似之人格權。</li>
-                                        <li>參與本活動之新創團隊，應維護並尊重中華電信之品牌聲譽，若有任何問題，應主動向執行單位《智趣王數位科技》反應或尋求解決，於未釐清事實前，參賽團隊不應有任何詆毀本活動與主辦及協辦單位之情事發生。</li>
-                                        <li>主辦單位得保留終止、修改及取消此活動之權利並以官方網站之最新公告為準，不另行通知。如有未盡事宜，悉依主辦單位相關規定或解釋，並得隨時補充公告之。 </li>
-                                        <li>主辦單位中華電信與執行單位《智趣王數位科技》向您蒐集個人資料，蒐集之目的係作為本次活動聯繫之用。主辦單位將於蒐集後自行或委託第三人於上述蒐集目的範圍內處理或使用您的個人資料。您可依法向主辦單位請求查詢閱覽、製給複製本、補充更正、停止蒐集處理利用或刪除您所提供的個人資料。</li>
+                                    <ul class="topic_list_none">
+                                        <li>(一)	參與本活動之新創團隊，應擔保參賽作品之相關內容，並無重製、改作、抄襲、仿冒或其他侵害第三人智慧財產權或其他權利之情事。惟主辦單位及協辦單位基於研究、宣傳與推廣等需要，對於所有入選/得獎作品仍享有文件、圖面、檔案等進行攝影、出版、著作、展覽及其它圖版揭載等利用權利，各入選/得獎者不得提出異議，並應配合提供相關圖片與資料。</li>
+                                        <li>(二)	為記錄本活動相關內容，參賽團隊及其成員同意主辦單位與執行單位有權拍攝（包括但不限於拍攝照片、側錄平面、動態花絮、平面及動態專訪等拍攝成果），或請參賽公司及其成員提供相關照片及動態影像。參賽團隊及所有成員同意無償授權主辦單位與執行單位及其關係企業，作為本活動舉辦、行銷宣傳推廣活動或進行結案報告等目的範圍內，進行公開發表、公開展示、重製、編輯、改作、散布、公開傳輸及播映等行為。參賽團隊及其成員同意永久不行使肖像權或其他類似之人格權。 </li>
+                                        <li>(三)	參與本活動之新創團隊，應維護並尊重中華電信之品牌聲譽，若有任何問題，應主動向執行單位《OOOO》反應或尋求解決，於未釐清事實前，參賽團隊不應有任何詆毀本活動與主辦及協辦單位之情事發生。 </li>
+                                        <li>(四)	主辦單位得保留終止、修改及取消此活動之權利並以官方網站之最新公告為準，不另行通知。如有未盡事宜，悉依主辦單位相關規定或解釋，並得隨時補充公告之。 </li>
+                                        <li>(五)	主辦單位中華電信與執行單位《OOOO》向您蒐集個人資料，蒐集之目的係作為本次活動聯繫之用。主辦單位將於蒐集後自行或委託第三人於上述蒐集目的範圍內處理或使用您的個人資料。您可依法向主辦單位請求查詢閱覽、製給複製本、補充更正、停止蒐集處理利用或刪除您所提供的個人資料。</li>
                                     </ul>
+
+                                    <br>
+                                    <p>聯絡諮詢：OOOOO股份有限公司<br>
+                                        客服電話：02-OOOO-OOOO#OOO<br>
+                                        客服信箱：<a style="display: inline-block" href="mailto:#">OOOOOO@OOOO.com.tw</a><br>
+                                        聯絡時間：週一至週五10:00-17:00</p>
                                 </div>
                             </div>
 
@@ -268,7 +383,7 @@
                 </div>
             </div>
                 
-            </div>
+        </div>
     </section>
     <footer id="footer"></footer>
 
@@ -282,6 +397,17 @@
 
         // $('#header').load('page/header.html');
         $('#footer').load('page/footer.html');
+
+        $('.my-slick-slider').slick({
+            dots: true,             // 顯示底部的點點導航
+            infinite: true,         // 無限循環播放
+            speed: 500,             // 滑動的動畫速度 (毫秒)
+            slidesToShow: 1,        // 桌機版一次顯示 3 張
+            slidesToScroll: 1,      // 一次滑動 1 張
+            autoplay: true,         // 開啟自動播放
+            autoplaySpeed: 2000,    // 自動播放的間隔時間 (毫秒)
+            arrows: false
+        });
         
         $('#menu-toggle').on('click', function () {
             $('nav').slideToggle(); // 用動畫切換顯示/隱藏

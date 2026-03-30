@@ -64,7 +64,7 @@ $rainbow-linear-color2: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
   
 //setting
 body{ font-family: "Noto Sans TC", sans-serif;}
-*{ box-sizing: border-box; font-family:  "Noto Sans TC", sans-serif; color: $primary-color; letter-spacing: 1px;}
+*{ box-sizing: border-box; font-family:  "Noto Sans TC", sans-serif; letter-spacing: 1px;}
 a, a:hover, a:active, a:visited{ text-decoration: none; display: block; transition: all .3s; outline: 0;}
 img{ width: 100%; display: block;}
 
@@ -233,4 +233,6 @@ input, button, select, textarea{
         cursor: pointer;
     }
 }
+
+
 

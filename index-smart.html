@@ -13,11 +13,14 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <!-- <link rel="stylesheet" type="text/css" href="css/fullpage.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     
     <!-- js -->
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <!-- <script type="text/javascript" src="js/fullpage.js"></script> -->
+    <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     
     <!-- Google tag (gtag.js) -->
@@ -58,8 +61,8 @@
                 <li><a href="index-5g.html" target="_blank">5G加速器徵選活動</a></li>
                 <li><a href="index.html#a1" target="_blank">最新消息</a></li>
                 <li><a href="index.html#a2" target="_blank">FAQ</a></li>
-                <li><a href="results-announcement.html" target="_blank">名單公告</a></li>
-                <li><a href="media-coverage.html" target="_blank">歷屆回顧</a></li>
+                <li><a href="#" target="_blank">名單公告</a></li>
+                <li><a href="#" target="_blank">歷屆回顧</a></li>
                 <li><a href="member.html" target="_blank">參賽專區</a></li>
             </ul>
         </nav>
@@ -72,18 +75,21 @@
 
     <section>
         <div class="section theme theme-kv">
-            <div class="pc">
-                <img src="img/kv.jpg" alt="">
-            </div>
-            <div class="mob">
-                <img src="img/kv.jpg" alt="">
+            <div class="my-slick-slider">
+                <div class="slide-item">
+                    <img src="img/kv-smart.jpg" alt="">
+                    <!-- <img class="mob" src="img/kv-smart.jpg" alt=""> -->
+                </div>
+                <div class="slide-item">
+                    <img src="img/kv-5g.jpg" alt="">
+                    <!-- <img class="mob" src="img/kv-5g.jpg" alt=""> -->
+                </div>
             </div>
         </div>
         <div class="section theme theme-smart">
             <div class="theme-smart-tab">
                 <h3><span>智慧創新應用大賽</span></h3>
                 <div class="tab-box">
-                    <form>
                         
                         <input type="radio" name="smart-tab" id="tab-option1">
                         <label for="tab-option1" class="tab-option1"><span>競賽宗旨/徵件對象</span></label>
@@ -102,16 +108,18 @@
                         <input type="radio" name="smart-tab" id="tab-option5">
                         <label for="tab-option5" class="tab-option5"><span>競賽時程</span></label>
 
-                        <input type="radio" name="smart-tab" id="tab-option6" checked>
+                        <input type="radio" name="smart-tab" id="tab-option6">
                         <label for="tab-option6" class="tab-option6"><span>競賽流程</span></label>
 
                         <input type="radio" name="smart-tab" id="tab-option7">
-                        <label for="tab-option7" class="tab-option7"><span>元宇宙應用特別獎</span></label>
+                        <label for="tab-option7" class="tab-option7"><span>文件下載</span></label>
 
-                        <input type="radio" name="smart-tab" id="tab-option8">
-                        <label for="tab-option8" class="tab-option8"><span>注意事項</span></label>
+                        <input type="radio" name="smart-tab" id="tab-option8" checked>
+                        <label for="tab-option8" class="tab-option8"><a href="index-allround.html"><span>海地星空</span></a></label>
 
-                        
+                        <input type="radio" name="smart-tab" id="tab-option9">
+                        <label for="tab-option9" class="tab-option9"><span>注意事項</span></label>
+
 
                         <div class="tab-content tab-content1">
                             <div class="theme-title">
@@ -478,7 +486,7 @@
                                         <tr>
                                             <td>最佳創意獎</td>
                                             <td>1組</td>
-                                            <td><50,000元/td>
+                                            <td>50,000元</td>
                                         </tr>
                                         <tr>
                                             <td>最佳應用獎</td>
@@ -616,6 +624,40 @@
                             </div>
                         </div>
                         <div class="tab-content tab-content7">
+                                <div class="theme-title">
+                                    <h3 class="gradient-text">智慧創新應用競賽文件下載</h3>
+                                </div>
+                                <div class="theme-content">
+                                    <div class="download">
+                                        <div class="item">
+                                            <a href="files/智慧創新應用大賽/01.【競賽辦法】2026中華電信智慧創新應用大賽.docx" download>
+                                                <img src="img/icon-document1.png" alt="">
+                                                <span>競賽辦法</span>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="files/智慧創新應用大賽/02.【作品提案規劃書】2026中華電信智慧創新應用大賽.docx" download>
+                                                <img src="img/icon-document2.png" alt="">
+                                                <span>作品提案規劃書</span>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="files/智慧創新應用大賽/03.【參賽同意書】2026中華電信智慧創新應用大賽.pdf" download>
+                                                <img src="img/icon-document3.png" alt="">
+                                                <span>參賽同意書</span>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="files/智慧創新應用大賽/04.【法定代理人同意書】2026中華電信智慧創新應用大賽.pdf" download>
+                                                <img src="img/icon-document4.png" alt="">
+                                                <span>法定代理人</span>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="tab-content tab-content8">
                             <div class="theme-title">
                                 <h3 class="gradient-text-dark">元宇宙應用特別獎</h3>
                             </div>
@@ -661,7 +703,7 @@
 
                             </div>
                         </div>
-                        <div class="tab-content tab-content8">
+                        <div class="tab-content tab-content9">
                             <div class="theme-title">
                                 <h3>注意事項</h3>
                             </div>
@@ -701,10 +743,8 @@
                                     聯絡時間：週一至週五10:00-17:00</p>
                             </div>
                         </div>
-
-                    </form>
                     
-                </div>
+            </div>
             </div>
                 
             </div>
@@ -721,20 +761,32 @@
 
         // $('#header').load('page/header.html');
         $('#footer').load('page/footer.html');
+
+        $('.my-slick-slider').slick({
+            dots: true,             // 顯示底部的點點導航
+            infinite: true,         // 無限循環播放
+            speed: 500,             // 滑動的動畫速度 (毫秒)
+            slidesToShow: 1,        // 桌機版一次顯示 3 張
+            slidesToScroll: 1,      // 一次滑動 1 張
+            autoplay: true,         // 開啟自動播放
+            autoplaySpeed: 2000,    // 自動播放的間隔時間 (毫秒)
+            arrows: false
+        });
         
         $('#menu-toggle').on('click', function () {
             $('nav').slideToggle(); // 用動畫切換顯示/隱藏
             $(this).toggleClass('active'); // 如果你想讓按鈕變化樣式（選配）
         });
+
         $('.menu li a[href^="#"]').on('click', function (e) {
             e.preventDefault();
 
             const target = $($(this).attr('href'));
 
             if (target.length) {
-            $('html, body').animate({
-                scrollTop: target.offset().top
-            }, 600); // 600 毫秒滑動
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 600); // 600 毫秒滑動
             }
         });
         
