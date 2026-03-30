@@ -621,9 +621,11 @@ footer .company_social ul li + li {
 section {
   width: 100%;
   overflow: hidden;
+  /* 左箭頭 */
+  /* 右箭頭 */
 }
 
-section form {
+section form, section .container {
   width: 96%;
   max-width: 1080px;
   margin: 0 auto;
@@ -659,6 +661,25 @@ section .slick-dots li.slick-active button {
   opacity: 1;
 }
 
+section .slick-prev:before {
+  content: '\25C0';
+  /* 實心向左三角形 ◀ */
+  font-family: 'Arial';
+  /* 確保字體支援，或者拿掉 slick 預設字體 */
+  color: #000;
+  /* 設定顏色 */
+  font-size: 20px;
+  /* 設定大小 */
+}
+
+section .slick-next:before {
+  content: '\25B6';
+  /* 實心向右三角形 ▶ */
+  font-family: 'Arial';
+  color: #000;
+  font-size: 20px;
+}
+
 section .theme-title {
   text-align: center;
   border-top: 2px solid;
@@ -681,152 +702,6 @@ section .theme-content {
   section .theme-content {
     padding: 120px 0;
   }
-}
-
-section .tab-box {
-  margin-top: 40px;
-}
-
-section .tab-box .tab-content {
-  display: none;
-}
-
-section .tab-box #tab-option1:checked ~ .tab-content1,
-section .tab-box #tab-option2:checked ~ .tab-content2,
-section .tab-box #tab-option3:checked ~ .tab-content3,
-section .tab-box #tab-option4:checked ~ .tab-content4,
-section .tab-box #tab-option5:checked ~ .tab-content5,
-section .tab-box #tab-option6:checked ~ .tab-content6,
-section .tab-box #tab-option7:checked ~ .tab-content7,
-section .tab-box #tab-option8:checked ~ .tab-content8,
-section .tab-box #tab-option9:checked ~ .tab-content9 {
-  display: block;
-}
-
-section .tab-box > input[type="radio"] {
-  display: none;
-}
-
-section .tab-box > label {
-  padding: 4px 32px;
-  font-size: 20px;
-  font-weight: 500;
-  margin: 10px 4px 0;
-  display: inline-block;
-}
-
-@media (max-width: 800px) {
-  section .tab-box > label {
-    font-size: 18px;
-    padding: 6px 8px;
-    margin: 10px 4px 0;
-  }
-}
-
-section .tab-box > label.tab-option1, section .tab-box > label.tab-option3, section .tab-box > label.tab-option5, section .tab-box > label.tab-option7, section .tab-box > label.tab-option9 {
-  border: 2px solid transparent;
-  border-radius: 50px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#05022E), to(#05022E)), -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
-  background-image: linear-gradient(#05022E, #05022E), linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-section .tab-box > label.tab-option1 span, section .tab-box > label.tab-option3 span, section .tab-box > label.tab-option5 span, section .tab-box > label.tab-option7 span, section .tab-box > label.tab-option9 span {
-  background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
-  background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-section .tab-box > label.tab-option1:hover, section .tab-box > label.tab-option3:hover, section .tab-box > label.tab-option5:hover, section .tab-box > label.tab-option7:hover, section .tab-box > label.tab-option9:hover {
-  border: 2px solid #05022E;
-  background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
-  background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
-}
-
-section .tab-box > label.tab-option1:hover span, section .tab-box > label.tab-option3:hover span, section .tab-box > label.tab-option5:hover span, section .tab-box > label.tab-option7:hover span, section .tab-box > label.tab-option9:hover span {
-  background: none;
-  -webkit-text-fill-color: #05022E;
-  color: #05022E;
-}
-
-section .tab-box > label.tab-option2, section .tab-box > label.tab-option4, section .tab-box > label.tab-option6, section .tab-box > label.tab-option8 {
-  border: 2px solid transparent;
-  border-radius: 50px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#05022E), to(#05022E)), -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
-  background-image: linear-gradient(#05022E, #05022E), linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-section .tab-box > label.tab-option2 span, section .tab-box > label.tab-option4 span, section .tab-box > label.tab-option6 span, section .tab-box > label.tab-option8 span {
-  background: -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
-  background: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-section .tab-box > label.tab-option2:hover, section .tab-box > label.tab-option4:hover, section .tab-box > label.tab-option6:hover, section .tab-box > label.tab-option8:hover {
-  border: 2px solid #05022E;
-  background: -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
-  background: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
-}
-
-section .tab-box > label.tab-option2:hover span, section .tab-box > label.tab-option4:hover span, section .tab-box > label.tab-option6:hover span, section .tab-box > label.tab-option8:hover span {
-  background: none;
-  -webkit-text-fill-color: #05022E;
-  color: #05022E;
-}
-
-section .tab-box > label:hover {
-  cursor: pointer;
-}
-
-section .tab-box #tab-option1:checked ~ .tab-option1,
-section .tab-box #tab-option3:checked ~ .tab-option3,
-section .tab-box #tab-option5:checked ~ .tab-option5,
-section .tab-box #tab-option7:checked ~ .tab-option7,
-section .tab-box #tab-option9:checked ~ .tab-option9 {
-  border: 2px solid #05022E;
-  background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
-  background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
-}
-
-section .tab-box #tab-option1:checked ~ .tab-option1 span,
-section .tab-box #tab-option3:checked ~ .tab-option3 span,
-section .tab-box #tab-option5:checked ~ .tab-option5 span,
-section .tab-box #tab-option7:checked ~ .tab-option7 span,
-section .tab-box #tab-option9:checked ~ .tab-option9 span {
-  background: none;
-  -webkit-text-fill-color: #05022E;
-  color: #05022E;
-}
-
-section .tab-box #tab-option2:checked ~ .tab-option2,
-section .tab-box #tab-option4:checked ~ .tab-option4,
-section .tab-box #tab-option6:checked ~ .tab-option6,
-section .tab-box #tab-option8:checked ~ .tab-option8 {
-  border: 2px solid #05022E;
-  background: -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
-  background: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
-}
-
-section .tab-box #tab-option2:checked ~ .tab-option2 span,
-section .tab-box #tab-option4:checked ~ .tab-option4 span,
-section .tab-box #tab-option6:checked ~ .tab-option6 span,
-section .tab-box #tab-option8:checked ~ .tab-option8 span {
-  background: none;
-  -webkit-text-fill-color: #05022E;
-  color: #05022E;
 }
 
 section .tab-box .tab-content {
@@ -3368,7 +3243,8 @@ section .theme-media .theme-media-tab .tab-box .tab-content-inner {
 }
 
 section .theme-member {
-  background: #05022E;
+  background: url(../img/login_bg.png) center center no-repeat;
+  background-size: cover;
 }
 
 section .theme-member .theme-member-tab {
@@ -3376,8 +3252,6 @@ section .theme-member .theme-member-tab {
 }
 
 section .theme-member .theme-member-tab > h3 {
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#2886B3), to(transparent));
-  background: linear-gradient(to right, transparent, #2886B3, transparent);
   padding: 4px 12px;
   margin: 0 0 40px;
   font-size: 20px;
@@ -3388,6 +3262,7 @@ section .theme-member .theme-member-tab > h3 {
   /* 寬度與樣式先設定好 */
   border-bottom: 2px solid;
   /* 寬度與樣式先設定好 */
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#2886B3), to(transparent));
   background: linear-gradient(to right, transparent, #2886B3, transparent);
   -o-border-image: linear-gradient(to right, transparent, #11B0FF, transparent) 1;
      border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#11B0FF), to(transparent)) 1;
@@ -3447,12 +3322,12 @@ section .theme-member .theme-member-tab .tab-box .tab-content .theme-title h3 {
 
 section .theme-member .theme-member-tab .tab-box .tab-content .theme-content .login-box {
   width: 80%;
-  padding: 40px;
+  max-width: 600px;
+  padding: 60px;
   border-radius: 10px;
-  margin: 50px auto 10px;
+  margin: 10px auto;
   font-family: sans-serif;
-  background: -webkit-gradient(linear, left top, right top, from(#00A5A9), to(#284FA6));
-  background: linear-gradient(to right, #00A5A9, #284FA6);
+  background: #05022E;
 }
 
 @media (max-width: 800px) {
@@ -3513,7 +3388,6 @@ section .theme-member .theme-member-tab .tab-box .tab-content .theme-content .lo
 section .theme-member .theme-member-tab .tab-box .tab-content .theme-content .login-box form button {
   width: 100%;
   padding: 10px;
-  background: #fff;
   color: white;
   border: none;
   border-radius: 5px;
@@ -3555,7 +3429,7 @@ section .theme-register .theme-register-tab > h3 {
   background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#2886B3), to(transparent));
   background: linear-gradient(to right, transparent, #2886B3, transparent);
   padding: 4px 12px;
-  margin: 30px 0 40px;
+  margin: 0 0 40px;
   font-size: 20px;
   font-weight: 500;
   padding: 8px;
@@ -3610,9 +3484,8 @@ section .theme-register .theme-register-tab .tab-box .tab-content {
   max-width: 1080px;
   margin: 0 auto;
   margin-top: 40px;
-  padding: 120px 60px;
+  padding: 0 60px;
   border-radius: 20px;
-  background: url(../img/intro_bg1.png) center top repeat-x, url(../img/intro_bg2.png) center bottom repeat-x #fff;
   background-size: contain;
 }
 
@@ -3626,25 +3499,13 @@ section .theme-register .theme-register-tab .tab-box .tab-content .theme-title h
   text-align: center;
 }
 
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content {
+  width: 100%;
+}
+
 section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .register-box {
-  width: 80%;
-  padding: 40px;
+  padding: 20px;
   border-radius: 10px;
-  margin: 50px auto 10px;
-  font-family: sans-serif;
-  background: -webkit-gradient(linear, left top, right top, from(#00A5A9), to(#284FA6));
-  background: linear-gradient(to right, #00A5A9, #284FA6);
-}
-
-@media (max-width: 800px) {
-  section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .register-box {
-    width: 100%;
-    padding: 40px 20px;
-  }
-}
-
-section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .register-box form .input-box {
-  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3652,81 +3513,205 @@ section .theme-register .theme-register-tab .tab-box .tab-content .theme-content
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  gap: 20px;
 }
 
 @media (max-width: 800px) {
-  section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .register-box form .input-box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 8px;
+  section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset {
+    margin-top: 8px;
   }
 }
 
-section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .register-box form .input-box label {
-  width: 260px;
-  display: inline-block;
-  margin-bottom: 5px;
-  font-weight: 500;
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset:disabled {
+  opacity: .8;
+}
+
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   color: #fff;
   text-align: left;
-  padding: 4px;
-  letter-spacing: 2px;
-  font-size: 16px;
 }
 
-@media (max-width: 800px) {
-  section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .register-box form .input-box label {
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-content {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+}
+
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-content.inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  row-gap: 4px;
+}
+
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-content label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 16px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+  margin: 0;
+}
+
+@media (max-width: 960px) {
+  section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-content label {
     width: 100%;
+    margin-right: 0;
+    white-space: normal;
+    text-align: left;
   }
 }
 
-section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .register-box form .input-box input {
-  display: inline-block;
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-content label.w100 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* 垂直居中 */
   width: 100%;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 16px;
+  /* 確保 label 寬度撐滿父容器 */
+  white-space: nowrap;
+  /* 確保文字（如：新台幣）不會換行 */
+  gap: 8px;
+  /* 文字與輸入框之間的間距 */
 }
 
-section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .register-box form button {
-  width: 100%;
-  padding: 10px;
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-content label input[type="radio"], section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-content label input[type="checkbox"] {
   background: #fff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  margin-top: 20px;
-  font-size: 20px;
-  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
 }
 
-section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .register-box form button:hover {
-  opacity: .9;
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-content label input[type="radio"]:checked, section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-content label input[type="checkbox"]:checked {
+  background: url(../img/check.svg) center center no-repeat #fff;
+  background-size: 16px;
+  border-radius: 4px;
+}
+
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-content label input[type="text"], section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-content label input[type="password"] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 0;
+}
+
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-content label input, section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-content label select {
+  font-size: 14px;
+  color: #000;
+}
+
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-content label select {
+  padding: 12px;
+}
+
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content fieldset .label-content label span.note {
+  font-size: 12px;
+  color: #909090;
+}
+
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .submit-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 30px;
+  min-width: 150px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(#00A5A9), to(#284FA6));
+  background: linear-gradient(to right, #00A5A9, #284FA6);
+  border-radius: 12px;
+  /* 膠囊形狀圓角 */
+  -webkit-box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+          box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 40px auto 0;
+}
+
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .submit-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  /* 顏色變深 */
+  -webkit-box-shadow: 0 6px 20px rgba(0, 86, 179, 0.4);
+          box-shadow: 0 6px 20px rgba(0, 86, 179, 0.4);
+  /* 陰影變重 */
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  /* 輕微往上飄 */
+}
+
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .submit-btn:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  /* 往下壓的感覺 */
+  -webkit-box-shadow: 0 2px 10px rgba(0, 86, 179, 0.3);
+          box-shadow: 0 2px 10px rgba(0, 86, 179, 0.3);
+}
+
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .submit-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 section .theme-register .theme-register-tab .tab-box .tab-content .theme-content p.note {
   margin: 0 auto;
   color: #fff;
-}
-
-section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .member-option {
-  width: 100%;
-}
-
-section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .member-option .list {
-  display: inline-block;
-}
-
-section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .member-option .list a {
-  color: #fff;
-  font-size: 14px;
-}
-
-section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .member-option .list + .list {
-  margin-left: 40px;
+  font-size: 13px;
+  text-align: center;
 }
 
 section .theme-event {

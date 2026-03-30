@@ -13,17 +13,15 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <!-- <link rel="stylesheet" type="text/css" href="css/fullpage.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     
     <!-- js -->
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <!-- <script type="text/javascript" src="js/fullpage.js"></script> -->
-    <script type="text/javascript" src="js/wow.min.js"></script>
-
-    <script src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
     
     <!-- Google tag (gtag.js) -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-QDF2DWWL46"></script>
@@ -76,12 +74,16 @@
     </header>
 
     <section>
-        <div class="section theme home_theme-kv">
-            <div class="pc">
-                <img src="img/kv.jpg" alt="">
-            </div>
-            <div class="mob">
-                <img src="img/kv.jpg" alt="">
+        <div class="section theme theme-kv">
+            <div class="my-slick-slider">
+                <div class="slide-item">
+                    <img src="img/kv-smart.jpg" alt="">
+                    <!-- <img class="mob" src="img/kv-smart.jpg" alt=""> -->
+                </div>
+                <div class="slide-item">
+                    <img src="img/kv-5g.jpg" alt="">
+                    <!-- <img class="mob" src="img/kv-5g.jpg" alt=""> -->
+                </div>
             </div>
         </div>
         <div class="section theme home-theme-news" id="a1">
@@ -349,6 +351,18 @@
 
         // $('#header').load('page/header.html');
         $('#footer').load('page/footer.html');
+
+        $('.my-slick-slider').slick({
+            dots: true,             // 顯示底部的點點導航
+            infinite: true,         // 無限循環播放
+            speed: 500,             // 滑動的動畫速度 (毫秒)
+            slidesToShow: 1,        // 桌機版一次顯示 3 張
+            slidesToScroll: 1,      // 一次滑動 1 張
+            autoplay: true,         // 開啟自動播放
+            autoplaySpeed: 2000,    // 自動播放的間隔時間 (毫秒)
+            arrows: false
+        });
+
         
         $('#menu-toggle').on('click', function () {
             $('nav').slideToggle(); // 用動畫切換顯示/隱藏

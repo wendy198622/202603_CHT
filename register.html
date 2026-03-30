@@ -80,35 +80,45 @@
                                 <h3 class="gradient-text">帳號註冊</h3>
                             </div>
                         <div class="theme-content">
-                            <div class="register-box">
-                                <form>
-                                    <div class="input-box">                              
-                                        <label for="leader-name">主要聯絡人姓名：</label>
-                                        <input type="text" id="leader-name" name="leader-name" placeholder="請輸入主要聯絡人姓名" required>
-                                    </div>
-                                    
-                                    <div class="input-box">
-                                        <label for="leader-phone">主要聯絡人電話：</label>
-                                        <input type="tel" id="leader-phone" name="leader-phone" placeholder="請輸入主要聯絡人電話" required>
-                                    </div>
-
-                                    <div class="input-box">     
-                                        <label for="email">主要聯絡人 E-mail：</label>
-                                        <input type="email" id="email" name="email" placeholder="請輸入主要聯絡人 E-mail" required>
-                                    </div>
-
-                                    <div class="input-box">     
-                                        <label for="password">密碼：</label>
-                                        <input type="password" id="password" name="password"
-                                            placeholder="請輸入密碼"
-                                            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}"
-                                            title="請使用 8 位英數字元的組合，包含大小寫英文字母，且不得包含特殊符號"
-                                            required>
-                                    </div>
-                                    <button type="submit">註冊帳號</button>
-                                </form>
-                            </div>
-                            <p class="white">如新創公司符合「智慧創新應用大賽暨5G加速器徵選活動」資格，可使用同一註冊帳號，報名兩個賽事活動。</p>
+                            <form>
+                                <div class="register-box">
+                                    <fieldset>
+                                        <div class="label-title">主要聯絡人姓名</div>
+                                        <div class="label-content">
+                                            <label><input type="text" name="leader-name" placeholder="請輸入主要聯絡人姓名" required></label>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="label-title">主要聯絡人電話</div>
+                                        <div class="label-content">
+                                            <label><input type="text" name="leader-phone" placeholder="請輸入主要聯絡人電話" required></label>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="label-title">主要聯絡人電話</div>
+                                        <div class="label-content">
+                                            <label><input type="text" name="leader-phone" placeholder="請輸入主要聯絡人電話" required></label>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="label-title">主要聯絡人 E-mail</div>
+                                        <div class="label-content">
+                                            <label><input type="text" name="email" placeholder="請輸入主要聯絡人 E-mail" required></label>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="label-title">登入密碼</div>
+                                        <div class="label-content">
+                                            <label><input type="password" id="password" name="password" placeholder="請輸入密碼"
+                                                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}"
+                                                title="請使用 8 位英數字元的組合，包含大小寫英文字母，且不得包含特殊符號"
+                                                required></label>
+                                        </div>
+                                    </fieldset>
+                                    <button type="submit" class="submit-btn">註冊帳號</button>
+                                </div>
+                            </form>
+                            <p class="note">如新創公司符合「智慧創新應用大賽暨5G加速器徵選活動」資格，可使用同一註冊帳號，報名兩個賽事活動。</p>
                             
                         </div>                                   
                     </div>
