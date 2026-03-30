@@ -393,7 +393,7 @@ header nav ul li a {
     width: 280px;
     padding: 20px 10px;
     text-align: center;
-    color: #05022E;
+    color: #05022E !important;
   }
 }
 
@@ -437,12 +437,15 @@ header #menu-toggle span {
     width: 24px;
     height: 3px;
     margin: 5px 0;
-    background: #05022E;
   }
 }
 
 header #menu-toggle:hover {
   cursor: pointer;
+}
+
+header #menu-toggle.active span {
+  background: #05022E;
 }
 
 header #menu-toggle.active span:nth-child(2) {

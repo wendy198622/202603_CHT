@@ -75,7 +75,7 @@ header{
                         width: 280px;
                         padding: 20px 10px;
                         text-align: center;
-                        color: $bg-color;
+                        color: $bg-color !important;
                     }
                 }
                 &:hover, &.active{
@@ -113,7 +113,6 @@ header{
                     width: 24px;
                     height: 3px;
                     margin: 5px 0;
-                    background: $bg-color;
                 }
             }
     
@@ -124,6 +123,8 @@ header{
             &.active{
     
                 span{
+                    background: $bg-color;
+                    
     
                     &:nth-child(2){
                         background: transparent !important;
@@ -2137,7 +2138,7 @@ section{
                         color: $bg-color;
                     }
                 }
-                
+
                 .theme-content{
                     h5{
                         margin-top: 40px;
