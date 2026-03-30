@@ -3385,19 +3385,52 @@ section .theme-member .theme-member-tab .tab-box .tab-content .theme-content .lo
   font-size: 16px;
 }
 
-section .theme-member .theme-member-tab .tab-box .tab-content .theme-content .login-box form button {
-  width: 100%;
-  padding: 10px;
-  color: white;
+section .theme-member .theme-member-tab .tab-box .tab-content .theme-content .login-box form .login-btn {
   border: none;
-  border-radius: 5px;
-  margin-top: 20px;
-  font-size: 20px;
+  outline: none;
   cursor: pointer;
+  padding: 12px 30px;
+  min-width: 150px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(#00A5A9), to(#284FA6));
+  background: linear-gradient(to right, #00A5A9, #284FA6);
+  border-radius: 12px;
+  /* 膠囊形狀圓角 */
+  -webkit-box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+          box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 40px auto 0;
 }
 
-section .theme-member .theme-member-tab .tab-box .tab-content .theme-content .login-box form button:hover {
-  opacity: .9;
+section .theme-member .theme-member-tab .tab-box .tab-content .theme-content .login-box form .login-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  /* 顏色變深 */
+  -webkit-box-shadow: 0 6px 20px rgba(0, 86, 179, 0.4);
+          box-shadow: 0 6px 20px rgba(0, 86, 179, 0.4);
+  /* 陰影變重 */
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  /* 輕微往上飄 */
+}
+
+section .theme-member .theme-member-tab .tab-box .tab-content .theme-content .login-box form .login-btn:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  /* 往下壓的感覺 */
+  -webkit-box-shadow: 0 2px 10px rgba(0, 86, 179, 0.3);
+          box-shadow: 0 2px 10px rgba(0, 86, 179, 0.3);
+}
+
+section .theme-member .theme-member-tab .tab-box .tab-content .theme-content .login-box form .login-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 section .theme-member .theme-member-tab .tab-box .tab-content .theme-content .member-option {
