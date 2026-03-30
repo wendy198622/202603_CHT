@@ -68,13 +68,14 @@ header{
             }
             li{
                 a{
-                    color: #fff;
+                    color: #fff !important;
                     font-size: 17px;
                     padding: 0 10px;
                     @media (max-width:960px){
                         width: 280px;
                         padding: 20px 10px;
                         text-align: center;
+                        color: $bg-color;
                     }
                 }
                 &:hover, &.active{
@@ -112,6 +113,7 @@ header{
                     width: 24px;
                     height: 3px;
                     margin: 5px 0;
+                    background: $bg-color;
                 }
             }
     
@@ -233,9 +235,9 @@ footer{
 section{
     width: 100%;
     overflow: hidden;
-    .container{
-        width: 90%;
-        max-width: 1360px;
+    form{
+        width: 96%;
+        max-width: 1080px;
         margin: 0 auto;
     }
     .slick-dotted.slick-slider{
@@ -789,11 +791,7 @@ section{
     .theme-smart{
         background: $bg-color;
         .theme-smart-tab{
-            padding: 100px 0;
-            @media (max-width:960px){
-                background-size: auto 100px;
-                padding: 60px 0;
-            }
+            padding: 60px 0;
             > h3{
                 background: $title-bg-color2;
                 // display: inline-block;
@@ -814,6 +812,115 @@ section{
                 }
             }
             .tab-box{
+                margin-top: 40px;
+                .tab-content{
+                    display: none;
+                }
+
+                #tab-option1:checked ~ .tab-content1,
+                #tab-option2:checked ~ .tab-content2,
+                #tab-option3:checked ~ .tab-content3,
+                #tab-option4:checked ~ .tab-content4,
+                #tab-option5:checked ~ .tab-content5,
+                #tab-option6:checked ~ .tab-content6,
+                #tab-option7:checked ~ .tab-content7,
+                #tab-option8:checked ~ .tab-content8,
+                #tab-option9:checked ~ .tab-content9 {
+                    display: block;
+                }
+
+                input[type="radio"]{
+                    display: none;
+                }
+                label{
+                    padding: 4px 32px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin: 10px 4px 0;
+                    display: inline-block;
+                    @media (max-width:800px){
+                        font-size: 18px;
+                        padding: 6px 8px;
+                        margin: 10px 4px 0;
+                    }
+                    &.tab-option1, &.tab-option3, &.tab-option5, &.tab-option7, &.tab-option9{                         
+                        border: 2px solid transparent;
+                        border-radius: 50px;
+                        background-image: linear-gradient($bg-color, $bg-color), $rainbow-linear-color1;
+                        background-origin: border-box;
+                        background-clip: padding-box, border-box;
+                        transition: all .3s;
+                        span {
+                            background: $rainbow-linear-color1;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            transition: all .3s;
+                        }
+                        &:hover{
+                            border: 2px solid $bg-color;
+                            background: $rainbow-linear-color1;
+                            span {
+                                background: none; 
+                                -webkit-text-fill-color: $bg-color;; 
+                                color: $bg-color;
+                            }
+                        }
+                    }
+                    &.tab-option2, &.tab-option4, &.tab-option6, &.tab-option8{
+                        border: 2px solid transparent;
+                        border-radius: 50px;
+                        background-image: linear-gradient($bg-color, $bg-color), $rainbow-linear-color2;
+                        background-origin: border-box;
+                        background-clip: padding-box, border-box;
+                        transition: all .3s;
+                        span {
+                            background: $rainbow-linear-color2;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            transition: all .3s;
+                        } 
+                        &:hover{
+                            border: 2px solid $bg-color;
+                            background: $rainbow-linear-color2;
+                            span {
+                                background: none; 
+                                -webkit-text-fill-color: $bg-color;; 
+                                color: $bg-color;
+                            }
+                        }
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+
+                }
+
+                #tab-option1:checked ~ .tab-option1,
+                #tab-option3:checked ~ .tab-option3,
+                #tab-option5:checked ~ .tab-option5,
+                #tab-option7:checked ~ .tab-option7,
+                #tab-option9:checked ~ .tab-option9{
+                    border: 2px solid $bg-color;
+                    background: $rainbow-linear-color1;
+                    span {
+                        background: none; 
+                        -webkit-text-fill-color: $bg-color;; 
+                        color: $bg-color;
+                    }
+                }
+
+                #tab-option2:checked ~ .tab-option2,
+                #tab-option4:checked ~ .tab-option4,
+                #tab-option6:checked ~ .tab-option6,
+                #tab-option8:checked ~ .tab-option8{
+                    border: 2px solid $bg-color;
+                    background: $rainbow-linear-color2;
+                    span {
+                        background: none; 
+                        -webkit-text-fill-color: $bg-color;; 
+                        color: $bg-color;
+                    }
+                }
 
                 .theme-content{
                     width: 100% !important;
@@ -1193,7 +1300,7 @@ section{
     .theme-5g{  
         background: $bg-color;
         .theme-5g-tab{
-            padding: 100px 0;
+            padding: 60px 0;
             @media (max-width:960px){
                 background-size: auto 100px;
                 padding: 60px 0;
@@ -1230,7 +1337,8 @@ section{
                 #tab-option5:checked ~ .tab-content5,
                 #tab-option6:checked ~ .tab-content6,
                 #tab-option7:checked ~ .tab-content7,
-                #tab-option8:checked ~ .tab-content8 {
+                #tab-option8:checked ~ .tab-content8,
+                #tab-option9:checked ~ .tab-content9 {
                     display: block;
                 }
 
@@ -1248,7 +1356,7 @@ section{
                         padding: 6px 8px;
                         margin: 10px 4px 0;
                     }
-                    &.tab-option1, &.tab-option3, &.tab-option5, &.tab-option7{                         
+                    &.tab-option1, &.tab-option3, &.tab-option5, &.tab-option7, &.tab-option9{                         
                         border: 2px solid transparent;
                         border-radius: 50px;
                         background-image: linear-gradient($bg-color, $bg-color), $rainbow-linear-color1;
@@ -1303,7 +1411,8 @@ section{
                 #tab-option1:checked ~ .tab-option1,
                 #tab-option3:checked ~ .tab-option3,
                 #tab-option5:checked ~ .tab-option5,
-                #tab-option7:checked ~ .tab-option7{
+                #tab-option7:checked ~ .tab-option7,
+                #tab-option9:checked ~ .tab-option9{
                     border: 2px solid $bg-color;
                     background: $rainbow-linear-color1;
                     span {
@@ -1339,7 +1448,8 @@ section{
                     &.tab-content1, &.tab-content2,
                     &.tab-content3, &.tab-content4,
                     &.tab-content5, &.tab-content6,
-                    &.tab-content7, &.tab-content8{
+                    &.tab-content7, &.tab-content8,
+                    &.tab-content9{
                         .theme-title, .theme-content{
                             display: inline-block;
                             width: auto;
@@ -1367,7 +1477,7 @@ section{
                     }
 
                     &.tab-content1, &.tab-content3, 
-                    &.tab-content5, &.tab-content7{
+                    &.tab-content5, &.tab-content7, &.tab-content9{
                         .theme-title, .theme-content{
                             background-image: linear-gradient($bg-color, $bg-color), $rainbow-linear-color1;
                         }
@@ -1896,8 +2006,8 @@ section{
 
     .theme-allround{
         background: $bg-color;
-        padding-bottom: 60px;
         .theme-smart-tab{
+            padding: 60px 0;
             > h3{
                 background: $title-bg-color2;
                 // display: inline-block;
@@ -1918,131 +2028,128 @@ section{
                 }
             }
             .tab-box{
-            //     margin-top: 40px;
-            //     .tab-content{
-            //         display: none;
-            //     }
+                margin-top: 40px;
+                .tab-content{
+                    display: none;
+                }
 
-            //     #tab-option1:checked ~ .tab-content1,
-            //     #tab-option2:checked ~ .tab-content2,
-            //     #tab-option3:checked ~ .tab-content3,
-            //     #tab-option4:checked ~ .tab-content4,
-            //     #tab-option5:checked ~ .tab-content5,
-            //     #tab-option6:checked ~ .tab-content6,
-            //     #tab-option7:checked ~ .tab-content7,
-            //     #tab-option8:checked ~ .tab-content8,
-            //     #tab-option9:checked ~ .tab-content9 {
-            //         display: block;
-            //     }
+                #tab-option1:checked ~ .tab-content1,
+                #tab-option2:checked ~ .tab-content2,
+                #tab-option3:checked ~ .tab-content3,
+                #tab-option4:checked ~ .tab-content4,
+                #tab-option5:checked ~ .tab-content5,
+                #tab-option6:checked ~ .tab-content6,
+                #tab-option7:checked ~ .tab-content7,
+                #tab-option8:checked ~ .tab-content8,
+                #tab-option9:checked ~ .tab-content9 {
+                    display: block;
+                }
 
-            //     input[type="radio"]{
-            //         display: none;
-            //     }
-            //     label{
-            //         padding: 4px 32px;
-            //         font-size: 20px;
-            //         font-weight: 500;
-            //         border-radius: 10px;
-            //         margin: 10px 4px 0;
-            //         display: inline-block;
-            //         @media (max-width:800px){
-            //             font-size: 18px;
-            //             padding: 6px 8px;
-            //             margin: 10px 4px 0;
-            //         }
-            //         &:hover{
-            //             cursor: pointer;
-            //         }
-
-            //     }
-
-            //     #tab-option1:checked ~ .tab-option1,
-            //     #tab-option2:checked ~ .tab-option2,
-            //     #tab-option3:checked ~ .tab-option3,
-            //     #tab-option4:checked ~ .tab-option4,
-            //     #tab-option5:checked ~ .tab-option5,
-            //     #tab-option6:checked ~ .tab-option6,
-            //     #tab-option7:checked ~ .tab-option7,
-            //     #tab-option8:checked ~ .tab-content8,
-            //     #tab-option9:checked ~ .tab-content9{
-            //         background: $linear-color;
-            //         color: #fff;
-            //         padding: 4px 32px;
-            //         position: relative;
-            //         display: inline-block;
-            //         border-radius: 40px;
-            //         outline: 4px solid rgba(255,255,255,.5);
-            //         a{
-            //             color: #fff;
-            //         }
-            //     }
-
-            //     .tab-content{
-            //         width: 90%;
-            //         max-width: 1080px;
-            //         margin: 0 auto;
-            //         margin-top: 40px;
-            //         padding: 120px 60px;
-            //         // background: rgba(225,225,225,1);
-            //         border-radius: 20px;
-            //         background: url(../img/intro_bg1.png) center top repeat-x,
-            //         url(../img/intro_bg2.png) center bottom repeat-x #fff;
-            //         background-size: contain;
-            //         @media (max-width:960px){
-            //             padding: 60px 20px;                        
-            //         }
-
-            //         .theme-title{
-            //             h3{
-            //                 text-align: center;
-            //                 // color: $secondery-color;
-            //             }
-            //         }
-
-                    .theme-content{
-                        h5{
-                            margin-top: 40px;
-                            color: #fff;
-                        }
-            //             h6{
-            //                 margin-top: 0px;
-            //             }
-                        p{
-                            margin-top: 20px;
-                            line-height: 1.8;
-                            color: #fff;
-                            text-align: center;
-                        }
-            //             ul.decimal{
-            //                 list-style-type: decimal;
-            //                 li{
-            //                     // color: #fff;
-            //                     text-align: justify;
-            //                     margin-top: 20px;
-            //                     margin-left: 20px;
-            //                     b{
-            //                         color: #fff;
-            //                     }
-            //                 }
-            //             }
-
-            //             .note{
-            //                 font-size: 13px;
-            //                 text-align: justify;
-            //                 background: #f4f5f6;
-            //                 padding: 20px;
-
-            //                 .disc{
-            //                     list-style-type: disc;
-            //                     li{
-            //                         text-align: justify;
-            //                         margin-left: 20px;
-            //                         font-size: 14px;
-            //                     }
-            //                 }
-            //             }
+                input[type="radio"]{
+                    display: none;
+                }
+                label{
+                    padding: 4px 32px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin: 10px 4px 0;
+                    display: inline-block;
+                    @media (max-width:800px){
+                        font-size: 18px;
+                        padding: 6px 8px;
+                        margin: 10px 4px 0;
                     }
-            //     }
+                    &.tab-option1, &.tab-option3, &.tab-option5, &.tab-option7, &.tab-option9{                         
+                        border: 2px solid transparent;
+                        border-radius: 50px;
+                        background-image: linear-gradient($bg-color, $bg-color), $rainbow-linear-color1;
+                        background-origin: border-box;
+                        background-clip: padding-box, border-box;
+                        transition: all .3s;
+                        span {
+                            background: $rainbow-linear-color1;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            transition: all .3s;
+                        }
+                        &:hover{
+                            border: 2px solid $bg-color;
+                            background: $rainbow-linear-color1;
+                            span {
+                                background: none; 
+                                -webkit-text-fill-color: $bg-color;; 
+                                color: $bg-color;
+                            }
+                        }
+                    }
+                    &.tab-option2, &.tab-option4, &.tab-option6, &.tab-option8{
+                        border: 2px solid transparent;
+                        border-radius: 50px;
+                        background-image: linear-gradient($bg-color, $bg-color), $rainbow-linear-color2;
+                        background-origin: border-box;
+                        background-clip: padding-box, border-box;
+                        transition: all .3s;
+                        span {
+                            background: $rainbow-linear-color2;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            transition: all .3s;
+                        } 
+                        &:hover{
+                            border: 2px solid $bg-color;
+                            background: $rainbow-linear-color2;
+                            span {
+                                background: none; 
+                                -webkit-text-fill-color: $bg-color;; 
+                                color: $bg-color;
+                            }
+                        }
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+
+                }
+
+                #tab-option1:checked ~ .tab-option1,
+                #tab-option3:checked ~ .tab-option3,
+                #tab-option5:checked ~ .tab-option5,
+                #tab-option7:checked ~ .tab-option7,
+                #tab-option9:checked ~ .tab-option9{
+                    border: 2px solid $bg-color;
+                    background: $rainbow-linear-color1;
+                    span {
+                        background: none; 
+                        -webkit-text-fill-color: $bg-color;; 
+                        color: $bg-color;
+                    }
+                }
+
+                #tab-option2:checked ~ .tab-option2,
+                #tab-option4:checked ~ .tab-option4,
+                #tab-option6:checked ~ .tab-option6,
+                #tab-option8:checked ~ .tab-option8{
+                    border: 2px solid $bg-color;
+                    background: $rainbow-linear-color2;
+                    span {
+                        background: none; 
+                        -webkit-text-fill-color: $bg-color;; 
+                        color: $bg-color;
+                    }
+                }
+                
+                .theme-content{
+                    h5{
+                        margin-top: 40px;
+                        color: #fff;
+                    }
+                    p{
+                        margin-top: 20px;
+                        line-height: 1.8;
+                        color: #fff;
+                        text-align: center;
+                    }
+                }
             }
         }
 
@@ -2172,16 +2279,9 @@ section{
     }
 
     .theme-media{
-        background: $secondery-color;
-        // background: #fff;
+        background: $bg-color;
         .theme-media-tab{
-            background: url(../img/news_bg1.png) center top no-repeat;
-            background-size: contain;
-            padding: 100px 0;
-            @media (max-width:960px){
-                background-size: auto 100px;
-                padding: 60px 0;
-            }
+            padding: 60px 0;
             > h3{
                 background: $title-bg-color2;
                 // display: inline-block;
@@ -2349,13 +2449,9 @@ section{
     }
 
     .theme-member{
-        background: $secondery-color;
-        // background: #fff;
+        background: $bg-color;
         .theme-member-tab{
-            @media (max-width:960px){
-                background-size: auto 100px;
-                padding: 60px 0;
-            }
+            padding: 60px 0;
             > h3{
                 background: $title-bg-color2;
                 // display: inline-block;
@@ -2503,16 +2599,9 @@ section{
     }
 
     .theme-register{
-        background: $secondery-color;
-        // background: #fff;
+        background: $bg-color;
         .theme-register-tab{
-            background: url(../img/news_bg1.png) center top no-repeat;
-            background-size: contain;
-            padding: 100px 0;
-            @media (max-width:960px){
-                background-size: auto 100px;
-                padding: 60px 0;
-            }
+            padding: 60px 0;
             > h3{
                 background: $title-bg-color2;
                 // display: inline-block;
@@ -2670,7 +2759,7 @@ section{
     .theme-event{
         background: $bg-color;
         .theme-event-tab{
-            
+            padding: 60px 0;            
             > h3{
                 background: $title-bg-color2;
                 // display: inline-block;
@@ -2692,12 +2781,112 @@ section{
             }
             .tab-box{
                 margin-top: 40px;
-                .event-note{
-                    text-align: center;
-                    font-size: 14px;
-                    color: #5b5b5b;
+                .tab-content{
+                    display: none;
+                }
+
+                #tab-option1:checked ~ .tab-content1,
+                #tab-option2:checked ~ .tab-content2,
+                #tab-option3:checked ~ .tab-content3,
+                #tab-option4:checked ~ .tab-content4,
+                #tab-option5:checked ~ .tab-content5,
+                #tab-option6:checked ~ .tab-content6,
+                #tab-option7:checked ~ .tab-content7,
+                #tab-option8:checked ~ .tab-content8,
+                #tab-option9:checked ~ .tab-content9 {
+                    display: block;
+                }
+
+                input[type="radio"]{
+                    display: none;
+                }
+                label{
+                    padding: 4px 32px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin: 10px 4px 0;
+                    display: inline-block;
                     @media (max-width:800px){
-                        padding: 0 10px;
+                        font-size: 18px;
+                        padding: 6px 8px;
+                        margin: 10px 4px 0;
+                    }
+                    &.tab-option1, &.tab-option3, &.tab-option5, &.tab-option7, &.tab-option9{                         
+                        border: 2px solid transparent;
+                        border-radius: 50px;
+                        background-image: linear-gradient($bg-color, $bg-color), $rainbow-linear-color1;
+                        background-origin: border-box;
+                        background-clip: padding-box, border-box;
+                        transition: all .3s;
+                        span {
+                            background: $rainbow-linear-color1;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            transition: all .3s;
+                        }
+                        &:hover{
+                            border: 2px solid $bg-color;
+                            background: $rainbow-linear-color1;
+                            span {
+                                background: none; 
+                                -webkit-text-fill-color: $bg-color;; 
+                                color: $bg-color;
+                            }
+                        }
+                    }
+                    &.tab-option2, &.tab-option4, &.tab-option6, &.tab-option8{
+                        border: 2px solid transparent;
+                        border-radius: 50px;
+                        background-image: linear-gradient($bg-color, $bg-color), $rainbow-linear-color2;
+                        background-origin: border-box;
+                        background-clip: padding-box, border-box;
+                        transition: all .3s;
+                        span {
+                            background: $rainbow-linear-color2;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            transition: all .3s;
+                        } 
+                        &:hover{
+                            border: 2px solid $bg-color;
+                            background: $rainbow-linear-color2;
+                            span {
+                                background: none; 
+                                -webkit-text-fill-color: $bg-color;; 
+                                color: $bg-color;
+                            }
+                        }
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+
+                }
+
+                #tab-option1:checked ~ .tab-option1,
+                #tab-option3:checked ~ .tab-option3,
+                #tab-option5:checked ~ .tab-option5,
+                #tab-option7:checked ~ .tab-option7,
+                #tab-option9:checked ~ .tab-option9{
+                    border: 2px solid $bg-color;
+                    background: $rainbow-linear-color1;
+                    span {
+                        background: none; 
+                        -webkit-text-fill-color: $bg-color;; 
+                        color: $bg-color;
+                    }
+                }
+
+                #tab-option2:checked ~ .tab-option2,
+                #tab-option4:checked ~ .tab-option4,
+                #tab-option6:checked ~ .tab-option6,
+                #tab-option8:checked ~ .tab-option8{
+                    border: 2px solid $bg-color;
+                    background: $rainbow-linear-color2;
+                    span {
+                        background: none; 
+                        -webkit-text-fill-color: $bg-color;; 
+                        color: $bg-color;
                     }
                 }
 

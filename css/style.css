@@ -51,6 +51,7 @@ a, a:hover, a:active, a:visited {
   -webkit-transition: all .3s;
   transition: all .3s;
   outline: 0;
+  color: #78caef;
 }
 
 img {
@@ -382,7 +383,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  color: #fff;
+  color: #fff !important;
   font-size: 17px;
   padding: 0 10px;
 }
@@ -392,6 +393,7 @@ header nav ul li a {
     width: 280px;
     padding: 20px 10px;
     text-align: center;
+    color: #05022E;
   }
 }
 
@@ -435,6 +437,7 @@ header #menu-toggle span {
     width: 24px;
     height: 3px;
     margin: 5px 0;
+    background: #05022E;
   }
 }
 
@@ -617,9 +620,9 @@ section {
   overflow: hidden;
 }
 
-section .container {
-  width: 90%;
-  max-width: 1360px;
+section form {
+  width: 96%;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -1316,14 +1319,7 @@ section .theme-smart {
 }
 
 section .theme-smart .theme-smart-tab {
-  padding: 100px 0;
-}
-
-@media (max-width: 960px) {
-  section .theme-smart .theme-smart-tab {
-    background-size: auto 100px;
-    padding: 60px 0;
-  }
+  padding: 60px 0;
 }
 
 section .theme-smart .theme-smart-tab > h3 {
@@ -1349,6 +1345,152 @@ section .theme-smart .theme-smart-tab > h3 span {
   display: inline-block;
   padding: 4px 20px;
   color: #fff;
+}
+
+section .theme-smart .theme-smart-tab .tab-box {
+  margin-top: 40px;
+}
+
+section .theme-smart .theme-smart-tab .tab-box .tab-content {
+  display: none;
+}
+
+section .theme-smart .theme-smart-tab .tab-box #tab-option1:checked ~ .tab-content1,
+section .theme-smart .theme-smart-tab .tab-box #tab-option2:checked ~ .tab-content2,
+section .theme-smart .theme-smart-tab .tab-box #tab-option3:checked ~ .tab-content3,
+section .theme-smart .theme-smart-tab .tab-box #tab-option4:checked ~ .tab-content4,
+section .theme-smart .theme-smart-tab .tab-box #tab-option5:checked ~ .tab-content5,
+section .theme-smart .theme-smart-tab .tab-box #tab-option6:checked ~ .tab-content6,
+section .theme-smart .theme-smart-tab .tab-box #tab-option7:checked ~ .tab-content7,
+section .theme-smart .theme-smart-tab .tab-box #tab-option8:checked ~ .tab-content8,
+section .theme-smart .theme-smart-tab .tab-box #tab-option9:checked ~ .tab-content9 {
+  display: block;
+}
+
+section .theme-smart .theme-smart-tab .tab-box input[type="radio"] {
+  display: none;
+}
+
+section .theme-smart .theme-smart-tab .tab-box label {
+  padding: 4px 32px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 4px 0;
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  section .theme-smart .theme-smart-tab .tab-box label {
+    font-size: 18px;
+    padding: 6px 8px;
+    margin: 10px 4px 0;
+  }
+}
+
+section .theme-smart .theme-smart-tab .tab-box label.tab-option1, section .theme-smart .theme-smart-tab .tab-box label.tab-option3, section .theme-smart .theme-smart-tab .tab-box label.tab-option5, section .theme-smart .theme-smart-tab .tab-box label.tab-option7, section .theme-smart .theme-smart-tab .tab-box label.tab-option9 {
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#05022E), to(#05022E)), -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
+  background-image: linear-gradient(#05022E, #05022E), linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section .theme-smart .theme-smart-tab .tab-box label.tab-option1 span, section .theme-smart .theme-smart-tab .tab-box label.tab-option3 span, section .theme-smart .theme-smart-tab .tab-box label.tab-option5 span, section .theme-smart .theme-smart-tab .tab-box label.tab-option7 span, section .theme-smart .theme-smart-tab .tab-box label.tab-option9 span {
+  background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
+  background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section .theme-smart .theme-smart-tab .tab-box label.tab-option1:hover, section .theme-smart .theme-smart-tab .tab-box label.tab-option3:hover, section .theme-smart .theme-smart-tab .tab-box label.tab-option5:hover, section .theme-smart .theme-smart-tab .tab-box label.tab-option7:hover, section .theme-smart .theme-smart-tab .tab-box label.tab-option9:hover {
+  border: 2px solid #05022E;
+  background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
+  background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
+}
+
+section .theme-smart .theme-smart-tab .tab-box label.tab-option1:hover span, section .theme-smart .theme-smart-tab .tab-box label.tab-option3:hover span, section .theme-smart .theme-smart-tab .tab-box label.tab-option5:hover span, section .theme-smart .theme-smart-tab .tab-box label.tab-option7:hover span, section .theme-smart .theme-smart-tab .tab-box label.tab-option9:hover span {
+  background: none;
+  -webkit-text-fill-color: #05022E;
+  color: #05022E;
+}
+
+section .theme-smart .theme-smart-tab .tab-box label.tab-option2, section .theme-smart .theme-smart-tab .tab-box label.tab-option4, section .theme-smart .theme-smart-tab .tab-box label.tab-option6, section .theme-smart .theme-smart-tab .tab-box label.tab-option8 {
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#05022E), to(#05022E)), -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
+  background-image: linear-gradient(#05022E, #05022E), linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section .theme-smart .theme-smart-tab .tab-box label.tab-option2 span, section .theme-smart .theme-smart-tab .tab-box label.tab-option4 span, section .theme-smart .theme-smart-tab .tab-box label.tab-option6 span, section .theme-smart .theme-smart-tab .tab-box label.tab-option8 span {
+  background: -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
+  background: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section .theme-smart .theme-smart-tab .tab-box label.tab-option2:hover, section .theme-smart .theme-smart-tab .tab-box label.tab-option4:hover, section .theme-smart .theme-smart-tab .tab-box label.tab-option6:hover, section .theme-smart .theme-smart-tab .tab-box label.tab-option8:hover {
+  border: 2px solid #05022E;
+  background: -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
+  background: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
+}
+
+section .theme-smart .theme-smart-tab .tab-box label.tab-option2:hover span, section .theme-smart .theme-smart-tab .tab-box label.tab-option4:hover span, section .theme-smart .theme-smart-tab .tab-box label.tab-option6:hover span, section .theme-smart .theme-smart-tab .tab-box label.tab-option8:hover span {
+  background: none;
+  -webkit-text-fill-color: #05022E;
+  color: #05022E;
+}
+
+section .theme-smart .theme-smart-tab .tab-box label:hover {
+  cursor: pointer;
+}
+
+section .theme-smart .theme-smart-tab .tab-box #tab-option1:checked ~ .tab-option1,
+section .theme-smart .theme-smart-tab .tab-box #tab-option3:checked ~ .tab-option3,
+section .theme-smart .theme-smart-tab .tab-box #tab-option5:checked ~ .tab-option5,
+section .theme-smart .theme-smart-tab .tab-box #tab-option7:checked ~ .tab-option7,
+section .theme-smart .theme-smart-tab .tab-box #tab-option9:checked ~ .tab-option9 {
+  border: 2px solid #05022E;
+  background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
+  background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
+}
+
+section .theme-smart .theme-smart-tab .tab-box #tab-option1:checked ~ .tab-option1 span,
+section .theme-smart .theme-smart-tab .tab-box #tab-option3:checked ~ .tab-option3 span,
+section .theme-smart .theme-smart-tab .tab-box #tab-option5:checked ~ .tab-option5 span,
+section .theme-smart .theme-smart-tab .tab-box #tab-option7:checked ~ .tab-option7 span,
+section .theme-smart .theme-smart-tab .tab-box #tab-option9:checked ~ .tab-option9 span {
+  background: none;
+  -webkit-text-fill-color: #05022E;
+  color: #05022E;
+}
+
+section .theme-smart .theme-smart-tab .tab-box #tab-option2:checked ~ .tab-option2,
+section .theme-smart .theme-smart-tab .tab-box #tab-option4:checked ~ .tab-option4,
+section .theme-smart .theme-smart-tab .tab-box #tab-option6:checked ~ .tab-option6,
+section .theme-smart .theme-smart-tab .tab-box #tab-option8:checked ~ .tab-option8 {
+  border: 2px solid #05022E;
+  background: -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
+  background: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
+}
+
+section .theme-smart .theme-smart-tab .tab-box #tab-option2:checked ~ .tab-option2 span,
+section .theme-smart .theme-smart-tab .tab-box #tab-option4:checked ~ .tab-option4 span,
+section .theme-smart .theme-smart-tab .tab-box #tab-option6:checked ~ .tab-option6 span,
+section .theme-smart .theme-smart-tab .tab-box #tab-option8:checked ~ .tab-option8 span {
+  background: none;
+  -webkit-text-fill-color: #05022E;
+  color: #05022E;
 }
 
 section .theme-smart .theme-smart-tab .tab-box .theme-content {
@@ -1828,7 +1970,7 @@ section .theme-5g {
 }
 
 section .theme-5g .theme-5g-tab {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 @media (max-width: 960px) {
@@ -1878,7 +2020,8 @@ section .theme-5g .theme-5g-tab .tab-box #tab-option4:checked ~ .tab-content4,
 section .theme-5g .theme-5g-tab .tab-box #tab-option5:checked ~ .tab-content5,
 section .theme-5g .theme-5g-tab .tab-box #tab-option6:checked ~ .tab-content6,
 section .theme-5g .theme-5g-tab .tab-box #tab-option7:checked ~ .tab-content7,
-section .theme-5g .theme-5g-tab .tab-box #tab-option8:checked ~ .tab-content8 {
+section .theme-5g .theme-5g-tab .tab-box #tab-option8:checked ~ .tab-content8,
+section .theme-5g .theme-5g-tab .tab-box #tab-option9:checked ~ .tab-content9 {
   display: block;
 }
 
@@ -1902,7 +2045,7 @@ section .theme-5g .theme-5g-tab .tab-box label {
   }
 }
 
-section .theme-5g .theme-5g-tab .tab-box label.tab-option1, section .theme-5g .theme-5g-tab .tab-box label.tab-option3, section .theme-5g .theme-5g-tab .tab-box label.tab-option5, section .theme-5g .theme-5g-tab .tab-box label.tab-option7 {
+section .theme-5g .theme-5g-tab .tab-box label.tab-option1, section .theme-5g .theme-5g-tab .tab-box label.tab-option3, section .theme-5g .theme-5g-tab .tab-box label.tab-option5, section .theme-5g .theme-5g-tab .tab-box label.tab-option7, section .theme-5g .theme-5g-tab .tab-box label.tab-option9 {
   border: 2px solid transparent;
   border-radius: 50px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#05022E), to(#05022E)), -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
@@ -1913,7 +2056,7 @@ section .theme-5g .theme-5g-tab .tab-box label.tab-option1, section .theme-5g .t
   transition: all .3s;
 }
 
-section .theme-5g .theme-5g-tab .tab-box label.tab-option1 span, section .theme-5g .theme-5g-tab .tab-box label.tab-option3 span, section .theme-5g .theme-5g-tab .tab-box label.tab-option5 span, section .theme-5g .theme-5g-tab .tab-box label.tab-option7 span {
+section .theme-5g .theme-5g-tab .tab-box label.tab-option1 span, section .theme-5g .theme-5g-tab .tab-box label.tab-option3 span, section .theme-5g .theme-5g-tab .tab-box label.tab-option5 span, section .theme-5g .theme-5g-tab .tab-box label.tab-option7 span, section .theme-5g .theme-5g-tab .tab-box label.tab-option9 span {
   background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
   background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
   -webkit-background-clip: text;
@@ -1922,13 +2065,13 @@ section .theme-5g .theme-5g-tab .tab-box label.tab-option1 span, section .theme-
   transition: all .3s;
 }
 
-section .theme-5g .theme-5g-tab .tab-box label.tab-option1:hover, section .theme-5g .theme-5g-tab .tab-box label.tab-option3:hover, section .theme-5g .theme-5g-tab .tab-box label.tab-option5:hover, section .theme-5g .theme-5g-tab .tab-box label.tab-option7:hover {
+section .theme-5g .theme-5g-tab .tab-box label.tab-option1:hover, section .theme-5g .theme-5g-tab .tab-box label.tab-option3:hover, section .theme-5g .theme-5g-tab .tab-box label.tab-option5:hover, section .theme-5g .theme-5g-tab .tab-box label.tab-option7:hover, section .theme-5g .theme-5g-tab .tab-box label.tab-option9:hover {
   border: 2px solid #05022E;
   background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
   background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
 }
 
-section .theme-5g .theme-5g-tab .tab-box label.tab-option1:hover span, section .theme-5g .theme-5g-tab .tab-box label.tab-option3:hover span, section .theme-5g .theme-5g-tab .tab-box label.tab-option5:hover span, section .theme-5g .theme-5g-tab .tab-box label.tab-option7:hover span {
+section .theme-5g .theme-5g-tab .tab-box label.tab-option1:hover span, section .theme-5g .theme-5g-tab .tab-box label.tab-option3:hover span, section .theme-5g .theme-5g-tab .tab-box label.tab-option5:hover span, section .theme-5g .theme-5g-tab .tab-box label.tab-option7:hover span, section .theme-5g .theme-5g-tab .tab-box label.tab-option9:hover span {
   background: none;
   -webkit-text-fill-color: #05022E;
   color: #05022E;
@@ -1973,7 +2116,8 @@ section .theme-5g .theme-5g-tab .tab-box label:hover {
 section .theme-5g .theme-5g-tab .tab-box #tab-option1:checked ~ .tab-option1,
 section .theme-5g .theme-5g-tab .tab-box #tab-option3:checked ~ .tab-option3,
 section .theme-5g .theme-5g-tab .tab-box #tab-option5:checked ~ .tab-option5,
-section .theme-5g .theme-5g-tab .tab-box #tab-option7:checked ~ .tab-option7 {
+section .theme-5g .theme-5g-tab .tab-box #tab-option7:checked ~ .tab-option7,
+section .theme-5g .theme-5g-tab .tab-box #tab-option9:checked ~ .tab-option9 {
   border: 2px solid #05022E;
   background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
   background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
@@ -1982,7 +2126,8 @@ section .theme-5g .theme-5g-tab .tab-box #tab-option7:checked ~ .tab-option7 {
 section .theme-5g .theme-5g-tab .tab-box #tab-option1:checked ~ .tab-option1 span,
 section .theme-5g .theme-5g-tab .tab-box #tab-option3:checked ~ .tab-option3 span,
 section .theme-5g .theme-5g-tab .tab-box #tab-option5:checked ~ .tab-option5 span,
-section .theme-5g .theme-5g-tab .tab-box #tab-option7:checked ~ .tab-option7 span {
+section .theme-5g .theme-5g-tab .tab-box #tab-option7:checked ~ .tab-option7 span,
+section .theme-5g .theme-5g-tab .tab-box #tab-option9:checked ~ .tab-option9 span {
   background: none;
   -webkit-text-fill-color: #05022E;
   color: #05022E;
@@ -2020,7 +2165,7 @@ section .theme-5g .theme-5g-tab .tab-box .tab-content {
   }
 }
 
-section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content2 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content2 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content4 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content4 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content6 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content6 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content8 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content8 .theme-content {
+section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content2 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content2 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content4 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content4 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content6 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content6 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content8 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content8 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content9 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content9 .theme-content {
   display: inline-block;
   width: auto;
   padding: 0 40px 2px;
@@ -2031,29 +2176,29 @@ section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-title,
   z-index: 2;
 }
 
-section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content2 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content4 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content6 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content8 h3 {
+section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content2 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content4 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content6 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content8 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content9 h3 {
   text-align: center;
   -webkit-text-fill-color: transparent;
 }
 
-section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content2 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content4 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content6 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content8 .theme-title {
+section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content2 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content4 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content6 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content8 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content9 .theme-title {
   margin-top: 40px;
   border-radius: 60px;
 }
 
-section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content2 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content4 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content6 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content8 .theme-content {
+section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content2 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content4 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content6 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content8 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content9 .theme-content {
   margin-top: -26px;
   z-index: 1;
   padding: 60px 60px 40px;
   border-radius: 24px;
 }
 
-section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 .theme-content {
+section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content9 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content9 .theme-content {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#05022E), to(#05022E)), -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
   background-image: linear-gradient(#05022E, #05022E), linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
 }
 
-section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 h3 {
+section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 h3, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content9 h3 {
   background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
   background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
   -webkit-background-clip: text;
@@ -2698,7 +2843,10 @@ section .theme-5g .theme-5g-tab .tab-box .tab-content .theme-content ul.topic_li
 
 section .theme-allround {
   background: #05022E;
-  padding-bottom: 60px;
+}
+
+section .theme-allround .theme-smart-tab {
+  padding: 60px 0;
 }
 
 section .theme-allround .theme-smart-tab > h3 {
@@ -2724,6 +2872,152 @@ section .theme-allround .theme-smart-tab > h3 span {
   display: inline-block;
   padding: 4px 20px;
   color: #fff;
+}
+
+section .theme-allround .theme-smart-tab .tab-box {
+  margin-top: 40px;
+}
+
+section .theme-allround .theme-smart-tab .tab-box .tab-content {
+  display: none;
+}
+
+section .theme-allround .theme-smart-tab .tab-box #tab-option1:checked ~ .tab-content1,
+section .theme-allround .theme-smart-tab .tab-box #tab-option2:checked ~ .tab-content2,
+section .theme-allround .theme-smart-tab .tab-box #tab-option3:checked ~ .tab-content3,
+section .theme-allround .theme-smart-tab .tab-box #tab-option4:checked ~ .tab-content4,
+section .theme-allround .theme-smart-tab .tab-box #tab-option5:checked ~ .tab-content5,
+section .theme-allround .theme-smart-tab .tab-box #tab-option6:checked ~ .tab-content6,
+section .theme-allround .theme-smart-tab .tab-box #tab-option7:checked ~ .tab-content7,
+section .theme-allround .theme-smart-tab .tab-box #tab-option8:checked ~ .tab-content8,
+section .theme-allround .theme-smart-tab .tab-box #tab-option9:checked ~ .tab-content9 {
+  display: block;
+}
+
+section .theme-allround .theme-smart-tab .tab-box input[type="radio"] {
+  display: none;
+}
+
+section .theme-allround .theme-smart-tab .tab-box label {
+  padding: 4px 32px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 4px 0;
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  section .theme-allround .theme-smart-tab .tab-box label {
+    font-size: 18px;
+    padding: 6px 8px;
+    margin: 10px 4px 0;
+  }
+}
+
+section .theme-allround .theme-smart-tab .tab-box label.tab-option1, section .theme-allround .theme-smart-tab .tab-box label.tab-option3, section .theme-allround .theme-smart-tab .tab-box label.tab-option5, section .theme-allround .theme-smart-tab .tab-box label.tab-option7, section .theme-allround .theme-smart-tab .tab-box label.tab-option9 {
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#05022E), to(#05022E)), -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
+  background-image: linear-gradient(#05022E, #05022E), linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section .theme-allround .theme-smart-tab .tab-box label.tab-option1 span, section .theme-allround .theme-smart-tab .tab-box label.tab-option3 span, section .theme-allround .theme-smart-tab .tab-box label.tab-option5 span, section .theme-allround .theme-smart-tab .tab-box label.tab-option7 span, section .theme-allround .theme-smart-tab .tab-box label.tab-option9 span {
+  background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
+  background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section .theme-allround .theme-smart-tab .tab-box label.tab-option1:hover, section .theme-allround .theme-smart-tab .tab-box label.tab-option3:hover, section .theme-allround .theme-smart-tab .tab-box label.tab-option5:hover, section .theme-allround .theme-smart-tab .tab-box label.tab-option7:hover, section .theme-allround .theme-smart-tab .tab-box label.tab-option9:hover {
+  border: 2px solid #05022E;
+  background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
+  background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
+}
+
+section .theme-allround .theme-smart-tab .tab-box label.tab-option1:hover span, section .theme-allround .theme-smart-tab .tab-box label.tab-option3:hover span, section .theme-allround .theme-smart-tab .tab-box label.tab-option5:hover span, section .theme-allround .theme-smart-tab .tab-box label.tab-option7:hover span, section .theme-allround .theme-smart-tab .tab-box label.tab-option9:hover span {
+  background: none;
+  -webkit-text-fill-color: #05022E;
+  color: #05022E;
+}
+
+section .theme-allround .theme-smart-tab .tab-box label.tab-option2, section .theme-allround .theme-smart-tab .tab-box label.tab-option4, section .theme-allround .theme-smart-tab .tab-box label.tab-option6, section .theme-allround .theme-smart-tab .tab-box label.tab-option8 {
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#05022E), to(#05022E)), -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
+  background-image: linear-gradient(#05022E, #05022E), linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section .theme-allround .theme-smart-tab .tab-box label.tab-option2 span, section .theme-allround .theme-smart-tab .tab-box label.tab-option4 span, section .theme-allround .theme-smart-tab .tab-box label.tab-option6 span, section .theme-allround .theme-smart-tab .tab-box label.tab-option8 span {
+  background: -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
+  background: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section .theme-allround .theme-smart-tab .tab-box label.tab-option2:hover, section .theme-allround .theme-smart-tab .tab-box label.tab-option4:hover, section .theme-allround .theme-smart-tab .tab-box label.tab-option6:hover, section .theme-allround .theme-smart-tab .tab-box label.tab-option8:hover {
+  border: 2px solid #05022E;
+  background: -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
+  background: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
+}
+
+section .theme-allround .theme-smart-tab .tab-box label.tab-option2:hover span, section .theme-allround .theme-smart-tab .tab-box label.tab-option4:hover span, section .theme-allround .theme-smart-tab .tab-box label.tab-option6:hover span, section .theme-allround .theme-smart-tab .tab-box label.tab-option8:hover span {
+  background: none;
+  -webkit-text-fill-color: #05022E;
+  color: #05022E;
+}
+
+section .theme-allround .theme-smart-tab .tab-box label:hover {
+  cursor: pointer;
+}
+
+section .theme-allround .theme-smart-tab .tab-box #tab-option1:checked ~ .tab-option1,
+section .theme-allround .theme-smart-tab .tab-box #tab-option3:checked ~ .tab-option3,
+section .theme-allround .theme-smart-tab .tab-box #tab-option5:checked ~ .tab-option5,
+section .theme-allround .theme-smart-tab .tab-box #tab-option7:checked ~ .tab-option7,
+section .theme-allround .theme-smart-tab .tab-box #tab-option9:checked ~ .tab-option9 {
+  border: 2px solid #05022E;
+  background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
+  background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
+}
+
+section .theme-allround .theme-smart-tab .tab-box #tab-option1:checked ~ .tab-option1 span,
+section .theme-allround .theme-smart-tab .tab-box #tab-option3:checked ~ .tab-option3 span,
+section .theme-allround .theme-smart-tab .tab-box #tab-option5:checked ~ .tab-option5 span,
+section .theme-allround .theme-smart-tab .tab-box #tab-option7:checked ~ .tab-option7 span,
+section .theme-allround .theme-smart-tab .tab-box #tab-option9:checked ~ .tab-option9 span {
+  background: none;
+  -webkit-text-fill-color: #05022E;
+  color: #05022E;
+}
+
+section .theme-allround .theme-smart-tab .tab-box #tab-option2:checked ~ .tab-option2,
+section .theme-allround .theme-smart-tab .tab-box #tab-option4:checked ~ .tab-option4,
+section .theme-allround .theme-smart-tab .tab-box #tab-option6:checked ~ .tab-option6,
+section .theme-allround .theme-smart-tab .tab-box #tab-option8:checked ~ .tab-option8 {
+  border: 2px solid #05022E;
+  background: -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
+  background: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
+}
+
+section .theme-allround .theme-smart-tab .tab-box #tab-option2:checked ~ .tab-option2 span,
+section .theme-allround .theme-smart-tab .tab-box #tab-option4:checked ~ .tab-option4 span,
+section .theme-allround .theme-smart-tab .tab-box #tab-option6:checked ~ .tab-option6 span,
+section .theme-allround .theme-smart-tab .tab-box #tab-option8:checked ~ .tab-option8 span {
+  background: none;
+  -webkit-text-fill-color: #05022E;
+  color: #05022E;
 }
 
 section .theme-allround .theme-smart-tab .tab-box .theme-content h5 {
@@ -2878,20 +3172,11 @@ section .theme-result .theme-result-tab .tab-box .tab-content .theme-content .ta
 }
 
 section .theme-media {
-  background: #191816;
+  background: #05022E;
 }
 
 section .theme-media .theme-media-tab {
-  background: url(../img/news_bg1.png) center top no-repeat;
-  background-size: contain;
-  padding: 100px 0;
-}
-
-@media (max-width: 960px) {
-  section .theme-media .theme-media-tab {
-    background-size: auto 100px;
-    padding: 60px 0;
-  }
+  padding: 60px 0;
 }
 
 section .theme-media .theme-media-tab > h3 {
@@ -3080,14 +3365,11 @@ section .theme-media .theme-media-tab .tab-box .tab-content-inner {
 }
 
 section .theme-member {
-  background: #191816;
+  background: #05022E;
 }
 
-@media (max-width: 960px) {
-  section .theme-member .theme-member-tab {
-    background-size: auto 100px;
-    padding: 60px 0;
-  }
+section .theme-member .theme-member-tab {
+  padding: 60px 0;
 }
 
 section .theme-member .theme-member-tab > h3 {
@@ -3259,20 +3541,11 @@ section .theme-member .theme-member-tab .tab-box .tab-content .theme-content .me
 }
 
 section .theme-register {
-  background: #191816;
+  background: #05022E;
 }
 
 section .theme-register .theme-register-tab {
-  background: url(../img/news_bg1.png) center top no-repeat;
-  background-size: contain;
-  padding: 100px 0;
-}
-
-@media (max-width: 960px) {
-  section .theme-register .theme-register-tab {
-    background-size: auto 100px;
-    padding: 60px 0;
-  }
+  padding: 60px 0;
 }
 
 section .theme-register .theme-register-tab > h3 {
@@ -3457,6 +3730,10 @@ section .theme-event {
   background: #05022E;
 }
 
+section .theme-event .theme-event-tab {
+  padding: 60px 0;
+}
+
 section .theme-event .theme-event-tab > h3 {
   background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#2886B3), to(transparent));
   background: linear-gradient(to right, transparent, #2886B3, transparent);
@@ -3486,16 +3763,146 @@ section .theme-event .theme-event-tab .tab-box {
   margin-top: 40px;
 }
 
-section .theme-event .theme-event-tab .tab-box .event-note {
-  text-align: center;
-  font-size: 14px;
-  color: #5b5b5b;
+section .theme-event .theme-event-tab .tab-box .tab-content {
+  display: none;
+}
+
+section .theme-event .theme-event-tab .tab-box #tab-option1:checked ~ .tab-content1,
+section .theme-event .theme-event-tab .tab-box #tab-option2:checked ~ .tab-content2,
+section .theme-event .theme-event-tab .tab-box #tab-option3:checked ~ .tab-content3,
+section .theme-event .theme-event-tab .tab-box #tab-option4:checked ~ .tab-content4,
+section .theme-event .theme-event-tab .tab-box #tab-option5:checked ~ .tab-content5,
+section .theme-event .theme-event-tab .tab-box #tab-option6:checked ~ .tab-content6,
+section .theme-event .theme-event-tab .tab-box #tab-option7:checked ~ .tab-content7,
+section .theme-event .theme-event-tab .tab-box #tab-option8:checked ~ .tab-content8,
+section .theme-event .theme-event-tab .tab-box #tab-option9:checked ~ .tab-content9 {
+  display: block;
+}
+
+section .theme-event .theme-event-tab .tab-box input[type="radio"] {
+  display: none;
+}
+
+section .theme-event .theme-event-tab .tab-box label {
+  padding: 4px 32px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 4px 0;
+  display: inline-block;
 }
 
 @media (max-width: 800px) {
-  section .theme-event .theme-event-tab .tab-box .event-note {
-    padding: 0 10px;
+  section .theme-event .theme-event-tab .tab-box label {
+    font-size: 18px;
+    padding: 6px 8px;
+    margin: 10px 4px 0;
   }
+}
+
+section .theme-event .theme-event-tab .tab-box label.tab-option1, section .theme-event .theme-event-tab .tab-box label.tab-option3, section .theme-event .theme-event-tab .tab-box label.tab-option5, section .theme-event .theme-event-tab .tab-box label.tab-option7, section .theme-event .theme-event-tab .tab-box label.tab-option9 {
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#05022E), to(#05022E)), -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
+  background-image: linear-gradient(#05022E, #05022E), linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section .theme-event .theme-event-tab .tab-box label.tab-option1 span, section .theme-event .theme-event-tab .tab-box label.tab-option3 span, section .theme-event .theme-event-tab .tab-box label.tab-option5 span, section .theme-event .theme-event-tab .tab-box label.tab-option7 span, section .theme-event .theme-event-tab .tab-box label.tab-option9 span {
+  background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
+  background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section .theme-event .theme-event-tab .tab-box label.tab-option1:hover, section .theme-event .theme-event-tab .tab-box label.tab-option3:hover, section .theme-event .theme-event-tab .tab-box label.tab-option5:hover, section .theme-event .theme-event-tab .tab-box label.tab-option7:hover, section .theme-event .theme-event-tab .tab-box label.tab-option9:hover {
+  border: 2px solid #05022E;
+  background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
+  background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
+}
+
+section .theme-event .theme-event-tab .tab-box label.tab-option1:hover span, section .theme-event .theme-event-tab .tab-box label.tab-option3:hover span, section .theme-event .theme-event-tab .tab-box label.tab-option5:hover span, section .theme-event .theme-event-tab .tab-box label.tab-option7:hover span, section .theme-event .theme-event-tab .tab-box label.tab-option9:hover span {
+  background: none;
+  -webkit-text-fill-color: #05022E;
+  color: #05022E;
+}
+
+section .theme-event .theme-event-tab .tab-box label.tab-option2, section .theme-event .theme-event-tab .tab-box label.tab-option4, section .theme-event .theme-event-tab .tab-box label.tab-option6, section .theme-event .theme-event-tab .tab-box label.tab-option8 {
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#05022E), to(#05022E)), -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
+  background-image: linear-gradient(#05022E, #05022E), linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section .theme-event .theme-event-tab .tab-box label.tab-option2 span, section .theme-event .theme-event-tab .tab-box label.tab-option4 span, section .theme-event .theme-event-tab .tab-box label.tab-option6 span, section .theme-event .theme-event-tab .tab-box label.tab-option8 span {
+  background: -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
+  background: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section .theme-event .theme-event-tab .tab-box label.tab-option2:hover, section .theme-event .theme-event-tab .tab-box label.tab-option4:hover, section .theme-event .theme-event-tab .tab-box label.tab-option6:hover, section .theme-event .theme-event-tab .tab-box label.tab-option8:hover {
+  border: 2px solid #05022E;
+  background: -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
+  background: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
+}
+
+section .theme-event .theme-event-tab .tab-box label.tab-option2:hover span, section .theme-event .theme-event-tab .tab-box label.tab-option4:hover span, section .theme-event .theme-event-tab .tab-box label.tab-option6:hover span, section .theme-event .theme-event-tab .tab-box label.tab-option8:hover span {
+  background: none;
+  -webkit-text-fill-color: #05022E;
+  color: #05022E;
+}
+
+section .theme-event .theme-event-tab .tab-box label:hover {
+  cursor: pointer;
+}
+
+section .theme-event .theme-event-tab .tab-box #tab-option1:checked ~ .tab-option1,
+section .theme-event .theme-event-tab .tab-box #tab-option3:checked ~ .tab-option3,
+section .theme-event .theme-event-tab .tab-box #tab-option5:checked ~ .tab-option5,
+section .theme-event .theme-event-tab .tab-box #tab-option7:checked ~ .tab-option7,
+section .theme-event .theme-event-tab .tab-box #tab-option9:checked ~ .tab-option9 {
+  border: 2px solid #05022E;
+  background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
+  background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
+}
+
+section .theme-event .theme-event-tab .tab-box #tab-option1:checked ~ .tab-option1 span,
+section .theme-event .theme-event-tab .tab-box #tab-option3:checked ~ .tab-option3 span,
+section .theme-event .theme-event-tab .tab-box #tab-option5:checked ~ .tab-option5 span,
+section .theme-event .theme-event-tab .tab-box #tab-option7:checked ~ .tab-option7 span,
+section .theme-event .theme-event-tab .tab-box #tab-option9:checked ~ .tab-option9 span {
+  background: none;
+  -webkit-text-fill-color: #05022E;
+  color: #05022E;
+}
+
+section .theme-event .theme-event-tab .tab-box #tab-option2:checked ~ .tab-option2,
+section .theme-event .theme-event-tab .tab-box #tab-option4:checked ~ .tab-option4,
+section .theme-event .theme-event-tab .tab-box #tab-option6:checked ~ .tab-option6,
+section .theme-event .theme-event-tab .tab-box #tab-option8:checked ~ .tab-option8 {
+  border: 2px solid #05022E;
+  background: -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
+  background: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
+}
+
+section .theme-event .theme-event-tab .tab-box #tab-option2:checked ~ .tab-option2 span,
+section .theme-event .theme-event-tab .tab-box #tab-option4:checked ~ .tab-option4 span,
+section .theme-event .theme-event-tab .tab-box #tab-option6:checked ~ .tab-option6 span,
+section .theme-event .theme-event-tab .tab-box #tab-option8:checked ~ .tab-option8 span {
+  background: none;
+  -webkit-text-fill-color: #05022E;
+  color: #05022E;
 }
 
 section .theme-event .theme-event-tab .tab-box .tab-content {
