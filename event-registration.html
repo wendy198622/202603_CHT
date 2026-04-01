@@ -13,11 +13,14 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <!-- <link rel="stylesheet" type="text/css" href="css/fullpage.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     
     <!-- js -->
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <!-- <script type="text/javascript" src="js/fullpage.js"></script> -->
+    <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     
     <!-- Google tag (gtag.js) -->
@@ -67,16 +70,24 @@
     </header>
 
     <section>
+        <div class="section theme theme-kv">
+            <div class="my-slick-slider">
+                <div class="slide-item">
+                    <img src="img/kv-smart.jpg" alt="">
+                    <!-- <img class="mob" src="img/kv-smart.jpg" alt=""> -->
+                </div>
+            </div>
+        </div>
         <div class="section theme theme-event">
             <div class="theme-event-tab">
                 <h3><span>賽事選擇</span></h3>
                 <div class="tab-box">
                         
-                        <input type="radio" name="smart-tab" id="tab-option1">
-                        <label for="tab-option1" class="tab-option1"><span>智慧創新應用大賽</span></label>
+                        <input type="radio" name="smart-tab" id="tab-option1" checked>
+                        <!-- <label for="tab-option1" class="tab-option1"><span>智慧創新應用大賽</span></label> -->
                         
-                        <input type="radio" name="smart-tab" id="tab-option2" checked>
-                        <label for="tab-option2" class="tab-option2"><span>5G加速器徵選活動</span></label>
+                        <!-- <input type="radio" name="smart-tab" id="tab-option2">
+                        <label for="tab-option2" class="tab-option2"><span>5G加速器徵選活動</span></label> -->
 
                         
                         <div class="tab-content tab-content1">
@@ -88,7 +99,7 @@
                                     <div class="form-group">
                                         <fieldset>
                                             <div class="label-title">請選擇您的身份組別</div>
-                                            <div class="label-content">
+                                            <div class="label-content inline-flex">
                                                 <label>
                                                     <input type="radio" name="group1" value="student" required>
                                                     <span>學生組</span>
@@ -116,7 +127,7 @@
 
                                         <fieldset>
                                             <div class="label-title">主題（擇一）：</div>
-                                            <div class="label-content">
+                                            <div class="label-content inline-flex">
                                                 <label><input type="radio" name="topic" value="medical"> 智慧醫療</label>
                                                 <label><input type="radio" name="topic" value="environment"> 智慧環境</label>
                                                 <label><input type="radio" name="topic" value="transport"> 智慧交通</label>
@@ -130,7 +141,7 @@
 
                                         <fieldset>
                                             <div class="label-title">如何得知本賽事：</div>
-                                            <div class="label-content">
+                                            <div class="label-content inline-flex">
                                                 <label><input type="checkbox" name="source" value="previous_team">上一屆參賽團隊</label>
                                                 <label><input type="checkbox" name="source" value="recommendation">師長、朋友、同事、同學推薦</label>
                                                 <label><input type="checkbox" name="source" value="facebook">FB粉絲頁、社團推薦</label>
@@ -994,6 +1005,17 @@
     $(document).ready(function () {
 
         new WOW().init();
+
+        $('.my-slick-slider').slick({
+            dots: true,             // 顯示底部的點點導航
+            infinite: true,         // 無限循環播放
+            speed: 500,             // 滑動的動畫速度 (毫秒)
+            slidesToShow: 1,        // 桌機版一次顯示 3 張
+            slidesToScroll: 1,      // 一次滑動 1 張
+            autoplay: true,         // 開啟自動播放
+            autoplaySpeed: 2000,    // 自動播放的間隔時間 (毫秒)
+            arrows: false
+        });
         
         $('#menu-toggle').on('click', function () {
             $('nav').slideToggle(); // 用動畫切換顯示/隱藏

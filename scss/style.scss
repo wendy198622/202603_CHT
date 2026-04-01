@@ -751,10 +751,10 @@ section{
                     display: block;
                 }
 
-                input[type="radio"]{
+                > input[type="radio"]{
                     display: none;
                 }
-                label{
+                > label{
                     padding: 4px 32px;
                     font-size: 20px;
                     font-weight: 500;
@@ -1263,10 +1263,10 @@ section{
                     display: block;
                 }
 
-                input[type="radio"]{
+                > input[type="radio"]{
                     display: none;
                 }
-                label{
+                > label{
                     padding: 4px 32px;
                     font-size: 20px;
                     font-weight: 500;
@@ -2036,10 +2036,10 @@ section{
                     display: block;
                 }
 
-                input[type="radio"]{
+                > input[type="radio"]{
                     display: none;
                 }
-                label{
+                > label{
                     padding: 4px 32px;
                     font-size: 20px;
                     font-weight: 500;
@@ -2192,10 +2192,10 @@ section{
                     display: block;
                 }
 
-                input[type="radio"]{
+                > input[type="radio"]{
                     display: none;
                 }
-                label{
+                > label{
                     padding: 4px 32px;
                     font-size: 20px;
                     font-weight: 500;
@@ -2310,10 +2310,10 @@ section{
                     display: block;
                 }
 
-                input[type="radio"]{
+                > input[type="radio"]{
                     display: none;
                 }
-                label{
+                > label{
                     padding: 4px 32px;
                     font-size: 20px;
                     font-weight: 500;
@@ -2470,10 +2470,10 @@ section{
             .tab-box{
                 margin-top: 40px;
 
-                input[type="radio"]{
+                > input[type="radio"]{
                     display: none;
                 }
-                label{
+                > label{
                     padding: 4px 32px;
                     font-size: 20px;
                     font-weight: 500;
@@ -2642,10 +2642,10 @@ section{
             .tab-box{
                 // margin-top: 40px;
 
-                input[type="radio"]{
+                > input[type="radio"]{
                     display: none;
                 }
-                label{
+                > label{
                     padding: 4px 32px;
                     font-size: 20px;
                     font-weight: 500;
@@ -2879,10 +2879,10 @@ section{
                     display: block;
                 }
 
-                input[type="radio"]{
+                > input[type="radio"]{
                     display: none;
                 }
-                label{
+                > label{
                     padding: 4px 32px;
                     font-size: 20px;
                     font-weight: 500;
@@ -3840,6 +3840,7 @@ section{
         }
     }
 }
+
 .mt20{
     margin-top: 20px;
 }
@@ -3856,4 +3857,8 @@ a.inline{
 /* 調整左右箭頭顏色 */
 .slick-prev:before, .slick-next:before {
     color: #333;
+}
+
+.slide-item{
+    margin-bottom: -5px !important;
 }
