@@ -357,6 +357,9 @@ section{
                     z-index: 1;
                     padding: 60px 60px 40px;
                     border-radius: 24px;
+                    @media (max-width:800px){
+                        padding: 60px 20px 40px;
+                    }
                 }
             }
 
@@ -910,6 +913,9 @@ section{
                                 margin-bottom: 20px;
                                 border-radius: 20px;
                                 padding: 40px;
+                                @media (max-width:800px){
+                                    flex-direction: column;
+                                }
                                 .top{ 
                                     width: 200px;
                                     .info{
@@ -917,7 +923,13 @@ section{
                                         margin-top: 12px;
                                     }
                                 }
-                                .content{ width: calc(100% - 200px);}
+                                .content{ 
+                                    width: calc(100% - 200px);
+                                    @media (max-width:800px){
+                                        width: 100%;
+                                    }
+
+                                }
 
                                 &:nth-child(1){ 
                                     border: 1px solid $text-color-purple;
@@ -2826,6 +2838,7 @@ section{
                             gap: 20px;
                             @media (max-width:800px){
                                 margin-top: 8px;
+                                flex-direction: column;
                             }
                             &:disabled{
                                 opacity: .8;
@@ -2841,6 +2854,9 @@ section{
                                 flex-wrap: wrap;
                                 align-items: flex-start;
                                 gap: 20px;
+                                @media (max-width:800px){
+                                    width: 100%;
+                                }
 
                                 &.inline-flex{
                                     display: inline-flex;
