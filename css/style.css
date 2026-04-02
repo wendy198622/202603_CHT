@@ -3100,7 +3100,11 @@ section .theme-result .theme-result-tab .tab-box .tab-content, section .theme-re
 }
 
 section .theme-result .theme-result-tab .tab-box #tab-option1:checked ~ .tab-content1,
-section .theme-result .theme-result-tab .tab-box #tab-option2:checked ~ .tab-content2 {
+section .theme-result .theme-result-tab .tab-box #tab-option2:checked ~ .tab-content2,
+section .theme-result .theme-result-tab .tab-box #tab-option-inner_smart1:checked ~ .tab-content-inner_smart1,
+section .theme-result .theme-result-tab .tab-box #tab-option-inner_smart2:checked ~ .tab-content-inner_smart2,
+section .theme-result .theme-result-tab .tab-box #tab-option-inner_5g1:checked ~ .tab-content-inner_5g1,
+section .theme-result .theme-result-tab .tab-box #tab-option-inner_5g2:checked ~ .tab-content-inner_5g2 {
   display: block;
 }
 
@@ -3124,7 +3128,7 @@ section .theme-result .theme-result-tab .tab-box label {
   }
 }
 
-section .theme-result .theme-result-tab .tab-box label.tab-option1 {
+section .theme-result .theme-result-tab .tab-box label.tab-option1, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_smart2, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_5g2 {
   border: 2px solid transparent;
   border-radius: 50px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#05022E), to(#05022E)), -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
@@ -3135,7 +3139,7 @@ section .theme-result .theme-result-tab .tab-box label.tab-option1 {
   transition: all .3s;
 }
 
-section .theme-result .theme-result-tab .tab-box label.tab-option1 span {
+section .theme-result .theme-result-tab .tab-box label.tab-option1 span, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_smart2 span, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_5g2 span {
   background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
   background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
   -webkit-background-clip: text;
@@ -3144,19 +3148,19 @@ section .theme-result .theme-result-tab .tab-box label.tab-option1 span {
   transition: all .3s;
 }
 
-section .theme-result .theme-result-tab .tab-box label.tab-option1:hover {
+section .theme-result .theme-result-tab .tab-box label.tab-option1:hover, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_smart2:hover, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_5g2:hover {
   border: 2px solid #05022E;
   background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
   background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
 }
 
-section .theme-result .theme-result-tab .tab-box label.tab-option1:hover span {
+section .theme-result .theme-result-tab .tab-box label.tab-option1:hover span, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_smart2:hover span, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_5g2:hover span {
   background: none;
   -webkit-text-fill-color: #05022E;
   color: #05022E;
 }
 
-section .theme-result .theme-result-tab .tab-box label.tab-option2 {
+section .theme-result .theme-result-tab .tab-box label.tab-option2, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_smart1, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_5g1 {
   border: 2px solid transparent;
   border-radius: 50px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#05022E), to(#05022E)), -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
@@ -3167,7 +3171,7 @@ section .theme-result .theme-result-tab .tab-box label.tab-option2 {
   transition: all .3s;
 }
 
-section .theme-result .theme-result-tab .tab-box label.tab-option2 span {
+section .theme-result .theme-result-tab .tab-box label.tab-option2 span, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_smart1 span, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_5g1 span {
   background: -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
   background: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
   -webkit-background-clip: text;
@@ -3176,13 +3180,13 @@ section .theme-result .theme-result-tab .tab-box label.tab-option2 span {
   transition: all .3s;
 }
 
-section .theme-result .theme-result-tab .tab-box label.tab-option2:hover {
+section .theme-result .theme-result-tab .tab-box label.tab-option2:hover, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_smart1:hover, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_5g1:hover {
   border: 2px solid #05022E;
   background: -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
   background: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
 }
 
-section .theme-result .theme-result-tab .tab-box label.tab-option2:hover span {
+section .theme-result .theme-result-tab .tab-box label.tab-option2:hover span, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_smart1:hover span, section .theme-result .theme-result-tab .tab-box label.tab-option-inner_5g1:hover span {
   background: none;
   -webkit-text-fill-color: #05022E;
   color: #05022E;
@@ -3192,58 +3196,67 @@ section .theme-result .theme-result-tab .tab-box label:hover {
   cursor: pointer;
 }
 
-section .theme-result .theme-result-tab .tab-box #tab-option1:checked ~ .tab-option1 {
+section .theme-result .theme-result-tab .tab-box #tab-option1:checked ~ .tab-option1,
+section .theme-result .theme-result-tab .tab-box #tab-option-inner_smart2:checked ~ .tab-option-inner_smart2,
+section .theme-result .theme-result-tab .tab-box #tab-option-inner_5g2:checked ~ .tab-option-inner_5g2 {
   border: 2px solid #05022E;
   background: -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
   background: linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
 }
 
-section .theme-result .theme-result-tab .tab-box #tab-option1:checked ~ .tab-option1 span {
+section .theme-result .theme-result-tab .tab-box #tab-option1:checked ~ .tab-option1 span,
+section .theme-result .theme-result-tab .tab-box #tab-option-inner_smart2:checked ~ .tab-option-inner_smart2 span,
+section .theme-result .theme-result-tab .tab-box #tab-option-inner_5g2:checked ~ .tab-option-inner_5g2 span {
   background: none;
   -webkit-text-fill-color: #05022E;
   color: #05022E;
 }
 
-section .theme-result .theme-result-tab .tab-box #tab-option2:checked ~ .tab-option2 {
+section .theme-result .theme-result-tab .tab-box #tab-option2:checked ~ .tab-option2,
+section .theme-result .theme-result-tab .tab-box #tab-option-inner_smart1:checked ~ .tab-option-inner_smart1,
+section .theme-result .theme-result-tab .tab-box #tab-option-inner_5g1:checked ~ .tab-option-inner_5g1 {
   border: 2px solid #05022E;
   background: -webkit-gradient(linear, left top, right top, from(#EBB26C), color-stop(#71DDC3), to(#78CAEF));
   background: linear-gradient(to right, #EBB26C, #71DDC3, #78CAEF);
 }
 
-section .theme-result .theme-result-tab .tab-box #tab-option2:checked ~ .tab-option2 span {
+section .theme-result .theme-result-tab .tab-box #tab-option2:checked ~ .tab-option2 span,
+section .theme-result .theme-result-tab .tab-box #tab-option-inner_smart1:checked ~ .tab-option-inner_smart1 span,
+section .theme-result .theme-result-tab .tab-box #tab-option-inner_5g1:checked ~ .tab-option-inner_5g1 span {
   background: none;
   -webkit-text-fill-color: #05022E;
   color: #05022E;
 }
 
-section .theme-result .theme-result-tab .tab-box .tab-content {
+section .theme-result .theme-result-tab .tab-box .tab-content, section .theme-result .theme-result-tab .tab-box .tab-content-inner {
   width: 96%;
   max-width: 1080px;
   margin: 0 auto;
   margin-top: 40px;
-  padding: 120px 60px;
   border-radius: 20px;
-  background: url(../img/intro_bg1.png) center top repeat-x, url(../img/intro_bg2.png) center bottom repeat-x #fff;
-  background-size: contain;
 }
 
 @media (max-width: 960px) {
-  section .theme-result .theme-result-tab .tab-box .tab-content {
+  section .theme-result .theme-result-tab .tab-box .tab-content, section .theme-result .theme-result-tab .tab-box .tab-content-inner {
     padding: 60px 20px;
   }
 }
 
-section .theme-result .theme-result-tab .tab-box .tab-content .theme-title h3 {
+section .theme-result .theme-result-tab .tab-box .tab-content .theme-title h3, section .theme-result .theme-result-tab .tab-box .tab-content-inner .theme-title h3 {
   text-align: center;
 }
 
-section .theme-result .theme-result-tab .tab-box .tab-content .theme-content p {
+section .theme-result .theme-result-tab .tab-box .tab-content .theme-content, section .theme-result .theme-result-tab .tab-box .tab-content-inner .theme-content {
+  width: 100%;
+}
+
+section .theme-result .theme-result-tab .tab-box .tab-content .theme-content p, section .theme-result .theme-result-tab .tab-box .tab-content-inner .theme-content p {
   margin-top: 20px;
   color: #fff;
   line-height: 1.8;
 }
 
-section .theme-result .theme-result-tab .tab-box .tab-content .theme-content .table-topic {
+section .theme-result .theme-result-tab .tab-box .tab-content .theme-content .table-topic, section .theme-result .theme-result-tab .tab-box .tab-content-inner .theme-content .table-topic {
   background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#050430), to(transparent));
   background: linear-gradient(to right, transparent, #050430, transparent);
   color: #292929;
@@ -3486,6 +3499,10 @@ section .theme-media .theme-media-tab .tab-box .theme-content p {
 
 section .theme-media .theme-media-tab .tab-box .tab-content-inner {
   margin-top: 40px;
+}
+
+section .theme-media .theme-media-tab .tab-box .tab-content-inner p {
+  height: auto;
 }
 
 section .theme-media .theme-media-tab .tab-box table {
@@ -4239,7 +4256,7 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content hr {
 }
 
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .form-group {
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 20px;
   border-radius: 10px;
   display: -webkit-box;
@@ -4273,16 +4290,11 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content field
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 20px;
   gap: 20px;
-}
-
-@media (max-width: 800px) {
-  section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset {
-    margin-top: 8px;
-  }
 }
 
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset:disabled {
@@ -4340,6 +4352,8 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content field
       flex-wrap: wrap;
   text-align: left;
   line-height: 2;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 960px) {
@@ -4371,6 +4385,7 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content field
   background: #fff;
   padding: 10px;
   border-radius: 4px;
+  display: block;
 }
 
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset .label-content label input[type="radio"]:checked, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content fieldset .label-content label input[type="checkbox"]:checked {
@@ -4643,6 +4658,11 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .memb
   margin-top: 0;
 }
 
+section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .member_group .member fieldset label, section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .process_group .member fieldset label {
+  padding: 0;
+  margin: 0;
+}
+
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .teacher_group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4778,6 +4798,8 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .teac
 
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .teacher_group .teacher label {
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .teacher_group .teacher label.inline {

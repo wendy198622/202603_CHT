@@ -2196,7 +2196,11 @@ section{
                 }
 
                 #tab-option1:checked ~ .tab-content1,
-                #tab-option2:checked ~ .tab-content2 {
+                #tab-option2:checked ~ .tab-content2,
+                #tab-option-inner_smart1:checked ~ .tab-content-inner_smart1,
+                #tab-option-inner_smart2:checked ~ .tab-content-inner_smart2,
+                #tab-option-inner_5g1:checked ~ .tab-content-inner_5g1,
+                #tab-option-inner_5g2:checked ~ .tab-content-inner_5g2 {
                     display: block;
                 }
 
@@ -2214,7 +2218,7 @@ section{
                         padding: 6px 8px;
                         margin: 10px 4px 0;
                     }
-                    &.tab-option1{                         
+                    &.tab-option1, &.tab-option-inner_smart2, &.tab-option-inner_5g2{                         
                         border: 2px solid transparent;
                         border-radius: 50px;
                         background-image: linear-gradient($bg-color, $bg-color), $rainbow-linear-color1;
@@ -2237,7 +2241,7 @@ section{
                             }
                         }
                     }
-                    &.tab-option2{
+                    &.tab-option2, &.tab-option-inner_smart1, &.tab-option-inner_5g1{ 
                         border: 2px solid transparent;
                         border-radius: 50px;
                         background-image: linear-gradient($bg-color, $bg-color), $rainbow-linear-color2;
@@ -2265,7 +2269,9 @@ section{
                     }
                 }
 
-                #tab-option1:checked ~ .tab-option1{
+                #tab-option1:checked ~ .tab-option1,
+                #tab-option-inner_smart2:checked ~ .tab-option-inner_smart2,
+                #tab-option-inner_5g2:checked ~ .tab-option-inner_5g2{
                     border: 2px solid $bg-color;
                     background: $rainbow-linear-color1;
                     span {
@@ -2275,7 +2281,9 @@ section{
                     }
                 }
 
-                #tab-option2:checked ~ .tab-option2{
+                #tab-option2:checked ~ .tab-option2,
+                #tab-option-inner_smart1:checked ~ .tab-option-inner_smart1,
+                #tab-option-inner_5g1:checked ~ .tab-option-inner_5g1{
                     border: 2px solid $bg-color;
                     background: $rainbow-linear-color2;
                     span {
@@ -2285,17 +2293,12 @@ section{
                     }
                 }
 
-                .tab-content{
+                .tab-content, .tab-content-inner{
                     width: 96%;
                     max-width: 1080px;
                     margin: 0 auto;
                     margin-top: 40px;
-                    padding: 120px 60px;
-                    // background: rgba(225,225,225,1);
                     border-radius: 20px;
-                    background: url(../img/intro_bg1.png) center top repeat-x,
-                    url(../img/intro_bg2.png) center bottom repeat-x $primary-color;
-                    background-size: contain;
                     @media (max-width:960px){
                         padding: 60px 20px;                        
                     }
@@ -2307,6 +2310,7 @@ section{
                     }
 
                     .theme-content{
+                        width: 100%;
                         p{
                             margin-top: 20px;
                             color: #fff;
@@ -2513,7 +2517,8 @@ section{
                 }
                 .tab-content-inner{
                         margin-top: 40px;
-                    .theme-content{
+                    p{
+                        height: auto;
                     }
                 }
 
@@ -3097,7 +3102,7 @@ section{
                             border-color: #525252;
                         }
                         .form-group{
-                            margin-top: 40px;
+                            margin-top: 20px;
                             // background: rgba(255,255,255,.2);
                             padding: 20px;
                             border-radius: 10px;
@@ -3116,12 +3121,9 @@ section{
                             display: flex;
                             flex-direction: row;
                             flex-wrap: wrap;
-                            align-content: center;
+                            align-items: center;
                             margin-top: 20px;
                             gap: 20px;
-                            @media (max-width:800px){
-                                margin-top: 8px;
-                            }
                             &:disabled{
                                 opacity: .8;
                             }
@@ -3154,6 +3156,8 @@ section{
                                     flex-wrap: wrap;
                                     text-align: left;
                                     line-height: 2;
+                                    margin: 0;
+                                    padding: 0;
                                     @media (max-width:960px){
                                         width: 100%;
                                         // margin-top: 10px;
@@ -3172,6 +3176,7 @@ section{
                                         background: #fff;
                                         padding: 10px;
                                         border-radius: 4px;
+                                        display: block;
                                         &:checked{
                                             background: url(../img/check.svg) center center no-repeat #fff;
                                             background-size: 16px;
@@ -3376,6 +3381,16 @@ section{
                                     margin-top: 0;
                                 }
                             }
+                            .member{
+                                fieldset{
+                                    label{
+                                        padding: 0;
+                                        margin: 0;
+                                        input[type="text"]{
+                                        }
+                                    }
+                                }
+                            }
                         }
 
                         .teacher_group{
@@ -3478,6 +3493,8 @@ section{
                                 }
                                 label{
                                     width: 100%;
+                                    padding: 0;
+                                    margin: 0;
                                     &.inline{
                                         width: auto;
                                         height: 34px;
