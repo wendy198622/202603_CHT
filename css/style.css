@@ -2924,6 +2924,12 @@ section .theme-allround .theme-smart-tab .tab-box {
   margin-top: 40px;
 }
 
+@media (max-width: 600px) {
+  section .theme-allround .theme-smart-tab .tab-box {
+    margin-top: 0;
+  }
+}
+
 section .theme-allround .theme-smart-tab .tab-box .tab-content {
   display: none;
 }

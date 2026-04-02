@@ -2051,6 +2051,9 @@ section{
             }
             .tab-box{
                 margin-top: 40px;
+                @media (max-width:600px){
+                    margin-top: 0;
+                }
                 .tab-content{
                     display: none;
                 }
