@@ -2111,6 +2111,12 @@ section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-conten
   border-radius: 24px;
 }
 
+@media (max-width: 800px) {
+  section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content2 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content4 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content6 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content8 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content9 .theme-content {
+    padding: 60px 20px 40px;
+  }
+}
+
 section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content1 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content3 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content5 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content7 .theme-content, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content9 .theme-title, section .theme-5g .theme-5g-tab .tab-box .tab-content.tab-content9 .theme-content {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#05022E), to(#05022E)), -webkit-gradient(linear, left top, right top, from(#78CAEF), color-stop(#8D93D2), to(#EBB26C));
   background-image: linear-gradient(#05022E, #05022E), linear-gradient(to right, #78CAEF, #8D93D2, #EBB26C);
