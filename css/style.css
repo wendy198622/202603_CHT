@@ -4121,6 +4121,10 @@ section .theme-register .theme-register-tab .tab-box .tab-content .theme-content
           appearance: checkbox;
 }
 
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .privacy-consent a {
+  display: inline-block;
+}
+
 section .theme-event {
   background: #05022E;
 }
