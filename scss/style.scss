@@ -2949,6 +2949,13 @@ section{
                             text-align: center;
                             opacity: 0.6;
                         }
+                        .privacy-consent{
+                            color: #fff;
+                            text-align: left;
+                            input[type="checkbox"]{
+                                appearance: checkbox;
+                            }
+                        }
                           
                           
                           

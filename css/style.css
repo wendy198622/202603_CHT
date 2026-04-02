@@ -4067,6 +4067,17 @@ section .theme-register .theme-register-tab .tab-box .tab-content .theme-content
   opacity: 0.6;
 }
 
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .privacy-consent {
+  color: #fff;
+  text-align: left;
+}
+
+section .theme-register .theme-register-tab .tab-box .tab-content .theme-content .privacy-consent input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+     -moz-appearance: checkbox;
+          appearance: checkbox;
+}
+
 section .theme-event {
   background: #05022E;
 }
