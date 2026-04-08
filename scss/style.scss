@@ -161,7 +161,7 @@ footer{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 40px 120px 60px;
+    padding: 40px 180px 60px;
     align-items: flex-end;
     // position: fixed;
     // z-index: 99;
@@ -3814,6 +3814,43 @@ section{
                             }
                             button + button{
                                 margin-left: 20px;
+                            }
+                        }
+                    }
+
+                        
+                    .form-group-apply{
+                        fieldset{
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            gap: 20px;
+                        }
+
+                        .label-title{
+                            width: 170px;
+                            flex-shrink: 0; /* 防止被壓縮 */
+                            flex: none !important;
+                        }
+                        label{
+                            color: #fff;
+                            display: flex;
+                            gap: 8px;
+                            font-size: 16px;
+                            padding: 4px 0;
+                            margin: 0;
+
+                            input[type="radio"]{
+                                display: flex;
+                                background: transparent;
+                                border: 1px solid #fff;
+                                padding: 6px 12px;
+                                border-radius: 4px;
+                                &:checked{
+                                    background: url(../img/check_white.svg) center center no-repeat;
+                                    background-size: 16px;
+                                    border-radius: 4px;
+                                }
                             }
                         }
                     }

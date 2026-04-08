@@ -491,7 +491,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px 120px 60px;
+  padding: 40px 180px 60px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -5233,6 +5233,55 @@ section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .btn-
 
 section .theme-event .theme-event-tab .tab-box .tab-content .theme-content .btn-group button + button {
   margin-left: 20px;
+}
+
+section .theme-event .theme-event-tab .tab-box .tab-content .form-group-apply fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+section .theme-event .theme-event-tab .tab-box .tab-content .form-group-apply .label-title {
+  width: 170px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  /* 防止被壓縮 */
+  -webkit-box-flex: 0 !important;
+      -ms-flex: none !important;
+          flex: none !important;
+}
+
+section .theme-event .theme-event-tab .tab-box .tab-content .form-group-apply label {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  padding: 4px 0;
+  margin: 0;
+}
+
+section .theme-event .theme-event-tab .tab-box .tab-content .form-group-apply label input[type="radio"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+section .theme-event .theme-event-tab .tab-box .tab-content .form-group-apply label input[type="radio"]:checked {
+  background: url(../img/check_white.svg) center center no-repeat;
+  background-size: 16px;
+  border-radius: 4px;
 }
 
 .mt20 {
